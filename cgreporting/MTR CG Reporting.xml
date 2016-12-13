@@ -1,0 +1,2446 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>MTR - CG Reporting</h:title>
+    <model>
+      <instance>
+        <cgReporting id="cgreporting" version="1004">
+          <start/>
+          <end/>
+          <deviceid/>
+          <today/>
+          <tdate/>
+          <staffbarcode/>
+          <reportingtype/>
+          <cg/>
+          <cgservicelist/>
+          <othercgservice/>
+          <cgworkingdatefrom/>
+          <cgworkingdateto/>
+          <workingcomments/>
+          <cgbarcode/>
+          <dcode/>
+          <gcode/>
+          <tcode/>
+          <cgcode/>
+          <cgname/>
+          <cgappointdate/>
+          <appointcomments/>
+          <cgdropped/>
+          <cgdropdate/>
+          <dropcomments/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </cgReporting>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/cgReporting/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/cgReporting/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/cgReporting/deviceid" type="string"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/cgReporting/today" type="date"/>
+      <bind nodeset="/cgReporting/tdate" type="date"/>
+      <bind nodeset="/cgReporting/staffbarcode" required="true()" type="select1"/>
+      <bind nodeset="/cgReporting/reportingtype" required="true()" type="select1"/>
+      <bind nodeset="/cgReporting/cg" relevant=" /cgReporting/reportingtype ='att'" required="true()" type="string"/>
+      <bind nodeset="/cgReporting/cgservicelist" relevant=" /cgReporting/reportingtype ='att'" required="true()" type="select1"/>
+      <bind nodeset="/cgReporting/othercgservice" relevant="selected( /cgReporting/cgservicelist ,'cgservicelist6')" required="true()" type="string"/>
+      <bind nodeset="/cgReporting/cgworkingdatefrom" relevant=" /cgReporting/reportingtype ='att'" required="true()" type="date"/>
+      <bind nodeset="/cgReporting/cgworkingdateto" relevant=" /cgReporting/reportingtype ='att'" required="true()" type="date"/>
+      <bind nodeset="/cgReporting/workingcomments" relevant=" /cgReporting/reportingtype ='att'" type="string"/>
+      <bind nodeset="/cgReporting/cgbarcode" relevant=" /cgReporting/reportingtype ='app'" type="barcode"/>
+      <bind nodeset="/cgReporting/dcode" relevant=" /cgReporting/cgbarcode ='' and  /cgReporting/reportingtype ='app'" required="true()" type="select1"/>
+      <bind nodeset="/cgReporting/gcode" relevant=" /cgReporting/cgbarcode ='' and  /cgReporting/reportingtype ='app'" required="true()" type="string"/>
+      <bind nodeset="/cgReporting/tcode" relevant=" /cgReporting/cgbarcode ='' and  /cgReporting/reportingtype ='app'" required="true()" type="string"/>
+      <bind nodeset="/cgReporting/cgcode" relevant=" /cgReporting/cgbarcode ='' and  /cgReporting/reportingtype ='app'" required="true()" type="select1"/>
+      <bind nodeset="/cgReporting/cgname" relevant=" /cgReporting/cgbarcode ='' and  /cgReporting/reportingtype ='app'" required="true()" type="string"/>
+      <bind nodeset="/cgReporting/cgappointdate" relevant=" /cgReporting/reportingtype ='app'" required="true()" type="date"/>
+      <bind nodeset="/cgReporting/appointcomments" relevant=" /cgReporting/reportingtype ='app'" type="string"/>
+      <bind nodeset="/cgReporting/cgdropped" relevant=" /cgReporting/reportingtype ='drp'" required="true()" type="string"/>
+      <bind nodeset="/cgReporting/cgdropdate" relevant=" /cgReporting/reportingtype ='drp'" required="true()" type="date"/>
+      <bind nodeset="/cgReporting/dropcomments" relevant=" /cgReporting/reportingtype ='drp'" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/cgReporting/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input appearance="no-calendar" ref="/cgReporting/tdate">
+      <label>Select today's date</label>
+    </input>
+    <select1 appearance="minimal" ref="/cgReporting/staffbarcode">
+      <label>Select your name</label>
+      <item>
+        <label>S0301 Pema Tenzin</label>
+        <value>S0301</value>
+      </item>
+      <item>
+        <label>S0306 Nima Gyeltshen</label>
+        <value>S0306</value>
+      </item>
+      <item>
+        <label>S0307 Tashi Dawa</label>
+        <value>S0307</value>
+      </item>
+      <item>
+        <label>S0308 Phuntsho Norbu</label>
+        <value>S0308</value>
+      </item>
+      <item>
+        <label>S0310 Tashi Chogay</label>
+        <value>S0310</value>
+      </item>
+      <item>
+        <label>S0311 Singye Dorji</label>
+        <value>S0311</value>
+      </item>
+      <item>
+        <label>S0312 Chimmi Wangchuk</label>
+        <value>S0312</value>
+      </item>
+      <item>
+        <label>S0313 Rinzin</label>
+        <value>S0313</value>
+      </item>
+      <item>
+        <label>S0314 Cheku</label>
+        <value>S0314</value>
+      </item>
+      <item>
+        <label>S0315 Lhendup</label>
+        <value>S0315</value>
+      </item>
+      <item>
+        <label>S0317 Dorji Yangki</label>
+        <value>S0317</value>
+      </item>
+      <item>
+        <label>S0322 Cheten Duba</label>
+        <value>S0322</value>
+      </item>
+      <item>
+        <label>S0323 Deki Yangzom</label>
+        <value>S0323</value>
+      </item>
+      <item>
+        <label>S0324 Dorji</label>
+        <value>S0324</value>
+      </item>
+      <item>
+        <label>S0326 Karma Wangdi</label>
+        <value>S0326</value>
+      </item>
+      <item>
+        <label>S0327 Ngawang Namgyel</label>
+        <value>S0327</value>
+      </item>
+      <item>
+        <label>S0328 Ngawang Tshering</label>
+        <value>S0328</value>
+      </item>
+      <item>
+        <label>S0330 Rinchen Khandu</label>
+        <value>S0330</value>
+      </item>
+      <item>
+        <label>S0332 Sonam Chophel</label>
+        <value>S0332</value>
+      </item>
+      <item>
+        <label>S0333 Sonam Phuntsho</label>
+        <value>S0333</value>
+      </item>
+      <item>
+        <label>S0334 Tenzin Wangdi</label>
+        <value>S0334</value>
+      </item>
+      <item>
+        <label>S0335 Tshewang Namgay</label>
+        <value>S0335</value>
+      </item>
+      <item>
+        <label>S0336 Tshewang Rinzin</label>
+        <value>S0336</value>
+      </item>
+      <item>
+        <label>S0341 Tshering Wangchuk</label>
+        <value>S0341</value>
+      </item>
+      <item>
+        <label>S0342 Pema Loday</label>
+        <value>S0342</value>
+      </item>
+      <item>
+        <label>S0343 Ugyen Wangdi</label>
+        <value>S0343</value>
+      </item>
+      <item>
+        <label>S0344 Tashi Tshering</label>
+        <value>S0344</value>
+      </item>
+      <item>
+        <label>S0345 Khandu Wangchuck</label>
+        <value>S0345</value>
+      </item>
+      <item>
+        <label>S0346 Jamyang Tenzin</label>
+        <value>S0346</value>
+      </item>
+      <item>
+        <label>S0347 Thinley Penjor</label>
+        <value>S0347</value>
+      </item>
+      <item>
+        <label>S0348 Wangchuck</label>
+        <value>S0348</value>
+      </item>
+      <item>
+        <label>S0350 Sherub Dorji</label>
+        <value>S0350</value>
+      </item>
+      <item>
+        <label>S0351 Sonam Dargay</label>
+        <value>S0351</value>
+      </item>
+      <item>
+        <label>S0352 Karma Tashi</label>
+        <value>S0352</value>
+      </item>
+      <item>
+        <label>S0359 Sangay Tshewang</label>
+        <value>S0359</value>
+      </item>
+      <item>
+        <label>S0360 Sonam Tobgay</label>
+        <value>S0360</value>
+      </item>
+      <item>
+        <label>S0361 Chedup Tenzin</label>
+        <value>S0361</value>
+      </item>
+      <item>
+        <label>S0362 Dawa Tshering</label>
+        <value>S0362</value>
+      </item>
+      <item>
+        <label>S0365 Dorji Gyeltshen</label>
+        <value>S0365</value>
+      </item>
+      <item>
+        <label>S0366 Nima Dhendup</label>
+        <value>S0366</value>
+      </item>
+      <item>
+        <label>S0367 Sangay Ghalley</label>
+        <value>S0367</value>
+      </item>
+      <item>
+        <label>S0368 Dorji Wangmo</label>
+        <value>S0368</value>
+      </item>
+      <item>
+        <label>S0369 Gyenden</label>
+        <value>S0369</value>
+      </item>
+      <item>
+        <label>S0370 Choki Wangmo</label>
+        <value>S0370</value>
+      </item>
+      <item>
+        <label>S0371 Sonam Rabten</label>
+        <value>S0371</value>
+      </item>
+      <item>
+        <label>S0372 Sangay Tshuten</label>
+        <value>S0372</value>
+      </item>
+      <item>
+        <label>S0373 Sonam Dhendup</label>
+        <value>S0373</value>
+      </item>
+      <item>
+        <label>S0374 Pema Yangchen</label>
+        <value>S0374</value>
+      </item>
+      <item>
+        <label>S0375 Tashi Duba</label>
+        <value>S0375</value>
+      </item>
+      <item>
+        <label>S0376 Sonam Jamtsho</label>
+        <value>S0376</value>
+      </item>
+      <item>
+        <label>S0377 Norbu Wangdi</label>
+        <value>S0377</value>
+      </item>
+      <item>
+        <label>S0378 Tenzin Wangchuk</label>
+        <value>S0378</value>
+      </item>
+      <item>
+        <label>S0379 Tashi Penjor</label>
+        <value>S0379</value>
+      </item>
+      <item>
+        <label>S0380 Sonam Tshering</label>
+        <value>S0380</value>
+      </item>
+      <item>
+        <label>S0381 Chimi Dorji</label>
+        <value>S0381</value>
+      </item>
+      <item>
+        <label>S0398 Rinzin Lhamo</label>
+        <value>S0398</value>
+      </item>
+      <item>
+        <label>S0399  Sonam Yuden</label>
+        <value>S0399</value>
+      </item>
+      <item>
+        <label>S0419 Tenzin Wangchuk</label>
+        <value>S0419</value>
+      </item>
+      <item>
+        <label>S0422 Dorji Choden</label>
+        <value>S0422</value>
+      </item>
+      <item>
+        <label>S0423 Sonam Jamtsho</label>
+        <value>S0423</value>
+      </item>
+      <item>
+        <label>S0424 Jigme Rabten</label>
+        <value>S0424</value>
+      </item>
+      <item>
+        <label>S0426 Chencho Thinley</label>
+        <value>S0426</value>
+      </item>
+      <item>
+        <label>S0427 Yeshi Rabgay</label>
+        <value>S0427</value>
+      </item>
+      <item>
+        <label>S0428 Tshewang Choden</label>
+        <value>S0428</value>
+      </item>
+      <item>
+        <label>S0429 Sonam Tshering</label>
+        <value>S0429</value>
+      </item>
+      <item>
+        <label>S0430 Dorji Wangchuk</label>
+        <value>S0430</value>
+      </item>
+      <item>
+        <label>S0431 Karma Jamtsho</label>
+        <value>S0431</value>
+      </item>
+      <item>
+        <label>S0432 Sonam Chedup</label>
+        <value>S0432</value>
+      </item>
+      <item>
+        <label>S0434 Cheki Gyeltshen</label>
+        <value>S0434</value>
+      </item>
+      <item>
+        <label>S0435 Tashi Dorji</label>
+        <value>S0435</value>
+      </item>
+      <item>
+        <label>S0436 Pema Rinzin</label>
+        <value>S0436</value>
+      </item>
+      <item>
+        <label>S0437 Tshering Penjor</label>
+        <value>S0437</value>
+      </item>
+      <item>
+        <label>S0438 Passang Dorji</label>
+        <value>S0438</value>
+      </item>
+      <item>
+        <label>S0439 Yeshi Jurmin</label>
+        <value>S0439</value>
+      </item>
+      <item>
+        <label>S0440 Dorji Phuntsho</label>
+        <value>S0440</value>
+      </item>
+      <item>
+        <label>S0441 Ngawang Tenzin</label>
+        <value>S0441</value>
+      </item>
+      <item>
+        <label>S0442 Tshering Dorji</label>
+        <value>S0442</value>
+      </item>
+      <item>
+        <label>S0443 Jigme Namgyal</label>
+        <value>S0443</value>
+      </item>
+      <item>
+        <label>S0445 Rinchen</label>
+        <value>S0445</value>
+      </item>
+      <item>
+        <label>S0446 Tenzin Wangchuk</label>
+        <value>S0446</value>
+      </item>
+      <item>
+        <label>S0448 Penden Zam</label>
+        <value>S0448</value>
+      </item>
+      <item>
+        <label>S0449 Dorji Tshewang</label>
+        <value>S0449</value>
+      </item>
+      <item>
+        <label>S0450 Rinzin Dorji</label>
+        <value>S0450</value>
+      </item>
+      <item>
+        <label>S0451 Dawa Gyeltshen</label>
+        <value>S0451</value>
+      </item>
+      <item>
+        <label>S0452 Pasang</label>
+        <value>S0452</value>
+      </item>
+      <item>
+        <label>S0453 Kinley Wangdi</label>
+        <value>S0453</value>
+      </item>
+      <item>
+        <label>S0454 Jigme Norbu</label>
+        <value>S0454</value>
+      </item>
+      <item>
+        <label>S0479 Rinchen Zangmo</label>
+        <value>S0479</value>
+      </item>
+      <item>
+        <label>S0480 Tshering Choki</label>
+        <value>S0480</value>
+      </item>
+      <item>
+        <label>S0481 Tshering Pelden</label>
+        <value>S0481</value>
+      </item>
+      <item>
+        <label>S0482 Kiran Rai</label>
+        <value>S0482</value>
+      </item>
+      <item>
+        <label>S0483 Sonamla</label>
+        <value>S0483</value>
+      </item>
+      <item>
+        <label>S0484 Chabilal Timsina</label>
+        <value>S0484</value>
+      </item>
+      <item>
+        <label>S0485 Kinley Gyeltshen</label>
+        <value>S0485</value>
+      </item>
+      <item>
+        <label>S0486 Sonam Tshewang</label>
+        <value>S0486</value>
+      </item>
+      <item>
+        <label>S0487 Sangay Jamtsho</label>
+        <value>S0487</value>
+      </item>
+      <item>
+        <label>S0488 Kelzang Dorji</label>
+        <value>S0488</value>
+      </item>
+      <item>
+        <label>S0489 Kamal Ghalley</label>
+        <value>S0489</value>
+      </item>
+      <item>
+        <label>S0490 Tashi Lhendup</label>
+        <value>S0490</value>
+      </item>
+      <item>
+        <label>S0491 Rekay Dawa</label>
+        <value>S0491</value>
+      </item>
+      <item>
+        <label>S0492 Ugyen Jamtsho</label>
+        <value>S0492</value>
+      </item>
+      <item>
+        <label>S0493 Tshering Namgay</label>
+        <value>S0493</value>
+      </item>
+      <item>
+        <label>S0494 Karma Tshewang</label>
+        <value>S0494</value>
+      </item>
+      <item>
+        <label>S0495 Dawa Gyeltshen</label>
+        <value>S0495</value>
+      </item>
+      <item>
+        <label>S0496 Tandin Dem</label>
+        <value>S0496</value>
+      </item>
+      <item>
+        <label>S0497 Jigme Norbu</label>
+        <value>S0497</value>
+      </item>
+      <item>
+        <label>S0498 Kezang</label>
+        <value>S0498</value>
+      </item>
+      <item>
+        <label>S0499 Namgay Tenzin</label>
+        <value>S0499</value>
+      </item>
+      <item>
+        <label>S0500 Sonam Rinzin</label>
+        <value>S0500</value>
+      </item>
+      <item>
+        <label>S0508 Jamyang Dorji</label>
+        <value>S0508</value>
+      </item>
+      <item>
+        <label>S0509 Ngawang Tenzin</label>
+        <value>S0509</value>
+      </item>
+      <item>
+        <label>S0510  Choki Dorji</label>
+        <value>S0510</value>
+      </item>
+      <item>
+        <label>S0511 Dorji Wangchuk</label>
+        <value>S0511</value>
+      </item>
+      <item>
+        <label>S0512 Kuenzang Tenzin</label>
+        <value>S0512</value>
+      </item>
+      <item>
+        <label>S0513 Tashi Tobgay</label>
+        <value>S0513</value>
+      </item>
+      <item>
+        <label>S0514 Tshewang Dema</label>
+        <value>S0514</value>
+      </item>
+      <item>
+        <label>S0515 Karma Tshering Tashi</label>
+        <value>S0515</value>
+      </item>
+      <item>
+        <label>S0516 Tshering Phuntsho</label>
+        <value>S0516</value>
+      </item>
+      <item>
+        <label>S0517 Kinzang Dechen Wangmo</label>
+        <value>S0517</value>
+      </item>
+      <item>
+        <label>S0518 Tsheten Dorji</label>
+        <value>S0518</value>
+      </item>
+      <item>
+        <label>S0519 Sonam Jamtsho</label>
+        <value>S0519</value>
+      </item>
+      <item>
+        <label>S0520 Tandin Zangpo</label>
+        <value>S0520</value>
+      </item>
+      <item>
+        <label>S0523 Passang Tobgyel</label>
+        <value>S0523</value>
+      </item>
+      <item>
+        <label>S0741 Rinzin Wangchuk</label>
+        <value>S0741</value>
+      </item>
+      <item>
+        <label>S0742 Dawa Gyeltshen</label>
+        <value>S0742</value>
+      </item>
+      <item>
+        <label>S0743 Thinley</label>
+        <value>S0743</value>
+      </item>
+      <item>
+        <label>S0744 Leki Zangmo</label>
+        <value>S0744</value>
+      </item>
+      <item>
+        <label>S0745 Sonam Yeshi</label>
+        <value>S0745</value>
+      </item>
+      <item>
+        <label>S0746 Rinchen Dema</label>
+        <value>S0746</value>
+      </item>
+      <item>
+        <label>S0747 Pema Wangchuk</label>
+        <value>S0747</value>
+      </item>
+      <item>
+        <label>S0748 Dewakar Bujel</label>
+        <value>S0748</value>
+      </item>
+      <item>
+        <label>S0749 Sangay Tenzin</label>
+        <value>S0749</value>
+      </item>
+      <item>
+        <label>S0750 Dorji Tempa</label>
+        <value>S0750</value>
+      </item>
+      <item>
+        <label>S0751 Kinley Tshering</label>
+        <value>S0751</value>
+      </item>
+      <item>
+        <label>S0752 Phuntsho Norbu</label>
+        <value>S0752</value>
+      </item>
+      <item>
+        <label>S0753 Pema Tshewang</label>
+        <value>S0753</value>
+      </item>
+      <item>
+        <label>S0754 Tula Ram Ghalley</label>
+        <value>S0754</value>
+      </item>
+      <item>
+        <label>S0755 Nima Dorji</label>
+        <value>S0755</value>
+      </item>
+      <item>
+        <label>S0756 Tashi Wangchuk</label>
+        <value>S0756</value>
+      </item>
+      <item>
+        <label>S0757 Karma Tshewang</label>
+        <value>S0757</value>
+      </item>
+      <item>
+        <label>S0758 Tashi Phuntsho</label>
+        <value>S0758</value>
+      </item>
+      <item>
+        <label>S0759 Sonam Wangchuk</label>
+        <value>S0759</value>
+      </item>
+      <item>
+        <label>S0760 Jigme Dorji</label>
+        <value>S0760</value>
+      </item>
+      <item>
+        <label>S0761 Dorji Tshering</label>
+        <value>S0761</value>
+      </item>
+      <item>
+        <label>S0762 Damcho Wangmo</label>
+        <value>S0762</value>
+      </item>
+      <item>
+        <label>S0763 Pema Loday</label>
+        <value>S0763</value>
+      </item>
+      <item>
+        <label>S0764 Karma Dupchu</label>
+        <value>S0764</value>
+      </item>
+      <item>
+        <label>S0765 Youden</label>
+        <value>S0765</value>
+      </item>
+      <item>
+        <label>S0766 Samten Pelzang</label>
+        <value>S0766</value>
+      </item>
+      <item>
+        <label>S0767 Jamyang Tenzin</label>
+        <value>S0767</value>
+      </item>
+      <item>
+        <label>S0768 Sangay Lethro</label>
+        <value>S0768</value>
+      </item>
+      <item>
+        <label>S0769 Sonam Tenzin</label>
+        <value>S0769</value>
+      </item>
+    </select1>
+    <select1 ref="/cgReporting/reportingtype">
+      <label>Select reporting type</label>
+      <item>
+        <label>Attendence</label>
+        <value>att</value>
+      </item>
+      <item>
+        <label>New appointment</label>
+        <value>app</value>
+      </item>
+      <item>
+        <label>Drop out</label>
+        <value>drp</value>
+      </item>
+    </select1>
+    <input appearance="minimal" query="instance('cg')/root/item[firstlevelselection= /cgReporting/staffbarcode ]" ref="/cgReporting/cg">
+      <label>Select CG</label>
+    </input>
+    <select1 appearance="minimal" ref="/cgReporting/cgservicelist">
+      <label>Select activity for which the CG is deployed</label>
+      <item>
+        <label>Plant Distribution</label>
+        <value>cgservicelist1</value>
+      </item>
+      <item>
+        <label>Field QC (More then 10 acres)</label>
+        <value>cgservicelist2</value>
+      </item>
+      <item>
+        <label>Field QC (Isolated area)</label>
+        <value>cgservicelist3</value>
+      </item>
+      <item>
+        <label>Irrigation</label>
+        <value>cgservicelist4</value>
+      </item>
+      <item>
+        <label>Farmer training</label>
+        <value>cgservicelist5</value>
+      </item>
+      <item>
+        <label>Other</label>
+        <value>cgservicelist6</value>
+      </item>
+    </select1>
+    <input ref="/cgReporting/othercgservice">
+      <label>Specify other</label>
+    </input>
+    <input appearance="no-calendar" ref="/cgReporting/cgworkingdatefrom">
+      <label>Working date from</label>
+    </input>
+    <input appearance="no-calendar" ref="/cgReporting/cgworkingdateto">
+      <label>Working date to</label>
+    </input>
+    <input ref="/cgReporting/workingcomments">
+      <label>Comments</label>
+    </input>
+    <input ref="/cgReporting/cgbarcode">
+      <label>Scan CG details from farmer barcode sheet</label>
+    </input>
+    <select1 appearance="minimal" ref="/cgReporting/dcode">
+      <label>Select Dzongkhag</label>
+      <item>
+        <label>D01 Trashigang</label>
+        <value>D01</value>
+      </item>
+      <item>
+        <label>D02 Trashiyangtse</label>
+        <value>D02</value>
+      </item>
+      <item>
+        <label>D03 Mongar</label>
+        <value>D03</value>
+      </item>
+      <item>
+        <label>D04 Lhuentse</label>
+        <value>D04</value>
+      </item>
+      <item>
+        <label>D05 Pemagatshel</label>
+        <value>D05</value>
+      </item>
+      <item>
+        <label>D06 Samdrup Jongkhar</label>
+        <value>D06</value>
+      </item>
+      <item>
+        <label>D07 Zhemgang</label>
+        <value>D07</value>
+      </item>
+      <item>
+        <label>D08 Bumthang</label>
+        <value>D08</value>
+      </item>
+      <item>
+        <label>D09 Trongsa</label>
+        <value>D09</value>
+      </item>
+      <item>
+        <label>D10 Wangdue</label>
+        <value>D10</value>
+      </item>
+      <item>
+        <label>D11 Punakha</label>
+        <value>D11</value>
+      </item>
+      <item>
+        <label>D12 Gasa</label>
+        <value>D12</value>
+      </item>
+      <item>
+        <label>D13 Dagana</label>
+        <value>D13</value>
+      </item>
+      <item>
+        <label>D14 Tsirang</label>
+        <value>D14</value>
+      </item>
+      <item>
+        <label>D15 Chhukha</label>
+        <value>D15</value>
+      </item>
+      <item>
+        <label>D16 Thimphu</label>
+        <value>D16</value>
+      </item>
+      <item>
+        <label>D17 Paro</label>
+        <value>D17</value>
+      </item>
+      <item>
+        <label>D18 Haa</label>
+        <value>D18</value>
+      </item>
+      <item>
+        <label>D19 Sarpang</label>
+        <value>D19</value>
+      </item>
+      <item>
+        <label>D20 Samtse</label>
+        <value>D20</value>
+      </item>
+    </select1>
+    <input appearance="minimal" query="instance('gewog')/root/item[firstlevelselection= /cgReporting/dcode ]" ref="/cgReporting/gcode">
+      <label>Select Gewog</label>
+    </input>
+    <input query="instance('tshowog')/root/item[secondlevelselection= /cgReporting/gcode ]" ref="/cgReporting/tcode">
+      <label>Select Tshowog</label>
+    </input>
+    <select1 appearance="minimal" ref="/cgReporting/cgcode">
+      <label>Farmer code</label>
+      <item>
+        <label>399</label>
+        <value>399</value>
+      </item>
+      <item>
+        <label>398</label>
+        <value>398</value>
+      </item>
+      <item>
+        <label>397</label>
+        <value>397</value>
+      </item>
+      <item>
+        <label>396</label>
+        <value>396</value>
+      </item>
+      <item>
+        <label>395</label>
+        <value>395</value>
+      </item>
+      <item>
+        <label>394</label>
+        <value>394</value>
+      </item>
+      <item>
+        <label>393</label>
+        <value>393</value>
+      </item>
+      <item>
+        <label>392</label>
+        <value>392</value>
+      </item>
+      <item>
+        <label>391</label>
+        <value>391</value>
+      </item>
+      <item>
+        <label>390</label>
+        <value>390</value>
+      </item>
+      <item>
+        <label>389</label>
+        <value>389</value>
+      </item>
+      <item>
+        <label>388</label>
+        <value>388</value>
+      </item>
+      <item>
+        <label>387</label>
+        <value>387</value>
+      </item>
+      <item>
+        <label>386</label>
+        <value>386</value>
+      </item>
+      <item>
+        <label>385</label>
+        <value>385</value>
+      </item>
+      <item>
+        <label>384</label>
+        <value>384</value>
+      </item>
+      <item>
+        <label>383</label>
+        <value>383</value>
+      </item>
+      <item>
+        <label>382</label>
+        <value>382</value>
+      </item>
+      <item>
+        <label>381</label>
+        <value>381</value>
+      </item>
+      <item>
+        <label>380</label>
+        <value>380</value>
+      </item>
+      <item>
+        <label>379</label>
+        <value>379</value>
+      </item>
+      <item>
+        <label>378</label>
+        <value>378</value>
+      </item>
+      <item>
+        <label>377</label>
+        <value>377</value>
+      </item>
+      <item>
+        <label>376</label>
+        <value>376</value>
+      </item>
+      <item>
+        <label>375</label>
+        <value>375</value>
+      </item>
+      <item>
+        <label>374</label>
+        <value>374</value>
+      </item>
+      <item>
+        <label>373</label>
+        <value>373</value>
+      </item>
+      <item>
+        <label>372</label>
+        <value>372</value>
+      </item>
+      <item>
+        <label>371</label>
+        <value>371</value>
+      </item>
+      <item>
+        <label>370</label>
+        <value>370</value>
+      </item>
+      <item>
+        <label>369</label>
+        <value>369</value>
+      </item>
+      <item>
+        <label>368</label>
+        <value>368</value>
+      </item>
+      <item>
+        <label>367</label>
+        <value>367</value>
+      </item>
+      <item>
+        <label>366</label>
+        <value>366</value>
+      </item>
+      <item>
+        <label>365</label>
+        <value>365</value>
+      </item>
+      <item>
+        <label>364</label>
+        <value>364</value>
+      </item>
+      <item>
+        <label>363</label>
+        <value>363</value>
+      </item>
+      <item>
+        <label>362</label>
+        <value>362</value>
+      </item>
+      <item>
+        <label>361</label>
+        <value>361</value>
+      </item>
+      <item>
+        <label>360</label>
+        <value>360</value>
+      </item>
+      <item>
+        <label>359</label>
+        <value>359</value>
+      </item>
+      <item>
+        <label>358</label>
+        <value>358</value>
+      </item>
+      <item>
+        <label>357</label>
+        <value>357</value>
+      </item>
+      <item>
+        <label>356</label>
+        <value>356</value>
+      </item>
+      <item>
+        <label>355</label>
+        <value>355</value>
+      </item>
+      <item>
+        <label>354</label>
+        <value>354</value>
+      </item>
+      <item>
+        <label>353</label>
+        <value>353</value>
+      </item>
+      <item>
+        <label>352</label>
+        <value>352</value>
+      </item>
+      <item>
+        <label>351</label>
+        <value>351</value>
+      </item>
+      <item>
+        <label>350</label>
+        <value>350</value>
+      </item>
+      <item>
+        <label>349</label>
+        <value>349</value>
+      </item>
+      <item>
+        <label>348</label>
+        <value>348</value>
+      </item>
+      <item>
+        <label>347</label>
+        <value>347</value>
+      </item>
+      <item>
+        <label>346</label>
+        <value>346</value>
+      </item>
+      <item>
+        <label>345</label>
+        <value>345</value>
+      </item>
+      <item>
+        <label>344</label>
+        <value>344</value>
+      </item>
+      <item>
+        <label>343</label>
+        <value>343</value>
+      </item>
+      <item>
+        <label>342</label>
+        <value>342</value>
+      </item>
+      <item>
+        <label>341</label>
+        <value>341</value>
+      </item>
+      <item>
+        <label>340</label>
+        <value>340</value>
+      </item>
+      <item>
+        <label>339</label>
+        <value>339</value>
+      </item>
+      <item>
+        <label>338</label>
+        <value>338</value>
+      </item>
+      <item>
+        <label>337</label>
+        <value>337</value>
+      </item>
+      <item>
+        <label>336</label>
+        <value>336</value>
+      </item>
+      <item>
+        <label>335</label>
+        <value>335</value>
+      </item>
+      <item>
+        <label>334</label>
+        <value>334</value>
+      </item>
+      <item>
+        <label>333</label>
+        <value>333</value>
+      </item>
+      <item>
+        <label>332</label>
+        <value>332</value>
+      </item>
+      <item>
+        <label>331</label>
+        <value>331</value>
+      </item>
+      <item>
+        <label>330</label>
+        <value>330</value>
+      </item>
+      <item>
+        <label>329</label>
+        <value>329</value>
+      </item>
+      <item>
+        <label>328</label>
+        <value>328</value>
+      </item>
+      <item>
+        <label>327</label>
+        <value>327</value>
+      </item>
+      <item>
+        <label>326</label>
+        <value>326</value>
+      </item>
+      <item>
+        <label>325</label>
+        <value>325</value>
+      </item>
+      <item>
+        <label>324</label>
+        <value>324</value>
+      </item>
+      <item>
+        <label>323</label>
+        <value>323</value>
+      </item>
+      <item>
+        <label>322</label>
+        <value>322</value>
+      </item>
+      <item>
+        <label>321</label>
+        <value>321</value>
+      </item>
+      <item>
+        <label>320</label>
+        <value>320</value>
+      </item>
+      <item>
+        <label>319</label>
+        <value>319</value>
+      </item>
+      <item>
+        <label>318</label>
+        <value>318</value>
+      </item>
+      <item>
+        <label>317</label>
+        <value>317</value>
+      </item>
+      <item>
+        <label>316</label>
+        <value>316</value>
+      </item>
+      <item>
+        <label>315</label>
+        <value>315</value>
+      </item>
+      <item>
+        <label>314</label>
+        <value>314</value>
+      </item>
+      <item>
+        <label>313</label>
+        <value>313</value>
+      </item>
+      <item>
+        <label>312</label>
+        <value>312</value>
+      </item>
+      <item>
+        <label>311</label>
+        <value>311</value>
+      </item>
+      <item>
+        <label>310</label>
+        <value>310</value>
+      </item>
+      <item>
+        <label>309</label>
+        <value>309</value>
+      </item>
+      <item>
+        <label>308</label>
+        <value>308</value>
+      </item>
+      <item>
+        <label>307</label>
+        <value>307</value>
+      </item>
+      <item>
+        <label>306</label>
+        <value>306</value>
+      </item>
+      <item>
+        <label>305</label>
+        <value>305</value>
+      </item>
+      <item>
+        <label>304</label>
+        <value>304</value>
+      </item>
+      <item>
+        <label>303</label>
+        <value>303</value>
+      </item>
+      <item>
+        <label>302</label>
+        <value>302</value>
+      </item>
+      <item>
+        <label>301</label>
+        <value>301</value>
+      </item>
+      <item>
+        <label>300</label>
+        <value>300</value>
+      </item>
+      <item>
+        <label>299</label>
+        <value>299</value>
+      </item>
+      <item>
+        <label>298</label>
+        <value>298</value>
+      </item>
+      <item>
+        <label>297</label>
+        <value>297</value>
+      </item>
+      <item>
+        <label>296</label>
+        <value>296</value>
+      </item>
+      <item>
+        <label>295</label>
+        <value>295</value>
+      </item>
+      <item>
+        <label>294</label>
+        <value>294</value>
+      </item>
+      <item>
+        <label>293</label>
+        <value>293</value>
+      </item>
+      <item>
+        <label>292</label>
+        <value>292</value>
+      </item>
+      <item>
+        <label>291</label>
+        <value>291</value>
+      </item>
+      <item>
+        <label>290</label>
+        <value>290</value>
+      </item>
+      <item>
+        <label>289</label>
+        <value>289</value>
+      </item>
+      <item>
+        <label>288</label>
+        <value>288</value>
+      </item>
+      <item>
+        <label>287</label>
+        <value>287</value>
+      </item>
+      <item>
+        <label>286</label>
+        <value>286</value>
+      </item>
+      <item>
+        <label>285</label>
+        <value>285</value>
+      </item>
+      <item>
+        <label>284</label>
+        <value>284</value>
+      </item>
+      <item>
+        <label>283</label>
+        <value>283</value>
+      </item>
+      <item>
+        <label>282</label>
+        <value>282</value>
+      </item>
+      <item>
+        <label>281</label>
+        <value>281</value>
+      </item>
+      <item>
+        <label>280</label>
+        <value>280</value>
+      </item>
+      <item>
+        <label>279</label>
+        <value>279</value>
+      </item>
+      <item>
+        <label>278</label>
+        <value>278</value>
+      </item>
+      <item>
+        <label>277</label>
+        <value>277</value>
+      </item>
+      <item>
+        <label>276</label>
+        <value>276</value>
+      </item>
+      <item>
+        <label>275</label>
+        <value>275</value>
+      </item>
+      <item>
+        <label>274</label>
+        <value>274</value>
+      </item>
+      <item>
+        <label>273</label>
+        <value>273</value>
+      </item>
+      <item>
+        <label>272</label>
+        <value>272</value>
+      </item>
+      <item>
+        <label>271</label>
+        <value>271</value>
+      </item>
+      <item>
+        <label>270</label>
+        <value>270</value>
+      </item>
+      <item>
+        <label>269</label>
+        <value>269</value>
+      </item>
+      <item>
+        <label>268</label>
+        <value>268</value>
+      </item>
+      <item>
+        <label>267</label>
+        <value>267</value>
+      </item>
+      <item>
+        <label>266</label>
+        <value>266</value>
+      </item>
+      <item>
+        <label>265</label>
+        <value>265</value>
+      </item>
+      <item>
+        <label>264</label>
+        <value>264</value>
+      </item>
+      <item>
+        <label>263</label>
+        <value>263</value>
+      </item>
+      <item>
+        <label>262</label>
+        <value>262</value>
+      </item>
+      <item>
+        <label>261</label>
+        <value>261</value>
+      </item>
+      <item>
+        <label>260</label>
+        <value>260</value>
+      </item>
+      <item>
+        <label>259</label>
+        <value>259</value>
+      </item>
+      <item>
+        <label>258</label>
+        <value>258</value>
+      </item>
+      <item>
+        <label>257</label>
+        <value>257</value>
+      </item>
+      <item>
+        <label>256</label>
+        <value>256</value>
+      </item>
+      <item>
+        <label>255</label>
+        <value>255</value>
+      </item>
+      <item>
+        <label>254</label>
+        <value>254</value>
+      </item>
+      <item>
+        <label>253</label>
+        <value>253</value>
+      </item>
+      <item>
+        <label>252</label>
+        <value>252</value>
+      </item>
+      <item>
+        <label>251</label>
+        <value>251</value>
+      </item>
+      <item>
+        <label>250</label>
+        <value>250</value>
+      </item>
+      <item>
+        <label>249</label>
+        <value>249</value>
+      </item>
+      <item>
+        <label>248</label>
+        <value>248</value>
+      </item>
+      <item>
+        <label>247</label>
+        <value>247</value>
+      </item>
+      <item>
+        <label>246</label>
+        <value>246</value>
+      </item>
+      <item>
+        <label>245</label>
+        <value>245</value>
+      </item>
+      <item>
+        <label>244</label>
+        <value>244</value>
+      </item>
+      <item>
+        <label>243</label>
+        <value>243</value>
+      </item>
+      <item>
+        <label>242</label>
+        <value>242</value>
+      </item>
+      <item>
+        <label>241</label>
+        <value>241</value>
+      </item>
+      <item>
+        <label>240</label>
+        <value>240</value>
+      </item>
+      <item>
+        <label>239</label>
+        <value>239</value>
+      </item>
+      <item>
+        <label>238</label>
+        <value>238</value>
+      </item>
+      <item>
+        <label>237</label>
+        <value>237</value>
+      </item>
+      <item>
+        <label>236</label>
+        <value>236</value>
+      </item>
+      <item>
+        <label>235</label>
+        <value>235</value>
+      </item>
+      <item>
+        <label>234</label>
+        <value>234</value>
+      </item>
+      <item>
+        <label>233</label>
+        <value>233</value>
+      </item>
+      <item>
+        <label>232</label>
+        <value>232</value>
+      </item>
+      <item>
+        <label>231</label>
+        <value>231</value>
+      </item>
+      <item>
+        <label>230</label>
+        <value>230</value>
+      </item>
+      <item>
+        <label>229</label>
+        <value>229</value>
+      </item>
+      <item>
+        <label>228</label>
+        <value>228</value>
+      </item>
+      <item>
+        <label>227</label>
+        <value>227</value>
+      </item>
+      <item>
+        <label>226</label>
+        <value>226</value>
+      </item>
+      <item>
+        <label>225</label>
+        <value>225</value>
+      </item>
+      <item>
+        <label>224</label>
+        <value>224</value>
+      </item>
+      <item>
+        <label>223</label>
+        <value>223</value>
+      </item>
+      <item>
+        <label>222</label>
+        <value>222</value>
+      </item>
+      <item>
+        <label>221</label>
+        <value>221</value>
+      </item>
+      <item>
+        <label>220</label>
+        <value>220</value>
+      </item>
+      <item>
+        <label>219</label>
+        <value>219</value>
+      </item>
+      <item>
+        <label>218</label>
+        <value>218</value>
+      </item>
+      <item>
+        <label>217</label>
+        <value>217</value>
+      </item>
+      <item>
+        <label>216</label>
+        <value>216</value>
+      </item>
+      <item>
+        <label>215</label>
+        <value>215</value>
+      </item>
+      <item>
+        <label>214</label>
+        <value>214</value>
+      </item>
+      <item>
+        <label>213</label>
+        <value>213</value>
+      </item>
+      <item>
+        <label>212</label>
+        <value>212</value>
+      </item>
+      <item>
+        <label>211</label>
+        <value>211</value>
+      </item>
+      <item>
+        <label>210</label>
+        <value>210</value>
+      </item>
+      <item>
+        <label>209</label>
+        <value>209</value>
+      </item>
+      <item>
+        <label>208</label>
+        <value>208</value>
+      </item>
+      <item>
+        <label>207</label>
+        <value>207</value>
+      </item>
+      <item>
+        <label>206</label>
+        <value>206</value>
+      </item>
+      <item>
+        <label>205</label>
+        <value>205</value>
+      </item>
+      <item>
+        <label>204</label>
+        <value>204</value>
+      </item>
+      <item>
+        <label>203</label>
+        <value>203</value>
+      </item>
+      <item>
+        <label>202</label>
+        <value>202</value>
+      </item>
+      <item>
+        <label>201</label>
+        <value>201</value>
+      </item>
+      <item>
+        <label>200</label>
+        <value>200</value>
+      </item>
+      <item>
+        <label>199</label>
+        <value>199</value>
+      </item>
+      <item>
+        <label>198</label>
+        <value>198</value>
+      </item>
+      <item>
+        <label>197</label>
+        <value>197</value>
+      </item>
+      <item>
+        <label>196</label>
+        <value>196</value>
+      </item>
+      <item>
+        <label>195</label>
+        <value>195</value>
+      </item>
+      <item>
+        <label>194</label>
+        <value>194</value>
+      </item>
+      <item>
+        <label>193</label>
+        <value>193</value>
+      </item>
+      <item>
+        <label>192</label>
+        <value>192</value>
+      </item>
+      <item>
+        <label>191</label>
+        <value>191</value>
+      </item>
+      <item>
+        <label>190</label>
+        <value>190</value>
+      </item>
+      <item>
+        <label>189</label>
+        <value>189</value>
+      </item>
+      <item>
+        <label>188</label>
+        <value>188</value>
+      </item>
+      <item>
+        <label>187</label>
+        <value>187</value>
+      </item>
+      <item>
+        <label>186</label>
+        <value>186</value>
+      </item>
+      <item>
+        <label>185</label>
+        <value>185</value>
+      </item>
+      <item>
+        <label>184</label>
+        <value>184</value>
+      </item>
+      <item>
+        <label>183</label>
+        <value>183</value>
+      </item>
+      <item>
+        <label>182</label>
+        <value>182</value>
+      </item>
+      <item>
+        <label>181</label>
+        <value>181</value>
+      </item>
+      <item>
+        <label>180</label>
+        <value>180</value>
+      </item>
+      <item>
+        <label>179</label>
+        <value>179</value>
+      </item>
+      <item>
+        <label>178</label>
+        <value>178</value>
+      </item>
+      <item>
+        <label>177</label>
+        <value>177</value>
+      </item>
+      <item>
+        <label>176</label>
+        <value>176</value>
+      </item>
+      <item>
+        <label>175</label>
+        <value>175</value>
+      </item>
+      <item>
+        <label>174</label>
+        <value>174</value>
+      </item>
+      <item>
+        <label>173</label>
+        <value>173</value>
+      </item>
+      <item>
+        <label>172</label>
+        <value>172</value>
+      </item>
+      <item>
+        <label>171</label>
+        <value>171</value>
+      </item>
+      <item>
+        <label>170</label>
+        <value>170</value>
+      </item>
+      <item>
+        <label>169</label>
+        <value>169</value>
+      </item>
+      <item>
+        <label>168</label>
+        <value>168</value>
+      </item>
+      <item>
+        <label>167</label>
+        <value>167</value>
+      </item>
+      <item>
+        <label>166</label>
+        <value>166</value>
+      </item>
+      <item>
+        <label>165</label>
+        <value>165</value>
+      </item>
+      <item>
+        <label>164</label>
+        <value>164</value>
+      </item>
+      <item>
+        <label>163</label>
+        <value>163</value>
+      </item>
+      <item>
+        <label>162</label>
+        <value>162</value>
+      </item>
+      <item>
+        <label>161</label>
+        <value>161</value>
+      </item>
+      <item>
+        <label>160</label>
+        <value>160</value>
+      </item>
+      <item>
+        <label>159</label>
+        <value>159</value>
+      </item>
+      <item>
+        <label>158</label>
+        <value>158</value>
+      </item>
+      <item>
+        <label>157</label>
+        <value>157</value>
+      </item>
+      <item>
+        <label>156</label>
+        <value>156</value>
+      </item>
+      <item>
+        <label>155</label>
+        <value>155</value>
+      </item>
+      <item>
+        <label>154</label>
+        <value>154</value>
+      </item>
+      <item>
+        <label>153</label>
+        <value>153</value>
+      </item>
+      <item>
+        <label>152</label>
+        <value>152</value>
+      </item>
+      <item>
+        <label>151</label>
+        <value>151</value>
+      </item>
+      <item>
+        <label>150</label>
+        <value>150</value>
+      </item>
+      <item>
+        <label>149</label>
+        <value>149</value>
+      </item>
+      <item>
+        <label>148</label>
+        <value>148</value>
+      </item>
+      <item>
+        <label>147</label>
+        <value>147</value>
+      </item>
+      <item>
+        <label>146</label>
+        <value>146</value>
+      </item>
+      <item>
+        <label>145</label>
+        <value>145</value>
+      </item>
+      <item>
+        <label>144</label>
+        <value>144</value>
+      </item>
+      <item>
+        <label>143</label>
+        <value>143</value>
+      </item>
+      <item>
+        <label>142</label>
+        <value>142</value>
+      </item>
+      <item>
+        <label>141</label>
+        <value>141</value>
+      </item>
+      <item>
+        <label>140</label>
+        <value>140</value>
+      </item>
+      <item>
+        <label>139</label>
+        <value>139</value>
+      </item>
+      <item>
+        <label>138</label>
+        <value>138</value>
+      </item>
+      <item>
+        <label>137</label>
+        <value>137</value>
+      </item>
+      <item>
+        <label>136</label>
+        <value>136</value>
+      </item>
+      <item>
+        <label>135</label>
+        <value>135</value>
+      </item>
+      <item>
+        <label>134</label>
+        <value>134</value>
+      </item>
+      <item>
+        <label>133</label>
+        <value>133</value>
+      </item>
+      <item>
+        <label>132</label>
+        <value>132</value>
+      </item>
+      <item>
+        <label>131</label>
+        <value>131</value>
+      </item>
+      <item>
+        <label>130</label>
+        <value>130</value>
+      </item>
+      <item>
+        <label>129</label>
+        <value>129</value>
+      </item>
+      <item>
+        <label>128</label>
+        <value>128</value>
+      </item>
+      <item>
+        <label>127</label>
+        <value>127</value>
+      </item>
+      <item>
+        <label>126</label>
+        <value>126</value>
+      </item>
+      <item>
+        <label>125</label>
+        <value>125</value>
+      </item>
+      <item>
+        <label>124</label>
+        <value>124</value>
+      </item>
+      <item>
+        <label>123</label>
+        <value>123</value>
+      </item>
+      <item>
+        <label>122</label>
+        <value>122</value>
+      </item>
+      <item>
+        <label>121</label>
+        <value>121</value>
+      </item>
+      <item>
+        <label>120</label>
+        <value>120</value>
+      </item>
+      <item>
+        <label>119</label>
+        <value>119</value>
+      </item>
+      <item>
+        <label>118</label>
+        <value>118</value>
+      </item>
+      <item>
+        <label>117</label>
+        <value>117</value>
+      </item>
+      <item>
+        <label>116</label>
+        <value>116</value>
+      </item>
+      <item>
+        <label>115</label>
+        <value>115</value>
+      </item>
+      <item>
+        <label>114</label>
+        <value>114</value>
+      </item>
+      <item>
+        <label>113</label>
+        <value>113</value>
+      </item>
+      <item>
+        <label>112</label>
+        <value>112</value>
+      </item>
+      <item>
+        <label>111</label>
+        <value>111</value>
+      </item>
+      <item>
+        <label>110</label>
+        <value>110</value>
+      </item>
+      <item>
+        <label>109</label>
+        <value>109</value>
+      </item>
+      <item>
+        <label>108</label>
+        <value>108</value>
+      </item>
+      <item>
+        <label>107</label>
+        <value>107</value>
+      </item>
+      <item>
+        <label>106</label>
+        <value>106</value>
+      </item>
+      <item>
+        <label>105</label>
+        <value>105</value>
+      </item>
+      <item>
+        <label>104</label>
+        <value>104</value>
+      </item>
+      <item>
+        <label>103</label>
+        <value>103</value>
+      </item>
+      <item>
+        <label>102</label>
+        <value>102</value>
+      </item>
+      <item>
+        <label>101</label>
+        <value>101</value>
+      </item>
+      <item>
+        <label>100</label>
+        <value>100</value>
+      </item>
+      <item>
+        <label>99</label>
+        <value>99</value>
+      </item>
+      <item>
+        <label>98</label>
+        <value>98</value>
+      </item>
+      <item>
+        <label>97</label>
+        <value>97</value>
+      </item>
+      <item>
+        <label>96</label>
+        <value>96</value>
+      </item>
+      <item>
+        <label>95</label>
+        <value>95</value>
+      </item>
+      <item>
+        <label>94</label>
+        <value>94</value>
+      </item>
+      <item>
+        <label>93</label>
+        <value>93</value>
+      </item>
+      <item>
+        <label>92</label>
+        <value>92</value>
+      </item>
+      <item>
+        <label>91</label>
+        <value>91</value>
+      </item>
+      <item>
+        <label>90</label>
+        <value>90</value>
+      </item>
+      <item>
+        <label>89</label>
+        <value>89</value>
+      </item>
+      <item>
+        <label>88</label>
+        <value>88</value>
+      </item>
+      <item>
+        <label>87</label>
+        <value>87</value>
+      </item>
+      <item>
+        <label>86</label>
+        <value>86</value>
+      </item>
+      <item>
+        <label>85</label>
+        <value>85</value>
+      </item>
+      <item>
+        <label>84</label>
+        <value>84</value>
+      </item>
+      <item>
+        <label>83</label>
+        <value>83</value>
+      </item>
+      <item>
+        <label>82</label>
+        <value>82</value>
+      </item>
+      <item>
+        <label>81</label>
+        <value>81</value>
+      </item>
+      <item>
+        <label>80</label>
+        <value>80</value>
+      </item>
+      <item>
+        <label>79</label>
+        <value>79</value>
+      </item>
+      <item>
+        <label>78</label>
+        <value>78</value>
+      </item>
+      <item>
+        <label>77</label>
+        <value>77</value>
+      </item>
+      <item>
+        <label>76</label>
+        <value>76</value>
+      </item>
+      <item>
+        <label>75</label>
+        <value>75</value>
+      </item>
+      <item>
+        <label>74</label>
+        <value>74</value>
+      </item>
+      <item>
+        <label>73</label>
+        <value>73</value>
+      </item>
+      <item>
+        <label>72</label>
+        <value>72</value>
+      </item>
+      <item>
+        <label>71</label>
+        <value>71</value>
+      </item>
+      <item>
+        <label>70</label>
+        <value>70</value>
+      </item>
+      <item>
+        <label>69</label>
+        <value>69</value>
+      </item>
+      <item>
+        <label>68</label>
+        <value>68</value>
+      </item>
+      <item>
+        <label>67</label>
+        <value>67</value>
+      </item>
+      <item>
+        <label>66</label>
+        <value>66</value>
+      </item>
+      <item>
+        <label>65</label>
+        <value>65</value>
+      </item>
+      <item>
+        <label>64</label>
+        <value>64</value>
+      </item>
+      <item>
+        <label>63</label>
+        <value>63</value>
+      </item>
+      <item>
+        <label>62</label>
+        <value>62</value>
+      </item>
+      <item>
+        <label>61</label>
+        <value>61</value>
+      </item>
+      <item>
+        <label>60</label>
+        <value>60</value>
+      </item>
+      <item>
+        <label>59</label>
+        <value>59</value>
+      </item>
+      <item>
+        <label>58</label>
+        <value>58</value>
+      </item>
+      <item>
+        <label>57</label>
+        <value>57</value>
+      </item>
+      <item>
+        <label>56</label>
+        <value>56</value>
+      </item>
+      <item>
+        <label>55</label>
+        <value>55</value>
+      </item>
+      <item>
+        <label>54</label>
+        <value>54</value>
+      </item>
+      <item>
+        <label>53</label>
+        <value>53</value>
+      </item>
+      <item>
+        <label>52</label>
+        <value>52</value>
+      </item>
+      <item>
+        <label>51</label>
+        <value>51</value>
+      </item>
+      <item>
+        <label>50</label>
+        <value>50</value>
+      </item>
+      <item>
+        <label>49</label>
+        <value>49</value>
+      </item>
+      <item>
+        <label>48</label>
+        <value>48</value>
+      </item>
+      <item>
+        <label>47</label>
+        <value>47</value>
+      </item>
+      <item>
+        <label>46</label>
+        <value>46</value>
+      </item>
+      <item>
+        <label>45</label>
+        <value>45</value>
+      </item>
+      <item>
+        <label>44</label>
+        <value>44</value>
+      </item>
+      <item>
+        <label>43</label>
+        <value>43</value>
+      </item>
+      <item>
+        <label>42</label>
+        <value>42</value>
+      </item>
+      <item>
+        <label>41</label>
+        <value>41</value>
+      </item>
+      <item>
+        <label>40</label>
+        <value>40</value>
+      </item>
+      <item>
+        <label>39</label>
+        <value>39</value>
+      </item>
+      <item>
+        <label>38</label>
+        <value>38</value>
+      </item>
+      <item>
+        <label>37</label>
+        <value>37</value>
+      </item>
+      <item>
+        <label>36</label>
+        <value>36</value>
+      </item>
+      <item>
+        <label>35</label>
+        <value>35</value>
+      </item>
+      <item>
+        <label>34</label>
+        <value>34</value>
+      </item>
+      <item>
+        <label>33</label>
+        <value>33</value>
+      </item>
+      <item>
+        <label>32</label>
+        <value>32</value>
+      </item>
+      <item>
+        <label>31</label>
+        <value>31</value>
+      </item>
+      <item>
+        <label>30</label>
+        <value>30</value>
+      </item>
+      <item>
+        <label>29</label>
+        <value>29</value>
+      </item>
+      <item>
+        <label>28</label>
+        <value>28</value>
+      </item>
+      <item>
+        <label>27</label>
+        <value>27</value>
+      </item>
+      <item>
+        <label>26</label>
+        <value>26</value>
+      </item>
+      <item>
+        <label>25</label>
+        <value>25</value>
+      </item>
+      <item>
+        <label>24</label>
+        <value>24</value>
+      </item>
+      <item>
+        <label>23</label>
+        <value>23</value>
+      </item>
+      <item>
+        <label>22</label>
+        <value>22</value>
+      </item>
+      <item>
+        <label>21</label>
+        <value>21</value>
+      </item>
+      <item>
+        <label>20</label>
+        <value>20</value>
+      </item>
+      <item>
+        <label>19</label>
+        <value>19</value>
+      </item>
+      <item>
+        <label>18</label>
+        <value>18</value>
+      </item>
+      <item>
+        <label>17</label>
+        <value>17</value>
+      </item>
+      <item>
+        <label>16</label>
+        <value>16</value>
+      </item>
+      <item>
+        <label>15</label>
+        <value>15</value>
+      </item>
+      <item>
+        <label>14</label>
+        <value>14</value>
+      </item>
+      <item>
+        <label>13</label>
+        <value>13</value>
+      </item>
+      <item>
+        <label>12</label>
+        <value>12</value>
+      </item>
+      <item>
+        <label>11</label>
+        <value>11</value>
+      </item>
+      <item>
+        <label>10</label>
+        <value>10</value>
+      </item>
+      <item>
+        <label>9</label>
+        <value>9</value>
+      </item>
+      <item>
+        <label>8</label>
+        <value>8</value>
+      </item>
+      <item>
+        <label>7</label>
+        <value>7</value>
+      </item>
+      <item>
+        <label>6</label>
+        <value>6</value>
+      </item>
+      <item>
+        <label>5</label>
+        <value>5</value>
+      </item>
+      <item>
+        <label>4</label>
+        <value>4</value>
+      </item>
+      <item>
+        <label>3</label>
+        <value>3</value>
+      </item>
+      <item>
+        <label>2</label>
+        <value>2</value>
+      </item>
+      <item>
+        <label>1</label>
+        <value>1</value>
+      </item>
+    </select1>
+    <input ref="/cgReporting/cgname">
+      <label>Farmer name</label>
+    </input>
+    <input appearance="no-calendar" ref="/cgReporting/cgappointdate">
+      <label>Appointment date</label>
+    </input>
+    <input ref="/cgReporting/appointcomments">
+      <label>Comments</label>
+    </input>
+    <input appearance="minimal" query="instance('cg')/root/item[firstlevelselection= /cgReporting/staffbarcode ]" ref="/cgReporting/cgdropped">
+      <label>Select CG to drop</label>
+    </input>
+    <input appearance="no-calendar" ref="/cgReporting/cgdropdate">
+      <label>Drop date</label>
+    </input>
+    <input ref="/cgReporting/dropcomments">
+      <label>Comments</label>
+    </input>
+  </h:body>
+</h:html>

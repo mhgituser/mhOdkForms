@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>MTR - Storage Qc</h:title>
+    <model>
+      <instance>
+        <tblstorageqc id="tblstorageqc" version="1009">
+          <start/>
+          <end/>
+          <deviceid/>
+          <today/>
+          <email/>
+          <phonenumber/>
+          <simserial/>
+          <gennote/>
+          <booklet/>
+          <treelocation/>
+          <timefromstoragetofarmerhouse/>
+          <timeroadheadtofarmerstorage/>
+          <layout/>
+          <timetowatersource/>
+          <gps_coordinates/>
+          <staffid/>
+          <farmerbarcode/>
+          <dcode/>
+          <gcode/>
+          <tcode/>
+          <fcode/>
+          <fname/>
+          <farmertype/>
+          <timefromstoragetofarmerhouse1/>
+          <timeroadheadtofarmerstorage1/>
+          <timetowatersource1/>
+          <mfcode/>
+          <minfo/>
+          <checkno0/>
+          <checkno01/>
+          <bagmediummonitoring>
+            <poormoisture/>
+            <goodmoisture/>
+            <waterlogged/>
+            <empty/>
+            <totaltrees/>
+            <checkno/>
+          </bagmediummonitoring>
+          <leafmonitoring>
+            <animaldamage/>
+            <shock/>
+            <inactivetree/>
+            <checkno/>
+          </leafmonitoring>
+          <monitorcomments/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </tblstorageqc>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/tblstorageqc/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/tblstorageqc/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/tblstorageqc/deviceid" type="string"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/tblstorageqc/today" type="date"/>
+      <bind jr:preload="property" jr:preloadParams="email" nodeset="/tblstorageqc/email" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/tblstorageqc/phonenumber" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/tblstorageqc/simserial" type="string"/>
+      <bind nodeset="/tblstorageqc/gennote" readonly="true()" type="string"/>
+      <bind nodeset="/tblstorageqc/booklet" required="true()" type="string"/>
+      <bind nodeset="/tblstorageqc/treelocation" required="true()" type="string"/>
+      <bind nodeset="/tblstorageqc/timefromstoragetofarmerhouse" required="true()" type="int"/>
+      <bind nodeset="/tblstorageqc/timeroadheadtofarmerstorage" required="true()" type="int"/>
+      <bind nodeset="/tblstorageqc/layout" required="true()" type="string"/>
+      <bind nodeset="/tblstorageqc/timetowatersource" required="true()" type="int"/>
+      <bind nodeset="/tblstorageqc/gps_coordinates" required="true()" type="geopoint"/>
+      <bind nodeset="/tblstorageqc/staffid" required="true()" type="string"/>
+      <bind jr:constraintMsg="Invalid barcode" nodeset="/tblstorageqc/farmerbarcode" type="barcode"/>
+      <bind nodeset="/tblstorageqc/dcode" relevant=" /tblstorageqc/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblstorageqc/gcode" relevant=" /tblstorageqc/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblstorageqc/tcode" relevant=" /tblstorageqc/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblstorageqc/fcode" relevant=" /tblstorageqc/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblstorageqc/fname" relevant=" /tblstorageqc/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblstorageqc/farmertype" relevant=" /tblstorageqc/farmerbarcode =''" required="true()" type="string"/>
+      <bind calculate="concat( /tblstorageqc/timefromstoragetofarmerhouse ,&quot; min&quot;)" nodeset="/tblstorageqc/timefromstoragetofarmerhouse1" type="string"/>
+      <bind calculate="concat( /tblstorageqc/timeroadheadtofarmerstorage ,&quot; min&quot;)" nodeset="/tblstorageqc/timeroadheadtofarmerstorage1" type="string"/>
+      <bind calculate="concat( /tblstorageqc/timetowatersource ,&quot; min&quot;)" nodeset="/tblstorageqc/timetowatersource1" type="string"/>
+      <bind calculate="if(string-length( /tblstorageqc/fcode )='1', concat('000', /tblstorageqc/fcode ), if(string-length( /tblstorageqc/fcode )='2', concat('00', /tblstorageqc/fcode ), if(string-length( /tblstorageqc/fcode )='3', concat('0', /tblstorageqc/fcode ), /tblstorageqc/fcode )))" nodeset="/tblstorageqc/mfcode" type="string"/>
+      <bind calculate="concat(substr( /tblstorageqc/tcode ,0,9), /tblstorageqc/farmertype , /tblstorageqc/mfcode ,' ', /tblstorageqc/fname )" nodeset="/tblstorageqc/minfo" type="string"/>
+      <bind nodeset="/tblstorageqc/checkno0" relevant=" /tblstorageqc/farmerbarcode =''" required="true()"/>
+      <bind nodeset="/tblstorageqc/checkno01" relevant=" /tblstorageqc/farmerbarcode !=''" required="true()"/>
+      <bind nodeset="/tblstorageqc/bagmediummonitoring/poormoisture" required="true()" type="int"/>
+      <bind nodeset="/tblstorageqc/bagmediummonitoring/goodmoisture" required="true()" type="int"/>
+      <bind nodeset="/tblstorageqc/bagmediummonitoring/waterlogged" required="true()" type="int"/>
+      <bind nodeset="/tblstorageqc/bagmediummonitoring/empty" required="true()" type="int"/>
+      <bind calculate=" /tblstorageqc/bagmediummonitoring/poormoisture + /tblstorageqc/bagmediummonitoring/goodmoisture + /tblstorageqc/bagmediummonitoring/waterlogged + /tblstorageqc/bagmediummonitoring/empty " nodeset="/tblstorageqc/bagmediummonitoring/totaltrees" type="string"/>
+      <bind nodeset="/tblstorageqc/bagmediummonitoring/checkno" required="true()"/>
+      <bind nodeset="/tblstorageqc/leafmonitoring" relevant=" /tblstorageqc/bagmediummonitoring/totaltrees !=0"/>
+      <bind nodeset="/tblstorageqc/leafmonitoring/animaldamage" relevant=" /tblstorageqc/bagmediummonitoring/totaltrees !=0" required="true()" type="int"/>
+      <bind nodeset="/tblstorageqc/leafmonitoring/shock" relevant=" /tblstorageqc/bagmediummonitoring/totaltrees !=0" required="true()" type="int"/>
+      <bind nodeset="/tblstorageqc/leafmonitoring/inactivetree" relevant=" /tblstorageqc/bagmediummonitoring/totaltrees !=0" required="true()" type="int"/>
+      <bind nodeset="/tblstorageqc/leafmonitoring/checkno" relevant=" /tblstorageqc/bagmediummonitoring/totaltrees !=0" required="true()"/>
+      <bind nodeset="/tblstorageqc/monitorcomments" required="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/tblstorageqc/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="theme_formhub">
+    <input ref="/tblstorageqc/gennote">
+      <label>Mountain Hazelnut Venture
+
+Form Name: QC Storage visit
+Form ID: MH-FF-05
+Revision Date: 07-10-2015
+Revision Number: 2.0</label>
+      <hint>----------------------------------------
+
+Important:This form contains storage geo location option which must be taken at the storage site.</hint>
+    </input>
+    <input ref="/tblstorageqc/booklet">
+      <label>Farmer booklet No.</label>
+    </input>
+    <input query="instance('treelocation')/root/item[dzongkhag=&quot;TL&quot;]" ref="/tblstorageqc/treelocation">
+      <label>Location of trees</label>
+    </input>
+    <input ref="/tblstorageqc/timefromstoragetofarmerhouse">
+      <label>Distance Storage to Farmer's House</label>
+      <hint>Minutes Walk</hint>
+    </input>
+    <input ref="/tblstorageqc/timeroadheadtofarmerstorage">
+      <label>Road Head to Farmer's Storage</label>
+      <hint>Minutes Walk</hint>
+    </input>
+    <input query="instance('yesno')/root/item[dzongkhag=&quot;YN&quot;]" ref="/tblstorageqc/layout">
+      <label>Layout carefully done?</label>
+    </input>
+    <input ref="/tblstorageqc/timetowatersource">
+      <label>Distance to water source</label>
+      <hint>Minutes Walk</hint>
+    </input>
+    <input ref="/tblstorageqc/gps_coordinates">
+      <label>Storage GPS co-ordinates</label>
+      <hint>GPS coordinates can only be collected when outside.</hint>
+    </input>
+    <input query="instance('staffcode')/root/item[dzongkhag=&quot;M&quot;]" ref="/tblstorageqc/staffid">
+      <label>Select your name</label>
+    </input>
+    <input ref="/tblstorageqc/farmerbarcode">
+      <label>Scan farmer details from barcode sheet</label>
+    </input>
+    <input query="instance('dzongkhag')/root/item[dzongkhag=&quot;D&quot;]" ref="/tblstorageqc/dcode">
+      <label>Select Dzongkhag</label>
+    </input>
+    <input query="instance('gewog')/root/item[dzongkhag= /tblstorageqc/dcode ]" ref="/tblstorageqc/gcode">
+      <label>Select Gewog</label>
+    </input>
+    <input query="instance('tshowog')/root/item[gewog= /tblstorageqc/gcode ]" ref="/tblstorageqc/tcode">
+      <label>Select Tshowog</label>
+    </input>
+    <input query="instance('farmercode')/root/item[dzongkhag=&quot;FC&quot;]" ref="/tblstorageqc/fcode">
+      <label>Farmer code</label>
+    </input>
+    <input ref="/tblstorageqc/fname">
+      <label>Farmer name</label>
+    </input>
+    <input query="instance('farmertype')/root/item[dzongkhag=&quot;FT&quot;]" ref="/tblstorageqc/farmertype">
+      <label>Select farmer type</label>
+    </input>
+    <trigger ref="/tblstorageqc/checkno0">
+      <label>Check your information, are these all correct? If not go back and correct!</label>
+      <hint>Farmer booklet No.: <output value=" /tblstorageqc/booklet "/>
+Location of trees: <output value=" /tblstorageqc/treelocation "/>
+Distance Storage to Farmer's House: <output value=" /tblstorageqc/timefromstoragetofarmerhouse1 "/>
+Road Head to Farmer's Storage: <output value=" /tblstorageqc/timeroadheadtofarmerstorage1 "/>
+Layout carefully done: <output value=" /tblstorageqc/layout "/> 
+Distance to water source: <output value=" /tblstorageqc/timetowatersource1 "/>
+Your staffcode: <output value=" /tblstorageqc/staffid "/>
+Farmer: <output value=" /tblstorageqc/minfo "/></hint></trigger>
+    <trigger ref="/tblstorageqc/checkno01">
+      <label>Check your information, are these all correct? If not go back and correct!</label>
+      <hint>Farmer booklet No.: <output value=" /tblstorageqc/booklet "/>
+Location of trees: <output value=" /tblstorageqc/treelocation "/>
+Distance Storage to Farmer's House: <output value=" /tblstorageqc/timefromstoragetofarmerhouse1 "/>
+Road Head to Farmer's Storage: <output value=" /tblstorageqc/timeroadheadtofarmerstorage1 "/>
+Layout carefully done: <output value=" /tblstorageqc/layout "/> 
+Distance to water source: <output value=" /tblstorageqc/timetowatersource1 "/>
+Your staffcode: <output value=" /tblstorageqc/staffid "/>
+Farmer Code: <output value=" /tblstorageqc/farmerbarcode "/></hint></trigger>
+    <group ref="/tblstorageqc/bagmediummonitoring">
+      <label>Bag Medium Monitoring</label>
+      <input ref="/tblstorageqc/bagmediummonitoring/poormoisture">
+        <label>Poor moisture</label>
+      </input>
+      <input ref="/tblstorageqc/bagmediummonitoring/goodmoisture">
+        <label>Good moisture</label>
+      </input>
+      <input ref="/tblstorageqc/bagmediummonitoring/waterlogged">
+        <label>Water logged</label>
+      </input>
+      <input ref="/tblstorageqc/bagmediummonitoring/empty">
+        <label>Empty</label>
+      </input>
+      <trigger ref="/tblstorageqc/bagmediummonitoring/checkno">
+        <label>Check your numbers, are these all correct? If not go back and correct!</label>
+        <hint>Poor moisture: <output value=" /tblstorageqc/bagmediummonitoring/poormoisture "/> 
+Good moisture: <output value=" /tblstorageqc/bagmediummonitoring/goodmoisture "/>
+Water logged: <output value=" /tblstorageqc/bagmediummonitoring/waterlogged "/>
+Empty: <output value=" /tblstorageqc/bagmediummonitoring/empty "/>
+Total trees: <output value=" /tblstorageqc/bagmediummonitoring/totaltrees "/></hint></trigger>
+    </group>
+    <group ref="/tblstorageqc/leafmonitoring">
+      <label>Leaf Monitoring</label>
+      <input ref="/tblstorageqc/leafmonitoring/animaldamage">
+        <label>Pest/Animal damage</label>
+      </input>
+      <input ref="/tblstorageqc/leafmonitoring/shock">
+        <label>Shock/sun damage</label>
+      </input>
+      <input ref="/tblstorageqc/leafmonitoring/inactivetree">
+        <label>Inactive tree</label>
+      </input>
+      <trigger ref="/tblstorageqc/leafmonitoring/checkno">
+        <label>Check your numbers, are these all correct? If not go back and correct!</label>
+        <hint>Pest/Animal damage: <output value=" /tblstorageqc/leafmonitoring/animaldamage "/> 
+Shock/sun damage: <output value=" /tblstorageqc/leafmonitoring/shock "/>
+Inactive tree: <output value=" /tblstorageqc/leafmonitoring/inactivetree "/></hint></trigger>
+    </group>
+    <input ref="/tblstorageqc/monitorcomments">
+      <label>Monitor comment:</label>
+      <hint>Type NA for no comments</hint>
+    </input>
+  </h:body>
+</h:html>

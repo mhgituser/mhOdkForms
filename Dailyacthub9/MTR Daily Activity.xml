@@ -1,0 +1,1052 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>MTR -  Daily Activity</h:title>
+    <model>
+      <instance>
+        <Dailyacthub9 id="Dailyacthub9" version="1006">
+          <start/>
+          <end/>
+          <deviceid/>
+          <today/>
+          <tdate/>
+          <gps_coordinates/>
+          <Staffid/>
+          <dcode/>
+          <gcode/>
+          <tcode/>
+          <accompanier/>
+          <other/>
+          <activities/>
+          <field/>
+          <nofailed/>
+          <qcfailed/>
+          <storage/>
+          <nofailed1/>
+          <qcfailed1/>
+          <norepresentative1/>
+          <norepresentative/>
+          <registered/>
+          <privateland/>
+          <individual/>
+          <travel1/>
+          <travel2/>
+          <gtruthing/>
+          <gtruthing1/>
+          <gtruthing2/>
+          <other1/>
+          <distribution/>
+          <notvisited/>
+          <comments/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Dailyacthub9>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/Dailyacthub9/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/Dailyacthub9/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/Dailyacthub9/deviceid" type="string"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/Dailyacthub9/today" type="date"/>
+      <bind nodeset="/Dailyacthub9/tdate" required="true()" type="date"/>
+      <bind nodeset="/Dailyacthub9/gps_coordinates" required="true()" type="geopoint"/>
+      <bind nodeset="/Dailyacthub9/Staffid" required="true()" type="select1"/>
+      <bind nodeset="/Dailyacthub9/dcode" required="true()" type="select1"/>
+      <bind nodeset="/Dailyacthub9/gcode" required="true()" type="string"/>
+      <bind nodeset="/Dailyacthub9/tcode" required="true()" type="string"/>
+      <bind nodeset="/Dailyacthub9/accompanier" required="true()" type="select"/>
+      <bind nodeset="/Dailyacthub9/other" relevant="selected( /Dailyacthub9/accompanier ,'person6')" required="true()" type="string"/>
+      <bind nodeset="/Dailyacthub9/activities" required="true()" type="select"/>
+      <bind nodeset="/Dailyacthub9/field" relevant="selected( /Dailyacthub9/activities ,'activity4')" required="true()" type="int"/>
+      <bind nodeset="/Dailyacthub9/nofailed" relevant="selected( /Dailyacthub9/activities ,'activity4')" type="int"/>
+      <bind nodeset="/Dailyacthub9/qcfailed" relevant="selected( /Dailyacthub9/activities ,'activity4')" type="select"/>
+      <bind nodeset="/Dailyacthub9/storage" relevant="selected( /Dailyacthub9/activities ,'activity4')" required="true()" type="int"/>
+      <bind nodeset="/Dailyacthub9/nofailed1" relevant="selected( /Dailyacthub9/activities ,'activity4')" type="int"/>
+      <bind nodeset="/Dailyacthub9/qcfailed1" relevant="selected( /Dailyacthub9/activities ,'activity4')" type="select"/>
+      <bind nodeset="/Dailyacthub9/norepresentative1" relevant="selected( /Dailyacthub9/activities ,'activity2')" required="true()" type="int"/>
+      <bind nodeset="/Dailyacthub9/norepresentative" relevant="selected( /Dailyacthub9/activities ,'activity2')" required="true()" type="int"/>
+      <bind constraint=".&gt;.49" jr:constraintMsg="Must be greater than .50" nodeset="/Dailyacthub9/registered" relevant="selected( /Dailyacthub9/activities ,'activity5')" required="true()" type="string"/>
+      <bind nodeset="/Dailyacthub9/privateland" relevant="selected( /Dailyacthub9/activities ,'activity5')" required="true()" type="string"/>
+      <bind nodeset="/Dailyacthub9/individual" relevant="selected( /Dailyacthub9/activities ,'activity3')" required="true()" type="int"/>
+      <bind nodeset="/Dailyacthub9/travel1" relevant="selected( /Dailyacthub9/activities ,'activity7')" required="true()" type="string"/>
+      <bind nodeset="/Dailyacthub9/travel2" relevant="selected( /Dailyacthub9/activities ,'activity7')" required="true()" type="string"/>
+      <bind nodeset="/Dailyacthub9/gtruthing" relevant="selected( /Dailyacthub9/activities ,'activity8')" required="true()" type="int"/>
+      <bind nodeset="/Dailyacthub9/gtruthing1" relevant="selected( /Dailyacthub9/activities ,'activity8')" required="true()" type="int"/>
+      <bind nodeset="/Dailyacthub9/gtruthing2" relevant="selected( /Dailyacthub9/activities ,'activity8')" type="select"/>
+      <bind nodeset="/Dailyacthub9/other1" relevant="selected( /Dailyacthub9/gtruthing2 ,'failedgtruthing9')" required="true()" type="string"/>
+      <bind nodeset="/Dailyacthub9/distribution" relevant="selected( /Dailyacthub9/activities ,'activity1')" type="select1"/>
+      <bind nodeset="/Dailyacthub9/notvisited" relevant=" /Dailyacthub9/distribution =&quot;no3&quot;" required="true()" type="int"/>
+      <bind nodeset="/Dailyacthub9/comments" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Dailyacthub9/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input appearance="no-calendar" ref="/Dailyacthub9/tdate">
+      <label>Select todays date</label>
+    </input>
+    <input ref="/Dailyacthub9/gps_coordinates">
+      <label>Field GPS co-ordinates</label>
+      <hint>GPS coordinates can only be collected when outside.</hint>
+    </input>
+    <select1 appearance="minimal" ref="/Dailyacthub9/Staffid">
+      <label>Select your name</label>
+      <item>
+        <label>S0301 Pema Tenzin</label>
+        <value>S0301</value>
+      </item>
+      <item>
+        <label>S0306 Nima Gyeltshen</label>
+        <value>S0306</value>
+      </item>
+      <item>
+        <label>S0307 Tashi Dawa</label>
+        <value>S0307</value>
+      </item>
+      <item>
+        <label>S0308 Phuntsho Norbu</label>
+        <value>S0308</value>
+      </item>
+      <item>
+        <label>S0310 Tashi Chogay</label>
+        <value>S0310</value>
+      </item>
+      <item>
+        <label>S0311 Singye Dorji</label>
+        <value>S0311</value>
+      </item>
+      <item>
+        <label>S0312 Chimmi Wangchuk</label>
+        <value>S0312</value>
+      </item>
+      <item>
+        <label>S0313 Rinzin</label>
+        <value>S0313</value>
+      </item>
+      <item>
+        <label>S0314 Cheku</label>
+        <value>S0314</value>
+      </item>
+      <item>
+        <label>S0315 Lhendup</label>
+        <value>S0315</value>
+      </item>
+      <item>
+        <label>S0317 Dorji Yangki</label>
+        <value>S0317</value>
+      </item>
+      <item>
+        <label>S0322 Cheten Duba</label>
+        <value>S0322</value>
+      </item>
+      <item>
+        <label>S0323 Deki Yangzom</label>
+        <value>S0323</value>
+      </item>
+      <item>
+        <label>S0324 Dorji</label>
+        <value>S0324</value>
+      </item>
+      <item>
+        <label>S0326 Karma Wangdi</label>
+        <value>S0326</value>
+      </item>
+      <item>
+        <label>S0327 Ngawang Namgyel</label>
+        <value>S0327</value>
+      </item>
+      <item>
+        <label>S0328 Ngawang Tshering</label>
+        <value>S0328</value>
+      </item>
+      <item>
+        <label>S0330 Rinchen Khandu</label>
+        <value>S0330</value>
+      </item>
+      <item>
+        <label>S0332 Sonam Chophel</label>
+        <value>S0332</value>
+      </item>
+      <item>
+        <label>S0333 Sonam Phuntsho</label>
+        <value>S0333</value>
+      </item>
+      <item>
+        <label>S0334 Tenzin Wangdi</label>
+        <value>S0334</value>
+      </item>
+      <item>
+        <label>S0335 Tshewang Namgay</label>
+        <value>S0335</value>
+      </item>
+      <item>
+        <label>S0336 Tshewang Rinzin</label>
+        <value>S0336</value>
+      </item>
+      <item>
+        <label>S0341 Tshering Wangchuk</label>
+        <value>S0341</value>
+      </item>
+      <item>
+        <label>S0342 Pema Loday</label>
+        <value>S0342</value>
+      </item>
+      <item>
+        <label>S0343 Ugyen Wangdi</label>
+        <value>S0343</value>
+      </item>
+      <item>
+        <label>S0344 Tashi Tshering</label>
+        <value>S0344</value>
+      </item>
+      <item>
+        <label>S0345 Khandu Wangchuck</label>
+        <value>S0345</value>
+      </item>
+      <item>
+        <label>S0346 Jamyang Tenzin</label>
+        <value>S0346</value>
+      </item>
+      <item>
+        <label>S0347 Thinley Penjor</label>
+        <value>S0347</value>
+      </item>
+      <item>
+        <label>S0348 Wangchuck</label>
+        <value>S0348</value>
+      </item>
+      <item>
+        <label>S0350 Sherub Dorji</label>
+        <value>S0350</value>
+      </item>
+      <item>
+        <label>S0351 Sonam Dargay</label>
+        <value>S0351</value>
+      </item>
+      <item>
+        <label>S0352 Karma Tashi</label>
+        <value>S0352</value>
+      </item>
+      <item>
+        <label>S0359 Sangay Tshewang</label>
+        <value>S0359</value>
+      </item>
+      <item>
+        <label>S0360 Sonam Tobgay</label>
+        <value>S0360</value>
+      </item>
+      <item>
+        <label>S0361 Chedup Tenzin</label>
+        <value>S0361</value>
+      </item>
+      <item>
+        <label>S0362 Dawa Tshering</label>
+        <value>S0362</value>
+      </item>
+      <item>
+        <label>S0365 Dorji Gyeltshen</label>
+        <value>S0365</value>
+      </item>
+      <item>
+        <label>S0366 Nima Dhendup</label>
+        <value>S0366</value>
+      </item>
+      <item>
+        <label>S0367 Sangay Ghalley</label>
+        <value>S0367</value>
+      </item>
+      <item>
+        <label>S0368 Dorji Wangmo</label>
+        <value>S0368</value>
+      </item>
+      <item>
+        <label>S0369 Gyenden</label>
+        <value>S0369</value>
+      </item>
+      <item>
+        <label>S0370 Choki Wangmo</label>
+        <value>S0370</value>
+      </item>
+      <item>
+        <label>S0371 Sonam Rabten</label>
+        <value>S0371</value>
+      </item>
+      <item>
+        <label>S0372 Sangay Tshuten</label>
+        <value>S0372</value>
+      </item>
+      <item>
+        <label>S0373 Sonam Dhendup</label>
+        <value>S0373</value>
+      </item>
+      <item>
+        <label>S0374 Pema Yangchen</label>
+        <value>S0374</value>
+      </item>
+      <item>
+        <label>S0375 Tashi Duba</label>
+        <value>S0375</value>
+      </item>
+      <item>
+        <label>S0376 Sonam Jamtsho</label>
+        <value>S0376</value>
+      </item>
+      <item>
+        <label>S0377 Norbu Wangdi</label>
+        <value>S0377</value>
+      </item>
+      <item>
+        <label>S0378 Tenzin Wangchuk</label>
+        <value>S0378</value>
+      </item>
+      <item>
+        <label>S0379 Tashi Penjor</label>
+        <value>S0379</value>
+      </item>
+      <item>
+        <label>S0380 Sonam Tshering</label>
+        <value>S0380</value>
+      </item>
+      <item>
+        <label>S0381 Chimi Dorji</label>
+        <value>S0381</value>
+      </item>
+      <item>
+        <label>S0398 Rinzin Lhamo</label>
+        <value>S0398</value>
+      </item>
+      <item>
+        <label>S0399  Sonam Yuden</label>
+        <value>S0399</value>
+      </item>
+      <item>
+        <label>S0419 Tenzin Wangchuk</label>
+        <value>S0419</value>
+      </item>
+      <item>
+        <label>S0422 Dorji Choden</label>
+        <value>S0422</value>
+      </item>
+      <item>
+        <label>S0423 Sonam Jamtsho</label>
+        <value>S0423</value>
+      </item>
+      <item>
+        <label>S0424 Jigme Rabten</label>
+        <value>S0424</value>
+      </item>
+      <item>
+        <label>S0426 Chencho Thinley</label>
+        <value>S0426</value>
+      </item>
+      <item>
+        <label>S0427 Yeshi Rabgay</label>
+        <value>S0427</value>
+      </item>
+      <item>
+        <label>S0428 Tshewang Choden</label>
+        <value>S0428</value>
+      </item>
+      <item>
+        <label>S0429 Sonam Tshering</label>
+        <value>S0429</value>
+      </item>
+      <item>
+        <label>S0430 Dorji Wangchuk</label>
+        <value>S0430</value>
+      </item>
+      <item>
+        <label>S0431 Karma Jamtsho</label>
+        <value>S0431</value>
+      </item>
+      <item>
+        <label>S0432 Sonam Chedup</label>
+        <value>S0432</value>
+      </item>
+      <item>
+        <label>S0434 Cheki Gyeltshen</label>
+        <value>S0434</value>
+      </item>
+      <item>
+        <label>S0435 Tashi Dorji</label>
+        <value>S0435</value>
+      </item>
+      <item>
+        <label>S0436 Pema Rinzin</label>
+        <value>S0436</value>
+      </item>
+      <item>
+        <label>S0437 Tshering Penjor</label>
+        <value>S0437</value>
+      </item>
+      <item>
+        <label>S0438 Passang Dorji</label>
+        <value>S0438</value>
+      </item>
+      <item>
+        <label>S0439 Yeshi Jurmin</label>
+        <value>S0439</value>
+      </item>
+      <item>
+        <label>S0440 Dorji Phuntsho</label>
+        <value>S0440</value>
+      </item>
+      <item>
+        <label>S0441 Ngawang Tenzin</label>
+        <value>S0441</value>
+      </item>
+      <item>
+        <label>S0442 Tshering Dorji</label>
+        <value>S0442</value>
+      </item>
+      <item>
+        <label>S0443 Jigme Namgyal</label>
+        <value>S0443</value>
+      </item>
+      <item>
+        <label>S0445 Rinchen</label>
+        <value>S0445</value>
+      </item>
+      <item>
+        <label>S0446 Tenzin Wangchuk</label>
+        <value>S0446</value>
+      </item>
+      <item>
+        <label>S0448 Penden Zam</label>
+        <value>S0448</value>
+      </item>
+      <item>
+        <label>S0449 Dorji Tshewang</label>
+        <value>S0449</value>
+      </item>
+      <item>
+        <label>S0450 Rinzin Dorji</label>
+        <value>S0450</value>
+      </item>
+      <item>
+        <label>S0451 Dawa Gyeltshen</label>
+        <value>S0451</value>
+      </item>
+      <item>
+        <label>S0452 Pasang</label>
+        <value>S0452</value>
+      </item>
+      <item>
+        <label>S0453 Kinley Wangdi</label>
+        <value>S0453</value>
+      </item>
+      <item>
+        <label>S0454 Jigme Norbu</label>
+        <value>S0454</value>
+      </item>
+      <item>
+        <label>S0479 Rinchen Zangmo</label>
+        <value>S0479</value>
+      </item>
+      <item>
+        <label>S0480 Tshering Choki</label>
+        <value>S0480</value>
+      </item>
+      <item>
+        <label>S0481 Tshering Pelden</label>
+        <value>S0481</value>
+      </item>
+      <item>
+        <label>S0482 Kiran Rai</label>
+        <value>S0482</value>
+      </item>
+      <item>
+        <label>S0483 Sonamla</label>
+        <value>S0483</value>
+      </item>
+      <item>
+        <label>S0484 Chabilal Timsina</label>
+        <value>S0484</value>
+      </item>
+      <item>
+        <label>S0485 Kinley Gyeltshen</label>
+        <value>S0485</value>
+      </item>
+      <item>
+        <label>S0486 Sonam Tshewang</label>
+        <value>S0486</value>
+      </item>
+      <item>
+        <label>S0487 Sangay Jamtsho</label>
+        <value>S0487</value>
+      </item>
+      <item>
+        <label>S0488 Kelzang Dorji</label>
+        <value>S0488</value>
+      </item>
+      <item>
+        <label>S0489 Kamal Ghalley</label>
+        <value>S0489</value>
+      </item>
+      <item>
+        <label>S0490 Tashi Lhendup</label>
+        <value>S0490</value>
+      </item>
+      <item>
+        <label>S0491 Rekay Dawa</label>
+        <value>S0491</value>
+      </item>
+      <item>
+        <label>S0492 Ugyen Jamtsho</label>
+        <value>S0492</value>
+      </item>
+      <item>
+        <label>S0493 Tshering Namgay</label>
+        <value>S0493</value>
+      </item>
+      <item>
+        <label>S0494 Karma Tshewang</label>
+        <value>S0494</value>
+      </item>
+      <item>
+        <label>S0495 Dawa Gyeltshen</label>
+        <value>S0495</value>
+      </item>
+      <item>
+        <label>S0496 Tandin Dem</label>
+        <value>S0496</value>
+      </item>
+      <item>
+        <label>S0497 Jigme Norbu</label>
+        <value>S0497</value>
+      </item>
+      <item>
+        <label>S0498 Kezang</label>
+        <value>S0498</value>
+      </item>
+      <item>
+        <label>S0499 Namgay Tenzin</label>
+        <value>S0499</value>
+      </item>
+      <item>
+        <label>S0500 Sonam Rinzin</label>
+        <value>S0500</value>
+      </item>
+      <item>
+        <label>S0508 Jamyang Dorji</label>
+        <value>S0508</value>
+      </item>
+      <item>
+        <label>S0509 Ngawang Tenzin</label>
+        <value>S0509</value>
+      </item>
+      <item>
+        <label>S0510  Choki Dorji</label>
+        <value>S0510</value>
+      </item>
+      <item>
+        <label>S0511 Dorji Wangchuk</label>
+        <value>S0511</value>
+      </item>
+      <item>
+        <label>S0512 Kuenzang Tenzin</label>
+        <value>S0512</value>
+      </item>
+      <item>
+        <label>S0513 Tashi Tobgay</label>
+        <value>S0513</value>
+      </item>
+      <item>
+        <label>S0514 Tshewang Dema</label>
+        <value>S0514</value>
+      </item>
+      <item>
+        <label>S0515 Karma Tshering Tashi</label>
+        <value>S0515</value>
+      </item>
+      <item>
+        <label>S0516 Tshering Phuntsho</label>
+        <value>S0516</value>
+      </item>
+      <item>
+        <label>S0517 Kinzang Dechen Wangmo</label>
+        <value>S0517</value>
+      </item>
+      <item>
+        <label>S0518 Tsheten Dorji</label>
+        <value>S0518</value>
+      </item>
+      <item>
+        <label>S0519 Sonam Jamtsho</label>
+        <value>S0519</value>
+      </item>
+      <item>
+        <label>S0520 Tandin Zangpo</label>
+        <value>S0520</value>
+      </item>
+      <item>
+        <label>S0523 Passang Tobgyel</label>
+        <value>S0523</value>
+      </item>
+      <item>
+        <label>S0741 Rinzin Wangchuk</label>
+        <value>S0741</value>
+      </item>
+      <item>
+        <label>S0742 Dawa Gyeltshen</label>
+        <value>S0742</value>
+      </item>
+      <item>
+        <label>S0743 Thinley</label>
+        <value>S0743</value>
+      </item>
+      <item>
+        <label>S0744 Leki Zangmo</label>
+        <value>S0744</value>
+      </item>
+      <item>
+        <label>S0745 Sonam Yeshi</label>
+        <value>S0745</value>
+      </item>
+      <item>
+        <label>S0746 Rinchen Dema</label>
+        <value>S0746</value>
+      </item>
+      <item>
+        <label>S0747 Pema Wangchuk</label>
+        <value>S0747</value>
+      </item>
+      <item>
+        <label>S0748 Dewakar Bujel</label>
+        <value>S0748</value>
+      </item>
+      <item>
+        <label>S0749 Sangay Tenzin</label>
+        <value>S0749</value>
+      </item>
+      <item>
+        <label>S0750 Dorji Tempa</label>
+        <value>S0750</value>
+      </item>
+      <item>
+        <label>S0751 Kinley Tshering</label>
+        <value>S0751</value>
+      </item>
+      <item>
+        <label>S0752 Phuntsho Norbu</label>
+        <value>S0752</value>
+      </item>
+      <item>
+        <label>S0753 Pema Tshewang</label>
+        <value>S0753</value>
+      </item>
+      <item>
+        <label>S0754 Tula Ram Ghalley</label>
+        <value>S0754</value>
+      </item>
+      <item>
+        <label>S0755 Nima Dorji</label>
+        <value>S0755</value>
+      </item>
+      <item>
+        <label>S0756 Tashi Wangchuk</label>
+        <value>S0756</value>
+      </item>
+      <item>
+        <label>S0757 Karma Tshewang</label>
+        <value>S0757</value>
+      </item>
+      <item>
+        <label>S0758 Tashi Phuntsho</label>
+        <value>S0758</value>
+      </item>
+      <item>
+        <label>S0759 Sonam Wangchuk</label>
+        <value>S0759</value>
+      </item>
+      <item>
+        <label>S0760 Jigme Dorji</label>
+        <value>S0760</value>
+      </item>
+      <item>
+        <label>S0761 Dorji Tshering</label>
+        <value>S0761</value>
+      </item>
+      <item>
+        <label>S0762 Damcho Wangmo</label>
+        <value>S0762</value>
+      </item>
+      <item>
+        <label>S0763 Pema Loday</label>
+        <value>S0763</value>
+      </item>
+      <item>
+        <label>S0764 Karma Dupchu</label>
+        <value>S0764</value>
+      </item>
+      <item>
+        <label>S0765 Youden</label>
+        <value>S0765</value>
+      </item>
+      <item>
+        <label>S0766 Samten Pelzang</label>
+        <value>S0766</value>
+      </item>
+      <item>
+        <label>S0767 Jamyang Tenzin</label>
+        <value>S0767</value>
+      </item>
+      <item>
+        <label>S0768 Sangay Lethro</label>
+        <value>S0768</value>
+      </item>
+      <item>
+        <label>S0769 Sonam Tenzin</label>
+        <value>S0769</value>
+      </item>
+    </select1>
+    <select1 appearance="minimal" ref="/Dailyacthub9/dcode">
+      <label>Select Dzongkhag</label>
+      <item>
+        <label>D01 Trashigang</label>
+        <value>D01</value>
+      </item>
+      <item>
+        <label>D02 Trashiyangtse</label>
+        <value>D02</value>
+      </item>
+      <item>
+        <label>D03 Mongar</label>
+        <value>D03</value>
+      </item>
+      <item>
+        <label>D04 Lhuentse</label>
+        <value>D04</value>
+      </item>
+      <item>
+        <label>D05 Pemagatshel</label>
+        <value>D05</value>
+      </item>
+      <item>
+        <label>D06 Samdrup Jongkhar</label>
+        <value>D06</value>
+      </item>
+      <item>
+        <label>D07 Zhemgang</label>
+        <value>D07</value>
+      </item>
+      <item>
+        <label>D08 Bumthang</label>
+        <value>D08</value>
+      </item>
+      <item>
+        <label>D09 Trongsa</label>
+        <value>D09</value>
+      </item>
+      <item>
+        <label>D10 Wangdue</label>
+        <value>D10</value>
+      </item>
+      <item>
+        <label>D11 Punakha</label>
+        <value>D11</value>
+      </item>
+      <item>
+        <label>D12 Gasa</label>
+        <value>D12</value>
+      </item>
+      <item>
+        <label>D13 Dagana</label>
+        <value>D13</value>
+      </item>
+      <item>
+        <label>D14 Tsirang</label>
+        <value>D14</value>
+      </item>
+      <item>
+        <label>D15 Chhukha</label>
+        <value>D15</value>
+      </item>
+      <item>
+        <label>D16 Thimphu</label>
+        <value>D16</value>
+      </item>
+      <item>
+        <label>D17 Paro</label>
+        <value>D17</value>
+      </item>
+      <item>
+        <label>D18 Haa</label>
+        <value>D18</value>
+      </item>
+      <item>
+        <label>D19 Sarpang</label>
+        <value>D19</value>
+      </item>
+      <item>
+        <label>D20 Samtse</label>
+        <value>D20</value>
+      </item>
+    </select1>
+    <input appearance="minimal" query="instance('gewog')/root/item[dzongkhag= /Dailyacthub9/dcode ]" ref="/Dailyacthub9/gcode">
+      <label>Select Gewog</label>
+    </input>
+    <input appearance="minimal" query="instance('tshowog')/root/item[gewog= /Dailyacthub9/gcode ]" ref="/Dailyacthub9/tcode">
+      <label>Select Tshowog</label>
+    </input>
+    <select ref="/Dailyacthub9/accompanier">
+      <label>Persons Accompanying Surveyor</label>
+      <item>
+        <label>Contact Grower</label>
+        <value>person1</value>
+      </item>
+      <item>
+        <label>Extension Agent</label>
+        <value>person2</value>
+      </item>
+      <item>
+        <label>Local Elected Official</label>
+        <value>person3</value>
+      </item>
+      <item>
+        <label>Supervisor</label>
+        <value>person4</value>
+      </item>
+      <item>
+        <label>Assistant or Trainee</label>
+        <value>person5</value>
+      </item>
+      <item>
+        <label>Other</label>
+        <value>person6</value>
+      </item>
+      <item>
+        <label>None</label>
+        <value>person7</value>
+      </item>
+    </select>
+    <input ref="/Dailyacthub9/other">
+      <label>Please specify&quot;Other&quot; persons</label>
+    </input>
+    <select ref="/Dailyacthub9/activities">
+      <label>Activities on this day</label>
+      <item>
+        <label>Plant Distribution</label>
+        <value>activity1</value>
+      </item>
+      <item>
+        <label>Group Planting Training</label>
+        <value>activity2</value>
+      </item>
+      <item>
+        <label>Individual Field Training</label>
+        <value>activity3</value>
+      </item>
+      <item>
+        <label>QC Visits Field Storage</label>
+        <value>activity4</value>
+      </item>
+      <item>
+        <label>Farmer Meetings Registration/Door to Door Registration</label>
+        <value>activity5</value>
+      </item>
+      <item>
+        <label>Community Land Works(CF/GRF)</label>
+        <value>activity6</value>
+      </item>
+      <item>
+        <label>Travelling to Next Area</label>
+        <value>activity7</value>
+      </item>
+      <item>
+        <label>Ground Truthing Registered Fields</label>
+        <value>activity8</value>
+      </item>
+      <item>
+        <label>Office Work</label>
+        <value>activity9</value>
+      </item>
+      <item>
+        <label>Rest Day</label>
+        <value>activity10</value>
+      </item>
+      <item>
+        <label>On leave</label>
+        <value>activity11</value>
+      </item>
+    </select>
+    <input ref="/Dailyacthub9/field">
+      <label>Number of Field QC Visits on this day</label>
+    </input>
+    <input ref="/Dailyacthub9/nofailed">
+      <label>Number of failed field QC visits on this day</label>
+      <hint>Failed &gt;20% dead, &gt;50% weak, No moisture, or Bad Layout</hint>
+    </input>
+    <select ref="/Dailyacthub9/qcfailed">
+      <label>Reasons for Field QC failures</label>
+      <item>
+        <label>&gt;50% Weak Trees</label>
+        <value>fieldfailed1</value>
+      </item>
+      <item>
+        <label>&gt;20% Dead Trees</label>
+        <value>fieldfailed2</value>
+      </item>
+      <item>
+        <label>&gt;20% Waterlogged Trees</label>
+        <value>fieldfailed3</value>
+      </item>
+      <item>
+        <label>&gt;20% No Moisture under Mulch</label>
+        <value>fieldfailed4</value>
+      </item>
+      <item>
+        <label>Poor Orchard Layout</label>
+        <value>fieldfailed5</value>
+      </item>
+      <item>
+        <label>&gt;20% Animal Damage(Rats, Cows, Dogs etc)</label>
+        <value>fieldfailed6</value>
+      </item>
+      <item>
+        <label>&gt;20% Serious Insect Damaged</label>
+        <value>fieldfailed7</value>
+      </item>
+      <item>
+        <label>&gt;20% Serious Fungal Disease</label>
+        <value>fieldfailed8</value>
+      </item>
+      <item>
+        <label>&gt;20% Other Serious Problems</label>
+        <value>fieldfailed9</value>
+      </item>
+    </select>
+    <input ref="/Dailyacthub9/storage">
+      <label>Number of Storage QC Visits on this day</label>
+    </input>
+    <input ref="/Dailyacthub9/nofailed1">
+      <label>Number of failed storage QC visits</label>
+      <hint>Failed &gt;20% dead, &gt;50% weak, &gt;20%bags No Moisture, &gt;20%waterlogged bags, Poor Storage Location, or &gt;20% other serious problem</hint>
+    </input>
+    <select ref="/Dailyacthub9/qcfailed1">
+      <label>Reasons for Storage QC failures</label>
+      <item>
+        <label>&gt;50% Weak Trees</label>
+        <value>storagefailed1</value>
+      </item>
+      <item>
+        <label>&gt;20% Dead Trees</label>
+        <value>storagefailed2</value>
+      </item>
+      <item>
+        <label>&gt;20% Waterlogged Trees</label>
+        <value>storagefailed3</value>
+      </item>
+      <item>
+        <label>&gt;20% No Moisture under Mulch</label>
+        <value>storagefailed4</value>
+      </item>
+      <item>
+        <label>Poor Orchard Layout</label>
+        <value>storagefailed5</value>
+      </item>
+      <item>
+        <label>&gt;20% Animal Damage(Rats, Cows, Dogs etc)</label>
+        <value>storagefailed6</value>
+      </item>
+      <item>
+        <label>&gt;20% Serious Insect Damaged</label>
+        <value>storagefailed7</value>
+      </item>
+      <item>
+        <label>&gt;20% Serious Fungal Disease</label>
+        <value>storagefailed8</value>
+      </item>
+      <item>
+        <label>&gt;20% Other Serious Problems</label>
+        <value>storagefailed9</value>
+      </item>
+    </select>
+    <input ref="/Dailyacthub9/norepresentative1">
+      <label>Actual number of farmers that received trees and should be present for the meeting</label>
+    </input>
+    <input ref="/Dailyacthub9/norepresentative">
+      <label>Numbers of farmers who receive trees but did NOT have a representative present for demo planting</label>
+    </input>
+    <input ref="/Dailyacthub9/registered">
+      <label>Total Number Private Farmers Registered Today</label>
+      <hint>Minimum area 0.5 acres</hint>
+    </input>
+    <input ref="/Dailyacthub9/privateland">
+      <label>Total Area of Private Land Registered Today (acres)</label>
+    </input>
+    <input ref="/Dailyacthub9/individual">
+      <label>Number of individual field trainings on this day</label>
+    </input>
+    <input ref="/Dailyacthub9/travel1">
+      <label>Travelling from</label>
+    </input>
+    <input ref="/Dailyacthub9/travel2">
+      <label>Travelling to</label>
+    </input>
+    <input ref="/Dailyacthub9/gtruthing">
+      <label>Total number ground truthing field visits today</label>
+    </input>
+    <input ref="/Dailyacthub9/gtruthing1">
+      <label>Total number ground truthing field visits failed</label>
+      <hint>Altitude, Insufficient Area, No Owner, Too Many Large Trees, Gov't Land</hint>
+    </input>
+    <select ref="/Dailyacthub9/gtruthing2">
+      <label>Reasons for ground truthing failures</label>
+      <item>
+        <label>Outside altitude range</label>
+        <value>failedgtruthing1</value>
+      </item>
+      <item>
+        <label>Land title in dispute</label>
+        <value>failedgtruthing2</value>
+      </item>
+      <item>
+        <label>Not fallow land</label>
+        <value>failedgtruthing3</value>
+      </item>
+      <item>
+        <label>Too many stones and rocks</label>
+        <value>failedgtruthing4</value>
+      </item>
+      <item>
+        <label>Too many old trees</label>
+        <value>failedgtruthing5</value>
+      </item>
+      <item>
+        <label>Land less than 0.5 net plantable acres</label>
+        <value>failedgtruthing6</value>
+      </item>
+      <item>
+        <label>No labour</label>
+        <value>failedgtruthing7</value>
+      </item>
+      <item>
+        <label>Too far from roadhead</label>
+        <value>failedgtruthing8</value>
+      </item>
+      <item>
+        <label>Other</label>
+        <value>failedgtruthing9</value>
+      </item>
+    </select>
+    <input ref="/Dailyacthub9/other1">
+      <label>Other reasons for Ground Truthing Failure</label>
+    </input>
+    <select1 ref="/Dailyacthub9/distribution">
+      <label>Have you just completed a plant distribution</label>
+      <item>
+        <label>Yes</label>
+        <value>yes3</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no3</value>
+      </item>
+    </select1>
+    <input ref="/Dailyacthub9/notvisited">
+      <label>How many farmers still left for distribution ?</label>
+    </input>
+    <input ref="/Dailyacthub9/comments">
+      <label>Other important comments about todays works</label>
+    </input>
+  </h:body>
+</h:html>

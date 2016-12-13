@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>MTR - Field Qc</h:title>
+    <model>
+      <instance>
+        <tblfieldqc id="tblfieldqc" version="1009">
+          <start/>
+          <end/>
+          <deviceid/>
+          <today/>
+          <email/>
+          <phonenumber/>
+          <simserial/>
+          <gennote/>
+          <booklet/>
+          <staffid/>
+          <farmerbarcode/>
+          <dcode/>
+          <gcode/>
+          <tcode/>
+          <fcode/>
+          <fname/>
+          <farmertype/>
+          <fdcode/>
+          <farmerpresent/>
+          <gps_coordinates/>
+          <mfcode/>
+          <minfo/>
+          <checkno0/>
+          <checkno01/>
+          <plantgrowthphase>
+            <treeheight/>
+            <stems/>
+            <activegrowing/>
+            <slowgrowing/>
+            <dor/>
+            <inactiveplant/>
+            <emptyhole/>
+            <totaltrees/>
+            <checkno/>
+          </plantgrowthphase>
+          <planthealth>
+            <yellowleaf/>
+            <activepest/>
+            <stempest/>
+            <rootpest/>
+            <animaldamage/>
+            <waterlog/>
+          </planthealth>
+          <checkno1/>
+          <phenologycaldata>
+            <treewithnut/>
+            <treewithcatkin/>
+            <treewithflower/>
+          </phenologycaldata>
+          <checkno2/>
+          <intercroppingdetails>
+            <plants/>
+            <other1/>
+          </intercroppingdetails>
+          <gapchecklist>
+            <checklist/>
+          </gapchecklist>
+          <recommendedaction/>
+          <duedate/>
+          <followstatus/>
+          <monitorcomments/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </tblfieldqc>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/tblfieldqc/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/tblfieldqc/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/tblfieldqc/deviceid" type="string"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/tblfieldqc/today" type="date"/>
+      <bind jr:preload="property" jr:preloadParams="email" nodeset="/tblfieldqc/email" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/tblfieldqc/phonenumber" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/tblfieldqc/simserial" type="string"/>
+      <bind nodeset="/tblfieldqc/gennote" readonly="true()" type="string"/>
+      <bind nodeset="/tblfieldqc/booklet" required="true()" type="string"/>
+      <bind nodeset="/tblfieldqc/staffid" required="true()" type="string"/>
+      <bind jr:constraintMsg="Invalid barcode" nodeset="/tblfieldqc/farmerbarcode" type="barcode"/>
+      <bind nodeset="/tblfieldqc/dcode" relevant=" /tblfieldqc/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblfieldqc/gcode" relevant=" /tblfieldqc/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblfieldqc/tcode" relevant=" /tblfieldqc/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblfieldqc/fcode" relevant=" /tblfieldqc/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblfieldqc/fname" relevant=" /tblfieldqc/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblfieldqc/farmertype" relevant=" /tblfieldqc/farmerbarcode =''" required="true()" type="string"/>
+      <bind constraint=".&gt;0" jr:constraintMsg="Field code must be 1, 2, 3 etc." nodeset="/tblfieldqc/fdcode" required="true()" type="string"/>
+      <bind nodeset="/tblfieldqc/farmerpresent" required="true()" type="string"/>
+      <bind nodeset="/tblfieldqc/gps_coordinates" required="true()" type="geopoint"/>
+      <bind calculate="if(string-length( /tblfieldqc/fcode )='1', concat('000', /tblfieldqc/fcode ), if(string-length( /tblfieldqc/fcode )='2', concat('00', /tblfieldqc/fcode ), if(string-length( /tblfieldqc/fcode )='3', concat('0', /tblfieldqc/fcode ), /tblfieldqc/fcode )))" nodeset="/tblfieldqc/mfcode" type="string"/>
+      <bind calculate="concat(substr( /tblfieldqc/tcode ,0,9), /tblfieldqc/farmertype , /tblfieldqc/mfcode )" nodeset="/tblfieldqc/minfo" type="string"/>
+      <bind nodeset="/tblfieldqc/checkno0" relevant=" /tblfieldqc/farmerbarcode =''" required="true()"/>
+      <bind nodeset="/tblfieldqc/checkno01" relevant=" /tblfieldqc/farmerbarcode !=''" required="true()"/>
+      <bind nodeset="/tblfieldqc/plantgrowthphase/treeheight" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/plantgrowthphase/stems" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/plantgrowthphase/activegrowing" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/plantgrowthphase/slowgrowing" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/plantgrowthphase/dor" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/plantgrowthphase/inactiveplant" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/plantgrowthphase/emptyhole" required="true()" type="int"/>
+      <bind calculate=" /tblfieldqc/plantgrowthphase/activegrowing + /tblfieldqc/plantgrowthphase/slowgrowing + /tblfieldqc/plantgrowthphase/dor + /tblfieldqc/plantgrowthphase/inactiveplant + /tblfieldqc/plantgrowthphase/emptyhole " nodeset="/tblfieldqc/plantgrowthphase/totaltrees" type="string"/>
+      <bind nodeset="/tblfieldqc/plantgrowthphase/checkno" required="true()"/>
+      <bind nodeset="/tblfieldqc/planthealth/yellowleaf" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/planthealth/activepest" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/planthealth/stempest" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/planthealth/rootpest" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/planthealth/animaldamage" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/planthealth/waterlog" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/checkno1" required="true()"/>
+      <bind nodeset="/tblfieldqc/phenologycaldata/treewithnut" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/phenologycaldata/treewithcatkin" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/phenologycaldata/treewithflower" required="true()" type="int"/>
+      <bind nodeset="/tblfieldqc/checkno2" relevant=" /tblfieldqc/phenologycaldata/treewithnut &gt;0 or  /tblfieldqc/phenologycaldata/treewithflower &gt;0 or  /tblfieldqc/phenologycaldata/treewithcatkin &gt;0" required="true()"/>
+      <bind constraint="not(selected(., 'cropping8') and (selected(., 'cropping1') or selected(., 'cropping2') or selected(., 'cropping3') or selected(., 'cropping4') or selected(., 'cropping5') or selected(., 'cropping6') or selected(., 'cropping7')))" jr:constraintMsg="Cannot have 'none' and another choice" nodeset="/tblfieldqc/intercroppingdetails/plants" required="true()" type="select"/>
+      <bind nodeset="/tblfieldqc/intercroppingdetails/other1" relevant="selected( /tblfieldqc/intercroppingdetails/plants ,'cropping7')" required="true()" type="string"/>
+      <bind constraint="not(selected(.,'checklist6') and (selected(.,'checklist1') or selected(.,'checklist2') or selected(.,'checklist3') or selected(.,'checklist4') or selected(.,'checklist5')))" jr:constraintMsg="Cannot have 'none' plus other choice" nodeset="/tblfieldqc/gapchecklist/checklist" required="true()" type="select"/>
+      <bind nodeset="/tblfieldqc/recommendedaction" type="string"/>
+      <bind constraint="date( /tblfieldqc/today )&lt;=date(.)" jr:constraintMsg="Not a due date" nodeset="/tblfieldqc/duedate" required="true()" type="date"/>
+      <bind nodeset="/tblfieldqc/followstatus" required="true()" type="string"/>
+      <bind nodeset="/tblfieldqc/monitorcomments" required="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/tblfieldqc/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/tblfieldqc/gennote">
+      <label>Mountain Hazelnut Venture
+
+Form Name: Orchard Management 
+Form ID: MH-FF-03
+Revision Date: 08-11-2015
+Revision Number: 2.0</label>
+      <hint>----------------------------------------
+
+Important:This form contains field geo location option which must be taken at the field site.</hint>
+    </input>
+    <input ref="/tblfieldqc/booklet">
+      <label>Farmer booklet No.</label>
+    </input>
+    <input query="instance('staffcode')/root/item[dzongkhag=&quot;M&quot;]" ref="/tblfieldqc/staffid">
+      <label>Select your name</label>
+    </input>
+    <input ref="/tblfieldqc/farmerbarcode">
+      <label>Scan farmer details from barcode sheet</label>
+    </input>
+    <input query="instance('dzongkhag')/root/item[dzongkhag=&quot;D&quot;]" ref="/tblfieldqc/dcode">
+      <label>Select Dzongkhag</label>
+    </input>
+    <input query="instance('gewog')/root/item[dzongkhag= /tblfieldqc/dcode ]" ref="/tblfieldqc/gcode">
+      <label>Select Gewog</label>
+    </input>
+    <input query="instance('tshowog')/root/item[gewog= /tblfieldqc/gcode ]" ref="/tblfieldqc/tcode">
+      <label>Select Tshowog</label>
+    </input>
+    <input query="instance('farmercode')/root/item[dzongkhag=&quot;FC&quot;]" ref="/tblfieldqc/fcode">
+      <label>Farmer code</label>
+    </input>
+    <input ref="/tblfieldqc/fname">
+      <label>Farmer name</label>
+    </input>
+    <input query="instance('farmertype')/root/item[dzongkhag=&quot;FT&quot;]" ref="/tblfieldqc/farmertype">
+      <label>Select farmer type</label>
+    </input>
+    <input query="instance('fieldcode')/root/item[dzongkhag=&quot;FDC&quot;]" ref="/tblfieldqc/fdcode">
+      <label>Field code</label>
+      <hint>First field - 1, second 2, etc. Visit ALL farmers fields</hint>
+    </input>
+    <input query="instance('yesno')/root/item[dzongkhag=&quot;YN&quot;]" ref="/tblfieldqc/farmerpresent">
+      <label>Is the farmer present ?</label>
+      <hint>Call farmer to field and explain him his field condition</hint>
+    </input>
+    <input ref="/tblfieldqc/gps_coordinates">
+      <label>Field GPS co-ordinates</label>
+      <hint>GPS coordinates can only be collected when outside.</hint>
+    </input>
+    <trigger ref="/tblfieldqc/checkno0">
+      <label>Check your information, are these all correct? If not go back and correct!</label>
+      <hint>Your staffcode: <output value=" /tblfieldqc/staffid "/>
+Farmer code: <output value=" /tblfieldqc/minfo "/>
+Field code: <output value=" /tblfieldqc/fdcode "/></hint></trigger>
+    <trigger ref="/tblfieldqc/checkno01">
+      <label>Check your information, are these all correct? If not go back and correct!</label>
+      <hint>Your staffcode: <output value=" /tblfieldqc/staffid "/>
+Farmer code: <output value=" /tblfieldqc/farmerbarcode "/>
+Field code: <output value=" /tblfieldqc/fdcode "/></hint></trigger>
+    <group ref="/tblfieldqc/plantgrowthphase">
+      <label>PLANT GROWTH PHASE</label>
+      <input ref="/tblfieldqc/plantgrowthphase/treeheight">
+        <label>Avg. height (cm)</label>
+      </input>
+      <input ref="/tblfieldqc/plantgrowthphase/stems">
+        <label>Avg. stem (number)</label>
+      </input>
+      <input ref="/tblfieldqc/plantgrowthphase/activegrowing">
+        <label>Actively growing</label>
+      </input>
+      <input ref="/tblfieldqc/plantgrowthphase/slowgrowing">
+        <label>Slow growing with top bud</label>
+      </input>
+      <input ref="/tblfieldqc/plantgrowthphase/dor">
+        <label>Dormant,with bud no leaf</label>
+      </input>
+      <input ref="/tblfieldqc/plantgrowthphase/inactiveplant">
+        <label>Inactive plant</label>
+      </input>
+      <input ref="/tblfieldqc/plantgrowthphase/emptyhole">
+        <label>Empty hole</label>
+      </input>
+      <trigger ref="/tblfieldqc/plantgrowthphase/checkno">
+        <label>Check your numbers, are these all correct? If not go back and correct!</label>
+        <hint>Avg. height (cm): <output value=" /tblfieldqc/plantgrowthphase/treeheight "/> 
+Avg. stem (number): <output value=" /tblfieldqc/plantgrowthphase/stems "/>
+
+Actively growing: <output value=" /tblfieldqc/plantgrowthphase/activegrowing "/>
+Slow growing: <output value=" /tblfieldqc/plantgrowthphase/slowgrowing "/>
+Dormant,with bud no leaf: <output value=" /tblfieldqc/plantgrowthphase/dor "/>
+Inactive plant: <output value=" /tblfieldqc/plantgrowthphase/inactiveplant "/>
+Empty hole: <output value=" /tblfieldqc/plantgrowthphase/emptyhole "/>
+Total trees: <output value=" /tblfieldqc/plantgrowthphase/totaltrees "/></hint></trigger>
+    </group>
+    <group ref="/tblfieldqc/planthealth">
+      <label>PLANT HEALTH</label>
+      <input ref="/tblfieldqc/planthealth/yellowleaf">
+        <label>&gt; 1 yr yellow leaf</label>
+      </input>
+      <input ref="/tblfieldqc/planthealth/activepest">
+        <label>Active pest on leaf</label>
+      </input>
+      <input ref="/tblfieldqc/planthealth/stempest">
+        <label>Stem pest</label>
+      </input>
+      <input ref="/tblfieldqc/planthealth/rootpest">
+        <label>Root pest</label>
+      </input>
+      <input ref="/tblfieldqc/planthealth/animaldamage">
+        <label>Animal damage</label>
+      </input>
+      <input ref="/tblfieldqc/planthealth/waterlog">
+        <label>Water logged</label>
+      </input>
+    </group>
+    <trigger ref="/tblfieldqc/checkno1">
+      <label>Check your numbers, are these all correct? If not go back and correct!</label>
+      <hint>&gt;1year yellow leaf: <output value=" /tblfieldqc/planthealth/yellowleaf "/> 
+Active pest: <output value=" /tblfieldqc/planthealth/activepest "/>
+Stem pest: <output value=" /tblfieldqc/planthealth/stempest "/>
+Root pest: <output value=" /tblfieldqc/planthealth/rootpest "/>
+Animal damage: <output value=" /tblfieldqc/planthealth/animaldamage "/>
+Water logged: <output value=" /tblfieldqc/planthealth/waterlog "/></hint></trigger>
+    <group appearance="field-list" ref="/tblfieldqc/phenologycaldata">
+      <label>PHENOLOGICAL DATA</label>
+      <input ref="/tblfieldqc/phenologycaldata/treewithnut">
+        <label>Total tree with nut</label>
+      </input>
+      <input ref="/tblfieldqc/phenologycaldata/treewithcatkin">
+        <label>Total tree with catkin</label>
+      </input>
+      <input ref="/tblfieldqc/phenologycaldata/treewithflower">
+        <label>Total tree with flower</label>
+      </input>
+    </group>
+    <trigger ref="/tblfieldqc/checkno2">
+      <label>Check your numbers, are these all correct? If not go back and correct!</label>
+      <hint>Total tree with nut: <output value=" /tblfieldqc/phenologycaldata/treewithnut "/>
+Total tree with flower: <output value=" /tblfieldqc/phenologycaldata/treewithflower "/>
+Total tree with catkin: <output value=" /tblfieldqc/phenologycaldata/treewithcatkin "/></hint></trigger>
+    <group ref="/tblfieldqc/intercroppingdetails">
+      <label>INTER CROPPING DETAILS</label>
+      <select ref="/tblfieldqc/intercroppingdetails/plants">
+        <label>Select inter-cropping plants if any</label>
+        <item>
+          <label>Maize</label>
+          <value>cropping1</value>
+        </item>
+        <item>
+          <label>Peanut</label>
+          <value>cropping2</value>
+        </item>
+        <item>
+          <label>Pea</label>
+          <value>cropping3</value>
+        </item>
+        <item>
+          <label>Beans</label>
+          <value>cropping4</value>
+        </item>
+        <item>
+          <label>Clover</label>
+          <value>cropping5</value>
+        </item>
+        <item>
+          <label>Potato</label>
+          <value>cropping6</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>cropping7</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>cropping8</value>
+        </item>
+      </select>
+      <input ref="/tblfieldqc/intercroppingdetails/other1">
+        <label>Specify other</label>
+      </input>
+    </group>
+    <group ref="/tblfieldqc/gapchecklist">
+      <label>GAP CHECK LIST</label>
+      <select ref="/tblfieldqc/gapchecklist/checklist">
+        <label>GAP checklist</label>
+        <item>
+          <label>Non- MH supplied chemical packets in field/house?</label>
+          <value>checklist1</value>
+        </item>
+        <item>
+          <label>Non-MH supplied  chemicals applied in orchard?</label>
+          <value>checklist2</value>
+        </item>
+        <item>
+          <label>Spraying without proper PPE's?</label>
+          <value>checklist3</value>
+        </item>
+        <item>
+          <label>Raw manure in field?</label>
+          <value>checklist4</value>
+        </item>
+        <item>
+          <label>Plastic/rubbish/glass in field?</label>
+          <value>checklist5</value>
+        </item>
+        <item>
+          <label>None of the above</label>
+          <value>checklist6</value>
+        </item>
+      </select>
+    </group>
+    <input ref="/tblfieldqc/recommendedaction">
+      <label>Recommended actions before next visit:</label>
+    </input>
+    <input appearance="no-calendar" ref="/tblfieldqc/duedate">
+      <label>Due Date</label>
+    </input>
+    <input query="instance('yesno')/root/item[dzongkhag=&quot;YN&quot;]" ref="/tblfieldqc/followstatus">
+      <label>Was previous recommendation completed?</label>
+    </input>
+    <input ref="/tblfieldqc/monitorcomments">
+      <label>Monitor comment:</label>
+      <hint>Type NA for no comments</hint>
+    </input>
+  </h:body>
+</h:html>

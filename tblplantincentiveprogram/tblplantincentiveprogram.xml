@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>MTR - Plant Incentive Program</h:title>
+    <model>
+      <instance>
+        <tblplantincentiveprogram id="tblplantincentiveprogram" version="1008">
+          <start/>
+          <end/>
+          <deviceid/>
+          <today/>
+          <email/>
+          <phonenumber/>
+          <simserial/>
+          <gennote/>
+          <staffid/>
+          <farmerbarcode/>
+          <dcode/>
+          <gcode/>
+          <tcode/>
+          <fcode/>
+          <fname/>
+          <farmertype/>
+          <fdcode/>
+          <farmerpresent/>
+          <gps_coordinates/>
+          <plantcount>
+            <treesaliveinfield/>
+            <treesaliveinstorage/>
+            <emptybag/>
+          </plantcount>
+          <monitorcomments/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </tblplantincentiveprogram>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/tblplantincentiveprogram/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/tblplantincentiveprogram/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/tblplantincentiveprogram/deviceid" type="string"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/tblplantincentiveprogram/today" type="date"/>
+      <bind jr:preload="property" jr:preloadParams="email" nodeset="/tblplantincentiveprogram/email" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/tblplantincentiveprogram/phonenumber" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/tblplantincentiveprogram/simserial" type="string"/>
+      <bind nodeset="/tblplantincentiveprogram/gennote" readonly="true()" type="string"/>
+      <bind nodeset="/tblplantincentiveprogram/staffid" required="true()" type="string"/>
+      <bind jr:constraintMsg="Invalid barcode" nodeset="/tblplantincentiveprogram/farmerbarcode" type="barcode"/>
+      <bind nodeset="/tblplantincentiveprogram/dcode" relevant=" /tblplantincentiveprogram/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblplantincentiveprogram/gcode" relevant=" /tblplantincentiveprogram/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblplantincentiveprogram/tcode" relevant=" /tblplantincentiveprogram/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblplantincentiveprogram/fcode" relevant=" /tblplantincentiveprogram/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblplantincentiveprogram/fname" relevant=" /tblplantincentiveprogram/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblplantincentiveprogram/farmertype" relevant=" /tblplantincentiveprogram/farmerbarcode =''" required="true()" type="string"/>
+      <bind constraint=".&gt;0" jr:constraintMsg="Field code must be 1, 2, 3 etc." nodeset="/tblplantincentiveprogram/fdcode" required="true()" type="string"/>
+      <bind nodeset="/tblplantincentiveprogram/farmerpresent" required="true()" type="string"/>
+      <bind nodeset="/tblplantincentiveprogram/gps_coordinates" required="true()" type="geopoint"/>
+      <bind nodeset="/tblplantincentiveprogram/plantcount/treesaliveinfield" required="true()" type="int"/>
+      <bind nodeset="/tblplantincentiveprogram/plantcount/treesaliveinstorage" required="true()" type="int"/>
+      <bind nodeset="/tblplantincentiveprogram/plantcount/emptybag" required="true()" type="int"/>
+      <bind nodeset="/tblplantincentiveprogram/monitorcomments" required="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/tblplantincentiveprogram/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/tblplantincentiveprogram/gennote">
+      <label>Mountain Hazelnut Venture
+
+Form Name: Farmer Incentive Program
+Form ID: Not Applicable
+Revision Date: 12-07-2016
+Revision Number: 1.0</label>
+      <hint>----------------------------------------
+
+Important:This form contains field geo location option which must be taken at the field site.</hint>
+    </input>
+    <input query="instance('staffcode')/root/item[dzongkhag=&quot;M&quot;]" ref="/tblplantincentiveprogram/staffid">
+      <label>Select your name</label>
+    </input>
+    <input ref="/tblplantincentiveprogram/farmerbarcode">
+      <label>Scan farmer details from barcode sheet</label>
+    </input>
+    <input query="instance('dzongkhag')/root/item[dzongkhag=&quot;D&quot;]" ref="/tblplantincentiveprogram/dcode">
+      <label>Select Dzongkhag</label>
+    </input>
+    <input query="instance('gewog')/root/item[dzongkhag= /tblplantincentiveprogram/dcode ]" ref="/tblplantincentiveprogram/gcode">
+      <label>Select Gewog</label>
+    </input>
+    <input query="instance('tshowog')/root/item[gewog= /tblplantincentiveprogram/gcode ]" ref="/tblplantincentiveprogram/tcode">
+      <label>Select Tshowog</label>
+    </input>
+    <input query="instance('farmercode')/root/item[dzongkhag=&quot;FC&quot;]" ref="/tblplantincentiveprogram/fcode">
+      <label>Farmer code</label>
+    </input>
+    <input ref="/tblplantincentiveprogram/fname">
+      <label>Farmer name</label>
+    </input>
+    <input query="instance('farmertype')/root/item[dzongkhag=&quot;FT&quot;]" ref="/tblplantincentiveprogram/farmertype">
+      <label>Select farmer type</label>
+    </input>
+    <input query="instance('fieldcode')/root/item[dzongkhag=&quot;FDC&quot;]" ref="/tblplantincentiveprogram/fdcode">
+      <label>Field code</label>
+      <hint>First field - 1, second 2, etc. Visit ALL farmers fields</hint>
+    </input>
+    <input query="instance('yesno')/root/item[dzongkhag=&quot;YN&quot;]" ref="/tblplantincentiveprogram/farmerpresent">
+      <label>Is the farmer present ?</label>
+    </input>
+    <input ref="/tblplantincentiveprogram/gps_coordinates">
+      <label>Field GPS co-ordinates</label>
+      <hint>GPS coordinates can only be collected when outside.</hint>
+    </input>
+    <group ref="/tblplantincentiveprogram/plantcount">
+      <label>Plant Count</label>
+      <input ref="/tblplantincentiveprogram/plantcount/treesaliveinfield">
+        <label>Trees alive in field</label>
+        <hint>This should include only the trees planted in the year 2016.This plant numbers are taken into account for incentive program</hint>
+      </input>
+      <input ref="/tblplantincentiveprogram/plantcount/treesaliveinstorage">
+        <label>Trees alive in storage</label>
+        <hint>This plant numbers are taken into account for incentive program</hint>
+      </input>
+      <input ref="/tblplantincentiveprogram/plantcount/emptybag">
+        <label>Empty bag</label>
+      </input>
+    </group>
+    <input ref="/tblplantincentiveprogram/monitorcomments">
+      <label>Monitor comment:</label>
+      <hint>Type NA for no comments</hint>
+    </input>
+  </h:body>
+</h:html>

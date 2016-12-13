@@ -1,0 +1,1663 @@
+list_name,name,label,dzongkhag,gewog
+dzongkhag,D01,D01 Trashigang,D,
+dzongkhag,D02,D02 Trashiyangtse,D,
+dzongkhag,D03,D03 Mongar,D,
+dzongkhag,D04,D04 Lhuentse,D,
+dzongkhag,D05,D05 Pemagatshel,D,
+dzongkhag,D06,D06 Samdrup Jongkhar,D,
+dzongkhag,D07,D07 Zhemgang,D,
+dzongkhag,D08,D08 Bumthang,D,
+dzongkhag,D09,D09 Trongsa,D,
+dzongkhag,D10,D10 Wangdue,D,
+dzongkhag,D11,D11 Punakha,D,
+dzongkhag,D12,D12 Gasa,D,
+dzongkhag,D13,D13 Dagana,D,
+dzongkhag,D14,D14 Tsirang,D,
+dzongkhag,D15,D15 Chhukha,D,
+dzongkhag,D16,D16 Thimphu,D,
+dzongkhag,D17,D17 Paro,D,
+dzongkhag,D18,D18 Haa,D,
+dzongkhag,D19,D19 Sarpang,D,
+dzongkhag,D20,D20 Samtse,D,
+gewog,D01G01,G01 Shongphu,D01,
+gewog,D01G02,G02 Samkhar,D01,
+gewog,D01G03,G03 Kanglung,D01,
+gewog,D01G04,G04 Khaling,D01,
+gewog,D01G05,G05 Lumang,D01,
+gewog,D01G06,G06 Thrimshing,D01,
+gewog,D01G07,G07 Yangneer,D01,
+gewog,D01G08,G08 Radhi,D01,
+gewog,D01G09,G09 Phongmey,D01,
+gewog,D01G10,G10 Bartsam,D01,
+gewog,D01G11,G11 Bidung,D01,
+gewog,D01G12,G12 Uzorong,D01,
+gewog,D01G13,G13 Kangpara,D01,
+gewog,D01G14,G14 Merak,D01,
+gewog,D01G15,G15 Sakteng,D01,
+gewog,D02G01,G01 Yangtse,D02,
+gewog,D02G02,G02 Khamdrang,D02,
+gewog,D02G03,G03 Tomzhang,D02,
+gewog,D02G04,G04 Jamkhar,D02,
+gewog,D02G05,G05 Ramjar,D02,
+gewog,D02G06,G06 Bumdeling,D02,
+gewog,D02G07,G07 Yalang,D02,
+gewog,D02G08,G08 Teotsho,D02,
+gewog,D03G01,G01 Shermung1,D03,
+gewog,D03G02,G02 Tsakaling,D03,
+gewog,D03G03,G03 Chali,D03,
+gewog,D03G04,G04 Tsamang,D03,
+gewog,D03G05,G05 Balam,D03,
+gewog,D03G06,G06 Narang,D03,
+gewog,D03G07,G07 Drametse,D03,
+gewog,D03G08,G08 Ngatsang,D03,
+gewog,D03G09,G09 Chaskar,D03,
+gewog,D03G10,G10 Thangrong,D03,
+gewog,D03G11,G11 Drepong,D03,
+gewog,D03G12,G12 Saling,D03,
+gewog,D03G13,G13 Mongar,D03,
+gewog,D03G14,G14 Kengkhar,D03,
+gewog,D03G15,G15 Silambi,D03,
+gewog,D03G16,G16 Jurmey,D03,
+gewog,D03G17,G17 Gongdue,D03,
+gewog,D04G01,G01 Menbee,D04,
+gewog,D04G02,G02 Tshenkhar,D04,
+gewog,D04G03,G03 Dungkhar,D04,
+gewog,D04G04,G04 Gangzur,D04,
+gewog,D04G05,G05 Jaray,D04,
+gewog,D04G06,G06 Khoma,D04,
+gewog,D04G07,G07 Minjay,D04,
+gewog,D04G08,G08 Metsho,D04,
+gewog,D04G09,G09 Kurtoe,D04,
+gewog,D05G01,G01 Zobel,D05,
+gewog,D05G02,G02 Khar,D05,
+gewog,D05G03,G03 Yurung,D05,
+gewog,D05G04,G04 Nanong,D05,
+gewog,D05G05,G05 Shumar,D05,
+gewog,D05G06,G06 Chongshing,D05,
+gewog,D05G07,G07 Dungmin,D05,
+gewog,D05G08,G08  Chhimoong,D05,
+gewog,D06G01,G01 Gomdar,D06,
+gewog,D06G02,G02 Wongphu,D06,
+gewog,D06G03,G03 Martshala,D06,
+gewog,D06G04,G04 Orong,D06,
+gewog,D06G05,G05 Serthi,D06,
+gewog,D06G06,G06 Lauri,D06,
+gewog,D06G07,G07 Pemathang,D06,
+gewog,D07G01,G01 Trong,D07,
+gewog,D07G02,G02 Nangkhor,D07,
+gewog,D07G03,G03 Shingkhar,D07,
+gewog,D07G04,G04 Bardo,D07,
+gewog,D07G05,G05 Phangkha,D07,
+gewog,D08G01,G01 Chhokhor,D08,
+gewog,D08G02,G02 Chamkhar Town,D08,
+gewog,D08G03,G03 Tang,D08,
+gewog,D08G04,G04 Ura,D08,
+gewog,D08G05,G05 Chumey,D08,
+gewog,D09G01,G01 Tangsibjee,D09,
+gewog,D09G02,G02 Nubi,D09,
+gewog,D09G03,G03 Drakteng,D09,
+gewog,D09G04,G04 Langthel,D09,
+gewog,D09G05,G05 Korphu,D09,
+gewog,D10G01,G01 Sephu,D10,
+gewog,D10G02,G02 Phobji,D10,
+gewog,D10G03,G03 Gangtey,D10,
+gewog,D10G04,G04 Dangchu,D10,
+gewog,D10G05,G05 Nisho,D10,
+gewog,D10G06,G06 Kazhi,D10,
+gewog,D10G07,G07 Nahi,D10,
+gewog,D10G08,G08 Bjena,D10,
+gewog,D10G09,G09 Daga,D10,
+gewog,D10G10,G10 Athang,D10,
+gewog,D10G11,G11 Gase Tshogom,D10,
+gewog,D10G12,G12 Gase Tshowom,D10,
+gewog,D10G13,G13 Rubesa,D10,
+gewog,D10G14,G14 Nubding Town,D10,
+gewog,D10G15,G15 Phangyul,D10,
+gewog,D11G01,G01 Guma ,D11,
+gewog,D11G02,G02 Kabjisa ,D11,
+gewog,D11G03,G03 Shengana,D11,
+gewog,D11G04,G04 Toebisa ,D11,
+gewog,D11G05,G05 Genshari,D11,
+gewog,D11G06,G06 Lingmukha ,D11,
+gewog,D11G07,G07 Talo,D11,
+gewog,D11G08,G08 Toewang,D11,
+gewog,D11G09,G09 Chubhu,D11,
+gewog,D11G10,G10 Zomi,D11,
+gewog,D12G01,G01 Khamaed,D12,
+gewog,D12G02,G02 Khatoed,D12,
+gewog,D12G03,G03 Laya,D12,
+gewog,D12G04,G04 Lunana,D12,
+gewog,D13G01,G01 Dorona,D13,
+gewog,D13G02,G02 Drujegang,D13,
+gewog,D13G03,G03 Gesarling,D13,
+gewog,D13G04,G04 Goshi,D13,
+gewog,D13G05,G05 Kana,D13,
+gewog,D13G06,G06 Karmaling,D13,
+gewog,D13G07,G07 Khebisa,D13,
+gewog,D13G08,G08 Lagyab,D13,
+gewog,D13G09,G09 Lhamoi Zingkha,D13,
+gewog,D13G10,G10 Nichula,D13,
+gewog,D13G11,G11 Trashiding,D13,
+gewog,D13G12,G12 Tsangkha,D13,
+gewog,D13G13,G13 Tsendagang,D13,
+gewog,D13G14,G14 Tseza,D13,
+gewog,D14G01,G01 Barshong,D14,
+gewog,D14G02,G02 Dunglagang,D14,
+gewog,D14G03,G03 Gosarling,D14,
+gewog,D14G04,G04 Kilkhorthang,D14,
+gewog,D14G05,G05 Mendrelgang,D14,
+gewog,D14G06,G06 Patshaling,D14,
+gewog,D14G07,G07 Phuntenchhu,D14,
+gewog,D14G08,G08 Rangthangling,D14,
+gewog,D14G09,G09 Semjong,D14,
+gewog,D14G10,G10 Sergithang,D14,
+gewog,D14G11,G11 Tsholingkhar,D14,
+gewog,D14G12,G12 Tsirang Toed,D14,
+gewog,D15G01,G01 Bjagchhog,D15,
+gewog,D15G02,G02 Bongo,D15,
+gewog,D15G03,G03 Chapcha,D15,
+gewog,D15G04,G04 Darla,D15,
+gewog,D15G05,G05 Dungna,D15,
+gewog,D15G06,G06 Geling,D15,
+gewog,D15G07,G07 Getana,D15,
+gewog,D15G08,G08 Lokchina,D15,
+gewog,D15G09,G09 Metakha,D15,
+gewog,D15G10,G10 Phuentsholing,D15,
+gewog,D15G11,G11 Sampheling,D15,
+gewog,D15G12,G12 Phuntsholing,D15,
+gewog,D16G01,G01 Maewang,D16,
+gewog,D16G02,G02 Chang ,D16,
+gewog,D16G03,G03 Lingzhi,D16,
+gewog,D16G04,G04 Soe,D16,
+gewog,D16G05,G05 Ge-Nyen,D16,
+gewog,D16G06,G06 Kawang,D16,
+gewog,D16G07,G07 Naro,D16,
+gewog,D16G08,G08 Dokarla,D16,
+gewog,D17G01,G01 Dokar,D17,
+gewog,D17G02,G02 Dopshar Re,D17,
+gewog,D17G03,G03 Dopteng,D17,
+gewog,D17G04,G04 Hoongrel,D17,
+gewog,D17G05,G05 Lamgong,D17,
+gewog,D17G06,G06 Loong Nyi,D17,
+gewog,D17G07,G07 Nagya,D17,
+gewog,D17G08,G08 Sharpa,D17,
+gewog,D17G09,G09 Tsento,D17,
+gewog,D17G10,G10 Wangcheng,D17,
+gewog,D18G01,G01 Bji,D18,
+gewog,D18G02,G02 Uesu,D18,
+gewog,D18G03,G03 Gakling,D18,
+gewog,D18G04,G04 Kartshog,D18,
+gewog,D18G05,G05 Sangbay,D18,
+gewog,D18G06,G06 Samar,D18,
+gewog,D19G01,G01 Chhuzagang,D19,
+gewog,D19G02,G02 Chhudzom,D19,
+gewog,D19G03,G03 Dekiling,D19,
+gewog,D19G04,G04 Gakiling,D19,
+gewog,D19G05,G05 Gelephu,D19,
+gewog,D19G06,G06 Jigmechholing,D19,
+gewog,D19G07,G07 Samtenling,D19,
+gewog,D19G08,G08 Senggey,D19,
+gewog,D19G09,G09 Sherzhong,D19,
+gewog,D19G10,G10 Shompangkha,D19,
+gewog,D19G11,G11 Tareythang,D19,
+gewog,D19G12,G12 Umling,D19,
+gewog,D20G01,G01 Dungtoe,D20,
+gewog,D20G02,G02 Dophoogchen,D20,
+gewog,D20G03,G03 Duenchukha,D20,
+gewog,D20G04,G04 Namgaychhoeling,D20,
+gewog,D20G05,G05 Norbugang,D20,
+gewog,D20G06,G06 Norgaygang,D20,
+gewog,D20G07,G07 Pemaling,D20,
+gewog,D20G08,G08 Phuentshogpelri,D20,
+gewog,D20G09,G09 Sangngagchhoeling,D20,
+gewog,D20G10,G10 Samtse,D20,
+gewog,D20G11,G11 Tading,D20,
+gewog,D20G12,G12 Tashicholing,D20,
+gewog,D20G13,G13 Tendruk,D20,
+gewog,D20G14,G14 Ugentse,D20,
+gewog,D20G15,G15 Yoeseltse,D20,
+tshowog,D01G01T01 Chaling,T01 Chaling,D01,D01G01
+tshowog,D01G01T02 Galing,T02 Galing,D01,D01G01
+tshowog,D01G01T03 Gongseyphangma,T03 Gongseyphangma,D01,D01G01
+tshowog,D01G01T04 Shongphu,T04 Shongphu,D01,D01G01
+tshowog,D01G01T05 Changmey,T05 Changmey,D01,D01G01
+tshowog,D01G02T01 Bikhar,T01 Bikhar,D01,D01G02
+tshowog,D01G02T02 Rangshikhar,T02 Rangshikhar,D01,D01G02
+tshowog,D01G02T03 Samchiling,T03 Samchiling,D01,D01G02
+tshowog,D01G02T04 Yenang Brangsa,T04 Yenang Brangsa,D01,D01G02
+tshowog,D01G02T05 Khapti,T05 Khapti,D01,D01G02
+tshowog,D01G02T07 Pam,T07 Pam,D01,D01G02
+tshowog,D01G03T01 Rongthung,T01 Rongthung,D01,D01G03
+tshowog,D01G03T02 Kanglung,T02 Kanglung,D01,D01G03
+tshowog,D01G03T03 Yonphula & Yonphula(Pam),T03 Yonphula & Yonphula(Pam),D01,D01G03
+tshowog,D01G03T04 Manthung,T04 Manthung,D01,D01G03
+tshowog,D01G03T05 Retsethung,T05 Retsethung,D01,D01G03
+tshowog,D01G04T01 Monangkhola,T01 Monangkhola,D01,D01G04
+tshowog,D01G04T02 Dawazor,T02 Dawazor,D01,D01G04
+tshowog,D01G04T03 Gomchu,T03 Gomchu,D01,D01G04
+tshowog,D01G04T04 Barshong,T04 Barshong,D01,D01G04
+tshowog,D01G04T05 Braykha,T05 Braykha,D01,D01G04
+tshowog,D01G04T07 Gonpa,T07 Gonpa,D01,D01G04
+tshowog,D01G04T08 Bephu,T08 Bephu,D01,D01G04
+tshowog,D01G04T09 Jeri lemi,T09 Jeri lemi,D01,D01G04
+tshowog,D01G04T10 Khaling ,T10 Khaling ,D01,D01G04
+tshowog,D01G05T01 Dungmanma,T01 Dungmanma,D01,D01G05
+tshowog,D01G05T02 Tshogonpa,T02 Tshogonpa,D01,D01G05
+tshowog,D01G05T03 Kheshing,T03 Kheshing,D01,D01G05
+tshowog,D01G05T04 Kurchilu,T04 Kurchilu,D01,D01G05
+tshowog,D01G05T05 Moshi,T05 Moshi,D01,D01G05
+tshowog,D01G05T07 Riserbo,T07 Riserbo,D01,D01G05
+tshowog,D01G05T08 Kharphu,T08 Kharphu,D01,D01G05
+tshowog,D01G05T09 Shatsari,T09 Shatsari,D01,D01G05
+tshowog,D01G05T10 Drubkhang,T10 Drubkhang,D01,D01G05
+tshowog,D01G06T01 Thrimshing,T01 Thrimshing,D01,D01G06
+tshowog,D01G06T02 Tsangpo,T02 Tsangpo,D01,D01G06
+tshowog,D01G06T03 Bardungma,T03 Bardungma,D01,D01G06
+tshowog,D01G06T04 Phushing,T04 Phushing,D01,D01G06
+tshowog,D01G06T05 Phegpheri/wemkhar,T05 Phegpheri/wemkhar,D01,D01G06
+tshowog,D01G07T01 Yangneer,T01 Yangneer,D01,D01G07
+tshowog,D01G07T02 Gungthung,T02 Gungthung,D01,D01G07
+tshowog,D01G07T03 Shokhang,T03 Shokhang,D01,D01G07
+tshowog,D01G07T04 Dhaliphangma,T04 Dhaliphangma,D01,D01G07
+tshowog,D01G07T05 Kharzeleyphu,T05 Kharzeleyphu,D01,D01G07
+tshowog,D01G07T07 Darjeling Khardung ,T07 Darjeling Khardung ,D01,D01G07
+tshowog,D01G07T08 Durung,T08 Durung,D01,D01G07
+tshowog,D01G08T01 Dunggoen,T01 Dunggoen,D01,D01G08
+tshowog,D01G08T02 Tongling Khatoe,T02 Tongling Khatoe,D01,D01G08
+tshowog,D01G08T03 Tangthrang,T03 Tangthrang,D01,D01G08
+tshowog,D01G08T04 Tsangkhar,T04 Tsangkhar,D01,D01G08
+tshowog,D01G08T05 Malongkhar,T05 Malongkhar,D01,D01G08
+tshowog,D01G08T06 Tokshimang,T06 Tokshimang,D01,D01G08
+tshowog,D01G08T07 Kadam,T07 Kadam,D01,D01G08
+tshowog,D01G09T01 Mixed,T01 Mixed,D01,D01G09
+tshowog,D01G09T02 Thongrong,T02 Thongrong,D01,D01G09
+tshowog,D01G09T03 Phongmey,T03 Phongmey,D01,D01G09
+tshowog,D01G09T04 Yabrang,T04 Yabrang,D01,D01G09
+tshowog,D01G09T05 Breng,T05 Breng,D01,D01G09
+tshowog,D01G09T07 Phimshong,T07 Phimshong,D01,D01G09
+tshowog,D01G10T01 Kumung,T01 Kumung,D01,D01G10
+tshowog,D01G10T02 Dzongthung,T02 Dzongthung,D01,D01G10
+tshowog,D01G10T03 Nangkhar,T03 Nangkhar,D01,D01G10
+tshowog,D01G10T04 Bargem,T04 Bargem,D01,D01G10
+tshowog,D01G10T05 Tashang,T05 Tashang,D01,D01G10
+tshowog,D01G10T06 Mukthangkhar,T06 Mukthangkhar,D01,D01G10
+tshowog,D01G11T01 Lempang,T01 Lempang,D01,D01G11
+tshowog,D01G11T02 Tsektum,T02 Tsektum,D01,D01G11
+tshowog,D01G11T03 Dori,T03 Dori,D01,D01G11
+tshowog,D01G11T04 Khari,T04 Khari,D01,D01G11
+tshowog,D01G11T05 Tsenkhar,T05 Tsenkhar,D01,D01G11
+tshowog,D01G11T06 Kakaniwog,T06 Kakaniwog,D01,D01G11
+tshowog,D01G11T07 Bidhung,T07 Bidhung,D01,D01G11
+tshowog,D01G12T01 Cheya,T01 Cheya,D01,D01G12
+tshowog,D01G12T02 Mangkhar,T02 Mangkhar,D01,D01G12
+tshowog,D01G12T03 Barkazor,T03 Barkazor,D01,D01G12
+tshowog,D01G12T04 Bepam,T04 Bepam,D01,D01G12
+tshowog,D01G12T05 Gengkhar,T05 Gengkhar,D01,D01G12
+tshowog,D01G12T06 Denshingmo,T06 Denshingmo,D01,D01G12
+tshowog,D01G12T07 Khamey ,T07 Khamey ,D01,D01G12
+tshowog,D01G13T01 Merdha,T01 Merdha,D01,D01G13
+tshowog,D01G13T02 Passaphu,T02 Passaphu,D01,D01G13
+tshowog,D01G13T03 Kangpara,T03 Kangpara,D01,D01G13
+tshowog,D01G13T04 Threphu,T04 Threphu,D01,D01G13
+tshowog,D01G13T05 Zordung,T05 Zordung,D01,D01G13
+tshowog,D01G14T01 Gango,T01 Gango,D01,D01G14
+tshowog,D01G15T01 Goenkhar,T01 Goenkhar,D01,D01G15
+tshowog,D01G15T02 Thrakthee,T02 Thrakthee,D01,D01G15
+tshowog,D01G15T03 Tengma,T03 Tengma,D01,D01G15
+tshowog,D01G15T04 Sakteng,T04 Sakteng,D01,D01G15
+tshowog,D01G15T05 Borangmang,T05 Borangmang,D01,D01G15
+tshowog,D02G01T01 Bayling,T01 Bayling,D02,D02G01
+tshowog,D02G01T02 Tsergom and Bhimkhar,T02 Tsergom and Bhimkhar,D02,D02G01
+tshowog,D02G01T03 Baney,T03 Baney,D02,D02G01
+tshowog,D02G01T04 Luchen,T04 Luchen,D02,D02G01
+tshowog,D02G01T05 Gangkha,T05 Gangkha,D02,D02G01
+tshowog,D02G01T06 Rabti,T06 Rabti,D02,D02G01
+tshowog,D02G02T01 Shali,T01 Shali,D02,D02G02
+tshowog,D02G02T02 Nomaring,T02 Nomaring,D02,D02G02
+tshowog,D02G02T03 Gardung,T03 Gardung,D02,D02G02
+tshowog,D02G02T04 Lengkhar,T04 Lengkhar,D02,D02G02
+tshowog,D02G02T05 Saripang,T05 Saripang,D02,D02G02
+tshowog,D02G02T07 Shalam,T07 Shalam,D02,D02G02
+tshowog,D02G02T08 Domtshang,T08 Domtshang,D02,D02G02
+tshowog,D02G02T09 Khamdrang,T09 Khamdrang,D02,D02G02
+tshowog,D02G02T10 Karmazom,T10 Karmazom,D02,D02G02
+tshowog,D02G03T01 Banangkhar & Bhaksha,T01 Banangkhar & Bhaksha,D02,D02G03
+tshowog,D02G03T02 Kenmong,T02 Kenmong,D02,D02G03
+tshowog,D02G03T03 Menchu,T03 Menchu,D02,D02G03
+tshowog,D02G03T04 Pang and Maimung,T04 Pang and Maimung,D02,D02G03
+tshowog,D02G03T05 Kunzaling,T05 Kunzaling,D02,D02G03
+tshowog,D02G03T06 Tsangadung,T06 Tsangadung,D02,D02G03
+tshowog,D02G03T07 Changmadung,T07 Changmadung,D02,D02G03
+tshowog,D02G04T01 Takshema,T01 Takshema,D02,D02G04
+tshowog,D02G04T02 Shingkhar,T02 Shingkhar,D02,D02G04
+tshowog,D02G04T03 Domshing ,T03 Domshing ,D02,D02G04
+tshowog,D02G04T04 Rejung,T04 Rejung,D02,D02G04
+tshowog,D02G04T05 Zoryoup,T05 Zoryoup,D02,D02G04
+tshowog,D02G04T06 Larjab,T06 Larjab,D02,D02G04
+tshowog,D02G04T07 Nindapachu,T07 Nindapachu,D02,D02G04
+tshowog,D02G05T01 Ramjar,T01 Ramjar,D02,D02G05
+tshowog,D02G05T02 Woongkhar,T02 Woongkhar,D02,D02G05
+tshowog,D02G05T03 Gonpa,T03 Gonpa,D02,D02G05
+tshowog,D02G05T04 Bainangrap ,T04 Bainangrap ,D02,D02G05
+tshowog,D02G05T05 Pangthang ,T05 Pangthang ,D02,D02G05
+tshowog,D02G06T01 Baytsamang,T01 Baytsamang,D02,D02G06
+tshowog,D02G06T02 Ngalemang,T02 Ngalemang,D02,D02G06
+tshowog,D02G06T03 Gangkardung,T03 Gangkardung,D02,D02G06
+tshowog,D02G06T04 Phangteng,T04 Phangteng,D02,D02G06
+tshowog,D02G06T05 Tarphel,T05 Tarphel,D02,D02G06
+tshowog,D02G06T06 Tsaling,T06 Tsaling,D02,D02G06
+tshowog,D02G06T07 Bamdir,T07 Bamdir,D02,D02G06
+tshowog,D02G06T08 Woomanang,T08 Woomanang,D02,D02G06
+tshowog,D02G06T09 Longkhar,T09 Longkhar,D02,D02G06
+tshowog,D02G07T01 Rolam,T01 Rolam,D02,D02G07
+tshowog,D02G07T02 Melongkhar,T02 Melongkhar,D02,D02G07
+tshowog,D02G07T03 Lemphang,T03 Lemphang,D02,D02G07
+tshowog,D02G07T04 Duktey ,T04 Duktey ,D02,D02G07
+tshowog,D02G07T05 Chema ,T05 Chema ,D02,D02G07
+tshowog,D02G07T07 Yalang ,T07 Yalang ,D02,D02G07
+tshowog,D02G08T01 Sep,T01 Sep,D02,D02G08
+tshowog,D02G08T02 Sertsho,T02 Sertsho,D02,D02G08
+tshowog,D02G08T03 Jangbu,T03 Jangbu,D02,D02G08
+tshowog,D02G08T04 Manamchen,T04 Manamchen,D02,D02G08
+tshowog,D02G08T05 Medung,T05 Medung,D02,D02G08
+tshowog,D03G01T01 Sershong,T01 Sershong,D03,D03G01
+tshowog,D03G01T02 Jabgang/Shermung,T02 Jabgang/Shermung,D03,D03G01
+tshowog,D03G01T03 Mohung,T03 Mohung,D03,D03G01
+tshowog,D03G01T04 Sanaykhar,T04 Sanaykhar,D03,D03G01
+tshowog,D03G01T05 Gangmung,T05 Gangmung,D03,D03G01
+tshowog,D03G02T01 Drongtey,T01 Drongtey,D03,D03G02
+tshowog,D03G02T02 Peatshongbi,T02 Peatshongbi,D03,D03G02
+tshowog,D03G02T03 Thungling,T03 Thungling,D03,D03G02
+tshowog,D03G02T04 Nertse,T04 Nertse,D03,D03G02
+tshowog,D03G02T05 Tahambi,T05 Tahambi,D03,D03G02
+tshowog,D03G03T01 Gonpa,T01 Gonpa,D03,D03G03
+tshowog,D03G03T02 Chulibi,T02 Chulibi,D03,D03G03
+tshowog,D03G03T03 Chali,T03 Chali,D03,D03G03
+tshowog,D03G03T04 Wangmakhar,T04 Wangmakhar,D03,D03G03
+tshowog,D03G03T05 Pangthang ,T05 Pangthang ,D03,D03G03
+tshowog,D03G04T01 Thengmung,T01 Thengmung,D03,D03G04
+tshowog,D03G04T02 Dangmaling,T02 Dangmaling,D03,D03G04
+tshowog,D03G04T03 Tokari,T03 Tokari,D03,D03G04
+tshowog,D03G04T04 Banjar,T04 Banjar,D03,D03G04
+tshowog,D03G04T05 Ganglapong,T05 Ganglapong,D03,D03G04
+tshowog,D03G05T01 Balam,T01 Balam,D03,D03G05
+tshowog,D03G05T02 Jadung,T02 Jadung,D03,D03G05
+tshowog,D03G05T03 Khapshing,T03 Khapshing,D03,D03G05
+tshowog,D03G05T04 Bakfai,T04 Bakfai,D03,D03G05
+tshowog,D03G06T01 Narang,T01 Narang,D03,D03G06
+tshowog,D03G06T02 Khalong,T02 Khalong,D03,D03G06
+tshowog,D03G06T03 Thrinangbo,T03 Thrinangbo,D03,D03G06
+tshowog,D03G06T04 Gomchu,T04 Gomchu,D03,D03G06
+tshowog,D03G06T05 Dhonghung,T05 Dhonghung,D03,D03G06
+tshowog,D03G07T01 Bazor,T01 Bazor,D03,D03G07
+tshowog,D03G07T02 Baging,T02 Baging,D03,D03G07
+tshowog,D03G07T03 Shaphangma,T03 Shaphangma,D03,D03G07
+tshowog,D03G07T04 Zangkhar,T04 Zangkhar,D03,D03G07
+tshowog,D03G08T01 Pelshup,T01 Pelshup,D03,D03G08
+tshowog,D03G08T02 Ngatsang,T02 Ngatsang,D03,D03G08
+tshowog,D03G08T03 Phanas,T03 Phanas,D03,D03G08
+tshowog,D03G08T04 Zangdary,T04 Zangdary,D03,D03G08
+tshowog,D03G08T05 Thumbary,T05 Thumbary,D03,D03G08
+tshowog,D03G08T07 Phalsa,T07 Phalsa,D03,D03G08
+tshowog,D03G09T01 Gonpa,T01 Gonpa,D03,D03G09
+tshowog,D03G09T02 Yarang Phushing,T02 Yarang Phushing,D03,D03G09
+tshowog,D03G09T03 Yeatong,T03 Yeatong,D03,D03G09
+tshowog,D03G09T04 Lamtag,T04 Lamtag,D03,D03G09
+tshowog,D03G10T01 Bowcheling,T01 Bowcheling,D03,D03G10
+tshowog,D03G10T02 Athola,T02 Athola,D03,D03G10
+tshowog,D03G10T03 Changshing gonpa,T03 Changshing gonpa,D03,D03G10
+tshowog,D03G10T07 Marpongtong ,T07 Marpongtong ,D03,D03G10
+tshowog,D03G10T08 Lingkhar ,T08 Lingkhar ,D03,D03G10
+tshowog,"D03G11T01 Laptsa, Bumpazor","T01 Laptsa, Bumpazor",D03,D03G11
+tshowog,D03G11T02 Chakzor,T02 Chakzor,D03,D03G11
+tshowog,D03G11T03 Zunglen,T03 Zunglen,D03,D03G11
+tshowog,D03G11T04 Drepong,T04 Drepong,D03,D03G11
+tshowog,D03G11T05 Nyamla,T05 Nyamla,D03,D03G11
+tshowog,D03G12T01 Tsantsabi/Zangitsawa,T01 Tsantsabi/Zangitsawa,D03,D03G12
+tshowog,D03G12T02 Broksar,T02 Broksar,D03,D03G12
+tshowog,D03G12T03 Sengor,T03 Sengor,D03,D03G12
+tshowog,D03G12T04 Saling ,T04 Saling ,D03,D03G12
+tshowog,D03G12T05 Thringtangbee,T05 Thringtangbee,D03,D03G12
+tshowog,D03G12T07 Rasa,T07 Rasa,D03,D03G12
+tshowog,D03G12T08 Yakpugang,T08 Yakpugang,D03,D03G12
+tshowog,D03G13T01 Kilikhar,T01 Kilikhar,D03,D03G13
+tshowog,D03G13T02 Konbar,T02 Konbar,D03,D03G13
+tshowog,D03G13T03 Phosorong,T03 Phosorong,D03,D03G13
+tshowog,D03G13T04 Themnangbi,T04 Themnangbi,D03,D03G13
+tshowog,D03G13T05 Wangling,T05 Wangling,D03,D03G13
+tshowog,D03G13T07 Wengkhar,T07 Wengkhar,D03,D03G13
+tshowog,D03G13T09 Ridaza,T09 Ridaza,D03,D03G13
+tshowog,D03G13T10 Wangling,T10 Wangling,D03,D03G13
+tshowog,D03G13T11 Pangtoe,T11 Pangtoe,D03,D03G13
+tshowog,D03G13T13 Tachu,T13 Tachu,D03,D03G13
+tshowog,D03G14T01 Yudrik,T01 Yudrik,D03,D03G14
+tshowog,D03G14T02 Dongphu,T02 Dongphu,D03,D03G14
+tshowog,D03G14T03 Tongla,T03 Tongla,D03,D03G14
+tshowog,D03G14T04 Nanangrey,T04 Nanangrey,D03,D03G14
+tshowog,D03G15T01 Nagor,T01 Nagor,D03,D03G15
+tshowog,D03G15T02 Silambi Kadak,T02 Silambi Kadak,D03,D03G15
+tshowog,D03G15T03 Jaigoan,T03 Jaigoan,D03,D03G15
+tshowog,D03G15T04 Wama,T04 Wama,D03,D03G15
+tshowog,D03G15T05 Dhak,T05 Dhak,D03,D03G15
+tshowog,D03G16T01 Sangkama,T01 Sangkama,D03,D03G16
+tshowog,D03G16T02 Beelam,T02 Beelam,D03,D03G16
+tshowog,D03G16T03 Muktangkhar,T03 Muktangkhar,D03,D03G16
+tshowog,D03G16T04 Yarakla,T04 Yarakla,D03,D03G16
+tshowog,D03G16T05 Tselam,T05 Tselam,D03,D03G16
+tshowog,D03G16T06 Next Tshowog,T06 Next Tshowog,D03,D03G16
+tshowog,D04G01T01 Zhungkhar/Dangling,T01 Zhungkhar/Dangling,D04,D04G01
+tshowog,D04G01T02 Naybee,T02 Naybee,D04,D04G01
+tshowog,D04G01T03 Menjabi,T03 Menjabi,D04,D04G01
+tshowog,D04G01T04 Tangmachu,T04 Tangmachu,D04,D04G01
+tshowog,D04G01T05 Domashung,T05 Domashung,D04,D04G01
+tshowog,D04G01T06 Khamdar,T06 Khamdar,D04,D04G01
+tshowog,D04G02T01 Wombur,T01 Wombur,D04,D04G02
+tshowog,D04G02T02 Tshenkhar,T02 Tshenkhar,D04,D04G02
+tshowog,D04G02T03 Chabee,T03 Chabee,D04,D04G02
+tshowog,D04G02T04 Domkhar,T04 Domkhar,D04,D04G02
+tshowog,D04G02T05 Khar,T05 Khar,D04,D04G02
+tshowog,D04G02T06 Tahambi,T06 Tahambi,D04,D04G02
+tshowog,D04G02T07 Dekilling Tshochen,T07 Dekilling Tshochen,D04,D04G02
+tshowog,D04G02T08 Artobadab Bumdag,T08 Artobadab Bumdag,D04,D04G02
+tshowog,D04G02T09 Yangla,T09 Yangla,D04,D04G02
+tshowog,D04G03T01 Dungkhar,T01 Dungkhar,D04,D04G03
+tshowog,D04G03T02 Samdang,T02 Samdang,D04,D04G03
+tshowog,D04G03T03 Jasabee,T03 Jasabee,D04,D04G03
+tshowog,D04G03T04 Tangrong,T04 Tangrong,D04,D04G03
+tshowog,D04G03T05 Manbi,T05 Manbi,D04,D04G03
+tshowog,D04G03T06 Tabee,T06 Tabee,D04,D04G03
+tshowog,D04G03T07 Tungbay,T07 Tungbay,D04,D04G03
+tshowog,D04G03T08 Chazam,T08 Chazam,D04,D04G03
+tshowog,D04G03T09 Shershong,T09 Shershong,D04,D04G03
+tshowog,D04G04T01 Thrimen/Threma,T01 Thrimen/Threma,D04,D04G04
+tshowog,D04G04T02 Ngye,T02 Ngye,D04,D04G04
+tshowog,D04G04T03 Jang,T03 Jang,D04,D04G04
+tshowog,D04G04T04 Nyemzhong,T04 Nyemzhong,D04,D04G04
+tshowog,D04G04T05 Mayar,T05 Mayar,D04,D04G04
+tshowog,D04G04T07 Shawa,T07 Shawa,D04,D04G04
+tshowog,D04G04T08 Somshing,T08 Somshing,D04,D04G04
+tshowog,D04G04T09 Rotpa,T09 Rotpa,D04,D04G04
+tshowog,D04G04T10 Zhamling,T10 Zhamling,D04,D04G04
+tshowog,"D04G05T01 Changkhala, Yabee & Jaray","T01 Changkhala, Yabee & Jaray",D04,D04G05
+tshowog,"D04G05T02 Ladrong, Kharchung & Ngangngay","T02 Ladrong, Kharchung & Ngangngay",D04,D04G05
+tshowog,D04G05T03 Yumtse,T03 Yumtse,D04,D04G05
+tshowog,D04G06T01 Pangkhar,T01 Pangkhar,D04,D04G06
+tshowog,D04G06T02 Berba,T02 Berba,D04,D04G06
+tshowog,D04G06T03 Nyalamdung,T03 Nyalamdung,D04,D04G06
+tshowog,D04G06T04 Gangla,T04 Gangla,D04,D04G06
+tshowog,D04G06T05 Goenpakab(Goenkhar),T05 Goenpakab(Goenkhar),D04,D04G06
+tshowog,D04G06T07 Lawa,T07 Lawa,D04,D04G06
+tshowog,D04G06T08 Babtong,T08 Babtong,D04,D04G06
+tshowog,D04G06T09 Barbakhoma,T09 Barbakhoma,D04,D04G06
+tshowog,D04G06T10 Pamthong,T10 Pamthong,D04,D04G06
+tshowog,D04G06T11 Tshennu,T11 Tshennu,D04,D04G06
+tshowog,D04G07T01 Jalang,T01 Jalang,D04,D04G07
+tshowog,D04G07T02 Minjay,T02 Minjay,D04,D04G07
+tshowog,D04G07T03 Kupte-nge-tsha,T03 Kupte-nge-tsha,D04,D04G07
+tshowog,D04G07T04 Zham,T04 Zham,D04,D04G07
+tshowog,D04G07T05 Kupangasa Budur,T05 Kupangasa Budur,D04,D04G07
+tshowog,D04G07T07 Minjiwangchen,T07 Minjiwangchen,D04,D04G07
+tshowog,D04G08T01 Ungar,T01 Ungar,D04,D04G08
+tshowog,D04G08T02 Gortsham,T02 Gortsham,D04,D04G08
+tshowog,D04G08T03 Tongthrong,T03 Tongthrong,D04,D04G08
+tshowog,D04G08T04 Bamdir,T04 Bamdir,D04,D04G08
+tshowog,D04G08T05 Zhongmey ,T05 Zhongmey ,D04,D04G08
+tshowog,D05G01T01 Zobel,T01 Zobel,D05,D05G01
+tshowog,D05G01T02 Ngamalang,T02 Ngamalang,D05,D05G01
+tshowog,D05G01T03 Resinang,T03 Resinang,D05,D05G01
+tshowog,D05G01T04 Chungkhar,T04 Chungkhar,D05,D05G01
+tshowog,D05G01T05 Shumartung,T05 Shumartung,D05,D05G01
+tshowog,D05G01T06 Pangthangdaza,T06 Pangthangdaza,D05,D05G01
+tshowog,D05G01T07 Tsalingkhor,T07 Tsalingkhor,D05,D05G01
+tshowog,D05G02T01 Tsezor,T01 Tsezor,D05,D05G02
+tshowog,D05G02T02 Labar,T02 Labar,D05,D05G02
+tshowog,D05G02T03 Shenary,T03 Shenary,D05,D05G02
+tshowog,D05G02T04 Nagtzeri,T04 Nagtzeri,D05,D05G02
+tshowog,D05G02T05 Khengzor,T05 Khengzor,D05,D05G02
+tshowog,D05G03T01 Thungo,T01 Thungo,D05,D05G03
+tshowog,D05G03T02 Bangdala,T02 Bangdala,D05,D05G03
+tshowog,D05G03T03 Dungsingma,T03 Dungsingma,D05,D05G03
+tshowog,D05G03T04 Khominang,T04 Khominang,D05,D05G03
+tshowog,D05G03T05 Khama,T05 Khama,D05,D05G03
+tshowog,D05G04T01 Dalung,T01 Dalung,D05,D05G04
+tshowog,D05G04T02 Tayphu,T02 Tayphu,D05,D05G04
+tshowog,D05G04T03 Wungchilo,T03 Wungchilo,D05,D05G04
+tshowog,D05G04T04 Tokari,T04 Tokari,D05,D05G04
+tshowog,D05G04T07 Woligtang,T07 Woligtang,D05,D05G04
+tshowog,D05G04T08 Raling,T08 Raling,D05,D05G04
+tshowog,D05G04T09 Nanong Pangthang,T09 Nanong Pangthang,D05,D05G04
+tshowog,D05G05T01 Goenpawong,T01 Goenpawong,D05,D05G05
+tshowog,D05G05T02 Shumar,T02 Shumar,D05,D05G05
+tshowog,D05G05T03 Nangtshri,T03 Nangtshri,D05,D05G05
+tshowog,D05G05T04 Khorpam,T04 Khorpam,D05,D05G05
+tshowog,D05G05T05 Bartsheri,T05 Bartsheri,D05,D05G05
+tshowog,D05G06T01 Gowung,T01 Gowung,D05,D05G06
+tshowog,D05G06T02 Chongshing Gonpa,T02 Chongshing Gonpa,D05,D05G06
+tshowog,D05G06T03 Yomzor,T03 Yomzor,D05,D05G06
+tshowog,D05G06T04 Mande,T04 Mande,D05,D05G06
+tshowog,D05G07T01 Dungmin,T01 Dungmin,D05,D05G07
+tshowog,D05G07T02 Bainang Gonpa,T02 Bainang Gonpa,D05,D05G07
+tshowog,D05G08T01 Redingla,T01 Redingla,D05,D05G08
+tshowog,D06G01T01 Narphung,T01 Narphung,D06,D06G01
+tshowog,D06G01T02 Khorapangthang,T02 Khorapangthang,D06,D06G01
+tshowog,D06G01T03 Richanglu,T03 Richanglu,D06,D06G01
+tshowog,D06G01T04 Denchi,T04 Denchi,D06,D06G01
+tshowog,D06G01T05 Barzor,T05 Barzor,D06,D06G01
+tshowog,D06G01T07 Chudungkhar,T07 Chudungkhar,D06,D06G01
+tshowog,D06G02T01 Shokshi /Pangthang,T01 Shokshi /Pangthang,D06,D06G02
+tshowog,D06G02T02 Xyyyyyyzzz,T02 Xyyyyyyzzz,D06,D06G02
+tshowog,D06G02T03 Sachilu,T03 Sachilu,D06,D06G02
+tshowog,D06G02T04 Wongphu,T04 Wongphu,D06,D06G02
+tshowog,D06G02T05 Yarphu,T05 Yarphu,D06,D06G02
+tshowog,D06G03T01 Sarjung Sham Sham,T01 Sarjung Sham Sham,D06,D06G03
+tshowog,D06G03T02 Kaptang Tsholingkhar,T02 Kaptang Tsholingkhar,D06,D06G03
+tshowog,D06G03T03 Tshotsalu Thongpashing,T03 Tshotsalu Thongpashing,D06,D06G03
+tshowog,D06G03T04 Kakani Chongmashing,T04 Kakani Chongmashing,D06,D06G03
+tshowog,D06G04T01 Morong ,T01 Morong ,D06,D06G04
+tshowog,D06G05T01 Debtzang,T01 Debtzang,D06,D06G05
+tshowog,D06G05T02 Tashithangji,T02 Tashithangji,D06,D06G05
+tshowog,D06G05T03 Phagchu,T03 Phagchu,D06,D06G05
+tshowog,D06G05T04 Serthi,T04 Serthi,D06,D06G05
+tshowog,D06G06T01 Momring,T01 Momring,D06,D06G06
+tshowog,D06G06T02 Lauri,T02 Lauri,D06,D06G06
+tshowog,D06G06T03 Dungmenba,T03 Dungmenba,D06,D06G06
+tshowog,D06G06T04 Zangthoe,T04 Zangthoe,D06,D06G06
+tshowog,D06G06T05 Tshothang,T05 Tshothang,D06,D06G06
+tshowog,D07G01T01 Tama,T01 Tama,D07,D07G01
+tshowog,D07G01T02 Dangkhar,T02 Dangkhar,D07,D07G01
+tshowog,D07G01T03 Trong,T03 Trong,D07,D07G01
+tshowog,D07G02T01 Kikhar_Tali,T01 Kikhar_Tali,D07,D07G02
+tshowog,D07G02T02 Buli,T02 Buli,D07,D07G02
+tshowog,D07G02T03 Buli Gonpa,T03 Buli Gonpa,D07,D07G02
+tshowog,D07G02T04 Chamtang,T04 Chamtang,D07,D07G02
+tshowog,D07G03T01 Shingkhar,T01 Shingkhar,D07,D07G03
+tshowog,D07G03T02 Wamling,T02 Wamling,D07,D07G03
+tshowog,D07G03T03 Thrisa,T03 Thrisa,D07,D07G03
+tshowog,D07G03T04 Nimshong,T04 Nimshong,D07,D07G03
+tshowog,D07G04T01 Bardo,T01 Bardo,D07,D07G04
+tshowog,D07G04T02 Khomshar,T02 Khomshar,D07,D07G04
+tshowog,D07G04T03 Pholobi,T03 Pholobi,D07,D07G04
+tshowog,D07G04T04 Langdorbee,T04 Langdorbee,D07,D07G04
+tshowog,D08G01T01 Chhokhor Toe,T01 Chhokhor Toe,D08,D08G01
+tshowog,D08G01T02 Kharsa,T02 Kharsa,D08,D08G01
+tshowog,D08G01T03 Dur,T03 Dur,D08,D08G01
+tshowog,D08G01T04 Norgang,T04 Norgang,D08,D08G01
+tshowog,D08G01T05 Tamshing,T05 Tamshing,D08,D08G01
+tshowog,D08G02T01 Upper Town,T01 Upper Town,D08,D08G02
+tshowog,D08G02T02 Lower Town,T02 Lower Town,D08,D08G02
+tshowog,D08G02T03 Wangdicholing,T03 Wangdicholing,D08,D08G02
+tshowog,D08G03T01 Tandingang,T01 Tandingang,D08,D08G03
+tshowog,D08G03T02 Kharab,T02 Kharab,D08,D08G03
+tshowog,D08G03T03 Nangnang,T03 Nangnang,D08,D08G03
+tshowog,D08G03T04 Tazur,T04 Tazur,D08,D08G03
+tshowog,D08G03T05 Phomrong Babzur,T05 Phomrong Babzur,D08,D08G03
+tshowog,D08G04T01 Proper Ura,T01 Proper Ura,D08,D08G04
+tshowog,D08G04T02 Shingnyer,T02 Shingnyer,D08,D08G04
+tshowog,D08G04T03 Tangsibe,T03 Tangsibe,D08,D08G04
+tshowog,D08G05T01 Gaytsha,T01 Gaytsha,D08,D08G05
+tshowog,D08G05T02 Domkhar,T02 Domkhar,D08,D08G05
+tshowog,D08G05T03 Hurchi,T03 Hurchi,D08,D08G05
+tshowog,D08G05T04 Zungey,T04 Zungey,D08,D08G05
+tshowog,D08G05T05 Chungphel,T05 Chungphel,D08,D08G05
+tshowog,D09G01T01 Tangsibjee,T01 Tangsibjee,D09,D09G01
+tshowog,D09G01T02 Chendebjee,T02 Chendebjee,D09,D09G01
+tshowog,D09G01T03 Nyala Dangla,T03 Nyala Dangla,D09,D09G01
+tshowog,D09G01T04 Tshangkha,T04 Tshangkha,D09,D09G01
+tshowog,D09G01T05 Kela,T05 Kela,D09,D09G01
+tshowog,D09G02T01 Lawzshong Dorjigonpa,T01 Lawzshong Dorjigonpa,D09,D09G02
+tshowog,D09G02T02 Bjee Semji,T02 Bjee Semji,D09,D09G02
+tshowog,D09G02T03 Gakhar Kharshong,T03 Gakhar Kharshong,D09,D09G02
+tshowog,D09G02T04 Chela Bemji,T04 Chela Bemji,D09,D09G02
+tshowog,D09G02T05 Daba Semphu,T05 Daba Semphu,D09,D09G02
+tshowog,D09G03T01 Kingarabten,T01 Kingarabten,D09,D09G03
+tshowog,D09G03T02 Samcholing,T02 Samcholing,D09,D09G03
+tshowog,D09G03T03 Usea,T03 Usea,D09,D09G03
+tshowog,D09G03T04 Taktse/ Trashitinga,T04 Taktse/ Trashitinga,D09,D09G03
+tshowog,D09G04T01 Baling,T01 Baling,D09,D09G04
+tshowog,D09G04T02 Yuendrupcholing,T02 Yuendrupcholing,D09,D09G04
+tshowog,D09G04T03 Langthel,T03 Langthel,D09,D09G04
+tshowog,D09G04T04 Sheling,T04 Sheling,D09,D09G04
+tshowog,D09G05T01 Korphu Toed,T01 Korphu Toed,D09,D09G05
+tshowog,D09G05T02 Korphu Meath,T02 Korphu Meath,D09,D09G05
+tshowog,D09G05T03 Nimshong Toed,T03 Nimshong Toed,D09,D09G05
+tshowog,D09G05T04 Nimshong Meath,T04 Nimshong Meath,D09,D09G05
+tshowog,D10G01T01 Rukuji Sephu,T01 Rukuji Sephu,D10,D10G01
+tshowog,D10G01T02 Nakha,T02 Nakha,D10,D10G01
+tshowog,D10G01T03 Bhusa/lubsor/zeri,T03 Bhusa/lubsor/zeri,D10,D10G01
+tshowog,D10G01T04 Bumliu,T04 Bumliu,D10,D10G01
+tshowog,D10G01T05 Longtey/gangchukha,T05 Longtey/gangchukha,D10,D10G01
+tshowog,D10G01T06 Sekthang,T06 Sekthang,D10,D10G01
+tshowog,D10G02T01 Dhangpa,T01 Dhangpa,D10,D10G02
+tshowog,D10G02T02 Dogsar,T02 Dogsar,D10,D10G02
+tshowog,D10G02T03 Themdo,T03 Themdo,D10,D10G02
+tshowog,D10G02T04 Gangphel,T04 Gangphel,D10,D10G02
+tshowog,D10G02T05 Rhadi/ Tafu/ Tawa,T05 Rhadi/ Tafu/ Tawa,D10,D10G02
+tshowog,D10G02T06 Adang Lomshokha,T06 Adang Lomshokha,D10,D10G02
+tshowog,D10G03T01 Geyley,T01 Geyley,D10,D10G03
+tshowog,D10G03T02 Gangtey/ Kumbo,T02 Gangtey/ Kumbo,D10,D10G03
+tshowog,D10G03T03 Yakgor,T03 Yakgor,D10,D10G03
+tshowog,D10G03T04 Usea,T04 Usea,D10,D10G03
+tshowog,D10G03T05 Gorgen,T05 Gorgen,D10,D10G03
+tshowog,D10G03T06 Bayta,T06 Bayta,D10,D10G03
+tshowog,D10G03T07 Mole,T07 Mole,D10,D10G03
+tshowog,D10G04T01 Goda/ Takshar,T01 Goda/ Takshar,D10,D10G04
+tshowog,D10G04T02 Tokaling,T02 Tokaling,D10,D10G04
+tshowog,D10G04T03 Yuesagang,T03 Yuesagang,D10,D10G04
+tshowog,D10G04T04 Rida Goenpa,T04 Rida Goenpa,D10,D10G04
+tshowog,D10G04T05 Dhendrup Choling ,T05 Dhendrup Choling ,D10,D10G04
+tshowog,D10G05T01 Gangjab,T01 Gangjab,D10,D10G05
+tshowog,D10G05T02 Goensar,T02 Goensar,D10,D10G05
+tshowog,D10G05T03 Chitokha/ Pangkha,T03 Chitokha/ Pangkha,D10,D10G05
+tshowog,D10G05T04 Nisho/ Samtengang,T04 Nisho/ Samtengang,D10,D10G05
+tshowog,D10G06T01 Beldok Isemsa,T01 Beldok Isemsa,D10,D10G06
+tshowog,D10G06T02 Lembi/ Sil/ Belpa,T02 Lembi/ Sil/ Belpa,D10,D10G06
+tshowog,D10G06T03 Chageb Gandeb,T03 Chageb Gandeb,D10,D10G06
+tshowog,D10G06T04 Komathang,T04 Komathang,D10,D10G06
+tshowog,D10G06T05 Kazi,T05 Kazi,D10,D10G06
+tshowog,D10G07T01 Nabi,T01 Nabi,D10,D10G07
+tshowog,D10G07T02 Yusagom,T02 Yusagom,D10,D10G07
+tshowog,D10G07T03 Khujula,T03 Khujula,D10,D10G07
+tshowog,D10G07T04 Yusa Wogma,T04 Yusa Wogma,D10,D10G07
+tshowog,D10G07T05 Hebesa,T05 Hebesa,D10,D10G07
+tshowog,D10G08T01 Ngawang,T01 Ngawang,D10,D10G08
+tshowog,D10G08T02 Garzhikha,T02 Garzhikha,D10,D10G08
+tshowog,D10G08T03 Wachey,T03 Wachey,D10,D10G08
+tshowog,D10G08T04 Tashi Tokha,T04 Tashi Tokha,D10,D10G08
+tshowog,D10G08T05 Themakha,T05 Themakha,D10,D10G08
+tshowog,D10G09T01 Umakha Toe,T01 Umakha Toe,D10,D10G09
+tshowog,D10G09T02 Khamey,T02 Khamey,D10,D10G09
+tshowog,D10G09T03 Wagayna,T03 Wagayna,D10,D10G09
+tshowog,D10G09T04 Taskha Seli,T04 Taskha Seli,D10,D10G09
+tshowog,D10G09T05 Baybakha,T05 Baybakha,D10,D10G09
+tshowog,D10G10T01 Lawalamkha,T01 Lawalamkha,D10,D10G10
+tshowog,D10G10T02 Lophu Phatakha,T02 Lophu Phatakha,D10,D10G10
+tshowog,D10G10T03 Lomtshokha,T03 Lomtshokha,D10,D10G10
+tshowog,D10G10T04 Rukha,T04 Rukha,D10,D10G10
+tshowog,D10G11T01 Khamina,T01 Khamina,D10,D10G11
+tshowog,D10G11T02 Khatoekha,T02 Khatoekha,D10,D10G11
+tshowog,D10G11T03 Pangsho,T03 Pangsho,D10,D10G11
+tshowog,D10G11T04 Changchey,T04 Changchey,D10,D10G11
+tshowog,D10G11T05 Matsikha,T05 Matsikha,D10,D10G11
+tshowog,D10G12T01 Shingkhey Toe,T01 Shingkhey Toe,D10,D10G12
+tshowog,D10G12T02 Shingkhey Mey,T02 Shingkhey Mey,D10,D10G12
+tshowog,D10G12T03 Tapchakha,T03 Tapchakha,D10,D10G12
+tshowog,D10G12T04 Haysokha,T04 Haysokha,D10,D10G12
+tshowog,D10G12T05 Hebisa,T05 Hebisa,D10,D10G12
+tshowog,D10G13T01 Sheyli,T01 Sheyli,D10,D10G13
+tshowog,D10G13T02 Jala,T02 Jala,D10,D10G13
+tshowog,D10G13T03 Samdrupgang,T03 Samdrupgang,D10,D10G13
+tshowog,D10G13T04 Ula,T04 Ula,D10,D10G13
+tshowog,D10G13T05 Zamding ,T05 Zamding ,D10,D10G13
+tshowog,D10G13T06 Japhu,T06 Japhu,D10,D10G13
+tshowog,D10G14T01 Nubding,T01 Nubding,D10,D10G14
+tshowog,D10G15T01 Kumchi,T01 Kumchi,D10,D10G15
+tshowog,D10G15T02 Chungoen,T02 Chungoen,D10,D10G15
+tshowog,D10G15T03 Chungsakha Domkha,T03 Chungsakha Domkha,D10,D10G15
+tshowog,D10G15T04 Genekha,T04 Genekha,D10,D10G15
+tshowog,D10G15T05 Whambekha,T05 Whambekha,D10,D10G15
+tshowog,D11G01T01 Phulum Changyal,T01 Phulum Changyal,D11,D11G01
+tshowog,D11G01T02 Lhakhu Guma,T02 Lhakhu Guma,D11,D11G01
+tshowog,D11G01T03 Wolakha,T03 Wolakha,D11,D11G01
+tshowog,D11G01T04 Dhocho-Ritsha ,T04 Dhocho-Ritsha ,D11,D11G01
+tshowog,D11G02T01 Eusakha ,T01 Eusakha ,D11,D11G02
+tshowog,D11G02T02 Shrigang,T02 Shrigang,D11,D11G02
+tshowog,D11G02T03 Agona Zabesa,T03 Agona Zabesa,D11,D11G02
+tshowog,D11G02T04 Tongsina ,T04 Tongsina ,D11,D11G02
+tshowog,D11G02T05 Peteri,T05 Peteri,D11,D11G02
+tshowog,D11G02T06 Phakhakha,T06 Phakhakha,D11,D11G02
+tshowog,D11G02T07 Wogwog Damchen,T07 Wogwog Damchen,D11,D11G02
+tshowog,D11G03T01 Jazhikha,T01 Jazhikha,D11,D11G03
+tshowog,D11G03T02 Khubji,T02 Khubji,D11,D11G03
+tshowog,D11G03T03 Gnagkha,T03 Gnagkha,D11,D11G03
+tshowog,D11G03T04 Thomji,T04 Thomji,D11,D11G03
+tshowog,D11G03T05 Dado Goenpa,T05 Dado Goenpa,D11,D11G03
+tshowog,D11G04T01 Menchuna ,T01 Menchuna ,D11,D11G04
+tshowog,D11G04T02 Begana,T02 Begana,D11,D11G04
+tshowog,D11G04T03 Renakha,T03 Renakha,D11,D11G04
+tshowog,D11G04T04 Thinleygang,T04 Thinleygang,D11,D11G04
+tshowog,D11G04T05 Gemkha,T05 Gemkha,D11,D11G04
+tshowog,D11G05T01 Saychana ,T01 Saychana ,D11,D11G05
+tshowog,D11G05T02 Gumgang,T02 Gumgang,D11,D11G05
+tshowog,D11G05T03 Shari,T03 Shari,D11,D11G05
+tshowog,D11G05T04 Zhehngosa ,T04 Zhehngosa ,D11,D11G05
+tshowog,D11G05T05 Dochukha ,T05 Dochukha ,D11,D11G05
+tshowog,D11G06T01 Domphola ,T01 Domphola ,D11,D11G06
+tshowog,D11G06T02 Limbukha ,T02 Limbukha ,D11,D11G06
+tshowog,D11G06T03 Nepchay,T03 Nepchay,D11,D11G06
+tshowog,D11G06T04 Omtakha ,T04 Omtakha ,D11,D11G06
+tshowog,D11G06T05 Gumkarma ,T05 Gumkarma ,D11,D11G06
+tshowog,D11G07T01 Talo,T01 Talo,D11,D11G07
+tshowog,D11G07T02 Gangthramo,T02 Gangthramo,D11,D11G07
+tshowog,D11G07T03 Nubgang,T03 Nubgang,D11,D11G07
+tshowog,D11G07T04 Dongkokha ,T04 Dongkokha ,D11,D11G07
+tshowog,D11G07T05 Lunakha ,T05 Lunakha ,D11,D11G07
+tshowog,D11G08T01 Khawajara ,T01 Khawajara ,D11,D11G08
+tshowog,D11G08T02 Dawakha,T02 Dawakha,D11,D11G08
+tshowog,D11G08T03 Tshachuphu,T03 Tshachuphu,D11,D11G08
+tshowog,D11G08T04 Tamidamchu,T04 Tamidamchu,D11,D11G08
+tshowog,D11G09T01 Jangwakha,T01 Jangwakha,D11,D11G09
+tshowog,D11G09T02 Nidupchhu,T02 Nidupchhu,D11,D11G09
+tshowog,D11G09T03 Changchena,T03 Changchena,D11,D11G09
+tshowog,D11G10T01 Lumgkha,T01 Lumgkha,D11,D11G10
+tshowog,D11G10T02 Tzekha,T02 Tzekha,D11,D11G10
+tshowog,D12G01T01 Gayza Zomina,T01 Gayza Zomina,D12,D12G01
+tshowog,D12G01T02 Jabisa,T02 Jabisa,D12,D12G01
+tshowog,D12G01T03 Damji,T03 Damji,D12,D12G01
+tshowog,D12G01T04 Barsha Panikong,T04 Barsha Panikong,D12,D12G01
+tshowog,D12G01T05 Khailog Tashithang,T05 Khailog Tashithang,D12,D12G01
+tshowog,D12G02T01 Chhogley Phulakha,T01 Chhogley Phulakha,D12,D12G02
+tshowog,D12G02T02 Mani,T02 Mani,D12,D12G02
+tshowog,D12G02T03 Baychhu Tshedpgang,T03 Baychhu Tshedpgang,D12,D12G02
+tshowog,D12G02T04 Tsheringkha,T04 Tsheringkha,D12,D12G02
+tshowog,D12G02T05 Rimi,T05 Rimi,D12,D12G02
+tshowog,D12G03T01 Gayza Lunggo,T01 Gayza Lunggo,D12,D12G03
+tshowog,D12G03T02 Chongra Loobcha,T02 Chongra Loobcha,D12,D12G03
+tshowog,D12G03T03 Neylug,T03 Neylug,D12,D12G03
+tshowog,D12G03T04 Pazhi,T04 Pazhi,D12,D12G03
+tshowog,D12G03T05 Toedkor,T05 Toedkor,D12,D12G03
+tshowog,D12G04T01 Raminang Uesana,T01 Raminang Uesana,D12,D12G04
+tshowog,D12G04T02 Shang Threlga Wachey,T02 Shang Threlga Wachey,D12,D12G04
+tshowog,D12G04T03 Lhedi,T03 Lhedi,D12,D12G04
+tshowog,D12G04T04 Tshozhong,T04 Tshozhong,D12,D12G04
+tshowog,D12G04T05 Thangza Toenchoe,T05 Thangza Toenchoe,D12,D12G04
+tshowog,D13G01T01 Maamedthang,T01 Maamedthang,D13,D13G01
+tshowog,D13G01T02 Nyimtola,T02 Nyimtola,D13,D13G01
+tshowog,D13G01T03 Dorona Chhongwa,T03 Dorona Chhongwa,D13,D13G01
+tshowog,D13G01T04 Tshalamji,T04 Tshalamji,D13,D13G01
+tshowog,D13G01T05 Dorona Chhewa,T05 Dorona Chhewa,D13,D13G01
+tshowog,D13G02T01 Dorona Chhewa,T01 Dorona Chhewa,D13,D13G02
+tshowog,D13G02T02 Thangna,T02 Thangna,D13,D13G02
+tshowog,D13G02T03 Budepang Pangna,T03 Budepang Pangna,D13,D13G02
+tshowog,D13G02T04 Ambithang Pangserpo,T04 Ambithang Pangserpo,D13,D13G02
+tshowog,D13G02T05 Pangserpo,T05 Pangserpo,D13,D13G02
+tshowog,D13G03T01 Tajoog,T01 Tajoog,D13,D13G03
+tshowog,D13G03T02 Samtengang,T02 Samtengang,D13,D13G03
+tshowog,D13G03T03 Geserling,T03 Geserling,D13,D13G03
+tshowog,D13G03T04 Phuensoomgang,T04 Phuensoomgang,D13,D13G03
+tshowog,D13G03T05 Tashithang,T05 Tashithang,D13,D13G03
+tshowog,D13G04T01 Baleggang,T01 Baleggang,D13,D13G04
+tshowog,D13G04T02 Dogaag,T02 Dogaag,D13,D13G04
+tshowog,D13G04T03 Gozhi,T03 Gozhi,D13,D13G04
+tshowog,D13G04T04 Gozhi Maed,T04 Gozhi Maed,D13,D13G04
+tshowog,D13G04T05 Gozhi Toed,T05 Gozhi Toed,D13,D13G04
+tshowog,D13G05T01 Lhaling,T01 Lhaling,D13,D13G05
+tshowog,D13G05T02 Purgzhi,T02 Purgzhi,D13,D13G05
+tshowog,D13G05T03 Dalithang Gangjab Khagochen,T03 Dalithang Gangjab Khagochen,D13,D13G05
+tshowog,D13G05T04 Bartsha Namgyalgang,T04 Bartsha Namgyalgang,D13,D13G05
+tshowog,D13G05T05 Jurugang,T05 Jurugang,D13,D13G05
+tshowog,D13G06T01 Karmaling,T01 Karmaling,D13,D13G06
+tshowog,D13G06T02 Omchhu,T02 Omchhu,D13,D13G06
+tshowog,D13G06T03 Labtshakha,T03 Labtshakha,D13,D13G06
+tshowog,D13G06T04 Senchumthang,T04 Senchumthang,D13,D13G06
+tshowog,D13G06T05 Jemathang,T05 Jemathang,D13,D13G06
+tshowog,D13G07T01 Pogtog,T01 Pogtog,D13,D13G07
+tshowog,D13G07T02 Pagser,T02 Pagser,D13,D13G07
+tshowog,D13G07T03 Akhochen,T03 Akhochen,D13,D13G07
+tshowog,D13G07T04 Thomgang,T04 Thomgang,D13,D13G07
+tshowog,D13G07T05 Gibsa,T05 Gibsa,D13,D13G07
+tshowog,D13G08T01 Baloong,T01 Baloong,D13,D13G08
+tshowog,D13G08T02 Thasa,T02 Thasa,D13,D13G08
+tshowog,D13G08T03 Kompa,T03 Kompa,D13,D13G08
+tshowog,D13G08T04 Barna,T04 Barna,D13,D13G08
+tshowog,D13G08T05 Sidpa,T05 Sidpa,D13,D13G08
+tshowog,D13G09T01 Tshaemzhigosa,T01 Tshaemzhigosa,D13,D13G09
+tshowog,D13G09T02 Chongsamling,T02 Chongsamling,D13,D13G09
+tshowog,D13G09T03 Lhamoi Zingkha,T03 Lhamoi Zingkha,D13,D13G09
+tshowog,D13G09T04 Loongilsa,T04 Loongilsa,D13,D13G09
+tshowog,D13G09T05 Kuendrelthang,T05 Kuendrelthang,D13,D13G09
+tshowog,D13G10T01 Dramzeksa,T01 Dramzeksa,D13,D13G10
+tshowog,D13G10T02 Yarpheling,T02 Yarpheling,D13,D13G10
+tshowog,D13G10T03 Damchhunang,T03 Damchhunang,D13,D13G10
+tshowog,D13G10T04 Dangreyboog,T04 Dangreyboog,D13,D13G10
+tshowog,D13G10T05 Gangtogkha,T05 Gangtogkha,D13,D13G10
+tshowog,D13G11T01 Shamdolay,T01 Shamdolay,D13,D13G11
+tshowog,D13G11T02 Tashiding,T02 Tashiding,D13,D13G11
+tshowog,D13G11T03 Namchagla,T03 Namchagla,D13,D13G11
+tshowog,D13G11T04 Norbuling,T04 Norbuling,D13,D13G11
+tshowog,D13G11T05 Gangyab,T05 Gangyab,D13,D13G11
+tshowog,D13G12T01 Gelegchhu,T01 Gelegchhu,D13,D13G12
+tshowog,D13G12T02 Tsangkha,T02 Tsangkha,D13,D13G12
+tshowog,D13G12T03 Zinchila,T03 Zinchila,D13,D13G12
+tshowog,D13G12T04 Goongpa Soomchu,T04 Goongpa Soomchu,D13,D13G12
+tshowog,D13G12T05 Pateykha,T05 Pateykha,D13,D13G12
+tshowog,D13G13T01 Tsendagang,T01 Tsendagang,D13,D13G13
+tshowog,D13G13T02 Gangzur Maed,T02 Gangzur Maed,D13,D13G13
+tshowog,D13G13T03 Gangzur Toed,T03 Gangzur Toed,D13,D13G13
+tshowog,D13G13T04 Norbuzingkha,T04 Norbuzingkha,D13,D13G13
+tshowog,D13G13T05 Samarchu,T05 Samarchu,D13,D13G13
+tshowog,D13G14T01 Pelling,T01 Pelling,D13,D13G14
+tshowog,D13G14T02 Tashigang,T02 Tashigang,D13,D13G14
+tshowog,D13G14T03 Samaed,T03 Samaed,D13,D13G14
+tshowog,D13G14T04 Karlingzingkha,T04 Karlingzingkha,D13,D13G14
+tshowog,D13G14T05 Tsangleykha,T05 Tsangleykha,D13,D13G14
+tshowog,D14G01T01 Barshong Maed,T01 Barshong Maed,D14,D14G01
+tshowog,D14G01T02 Barshong Toed,T02 Barshong Toed,D14,D14G01
+tshowog,D14G01T03 Chunyikhang,T03 Chunyikhang,D14,D14G01
+tshowog,D14G01T04 Gangtogkha,T04 Gangtogkha,D14,D14G01
+tshowog,D14G01T05 Toedsang,T05 Toedsang,D14,D14G01
+tshowog,D14G02T01 Norjangsa,T01 Norjangsa,D14,D14G02
+tshowog,D14G02T02 Dingrigang Lhamoiloongm,T02 Dingrigang Lhamoiloongm,D14,D14G02
+tshowog,D14G02T03 Khirithang,T03 Khirithang,D14,D14G02
+tshowog,D14G02T04 Dangreyboog Maed,T04 Dangreyboog Maed,D14,D14G02
+tshowog,D14G02T05 Dangreyboog Toed,T05 Dangreyboog Toed,D14,D14G02
+tshowog,D14G03T01 Phuensoomgang,T01 Phuensoomgang,D14,D14G03
+tshowog,D14G03T02 Dzamlingzor,T02 Dzamlingzor,D14,D14G03
+tshowog,D14G03T03 Pemathang,T03 Pemathang,D14,D14G03
+tshowog,D14G03T04 Pelrithang,T04 Pelrithang,D14,D14G03
+tshowog,D14G03T05 Dzamlingthang,T05 Dzamlingthang,D14,D14G03
+tshowog,D14G04T01 Tashiyangjong,T01 Tashiyangjong,D14,D14G04
+tshowog,D14G04T02 Nyizergang,T02 Nyizergang,D14,D14G04
+tshowog,D14G04T03 Satsangma,T03 Satsangma,D14,D14G04
+tshowog,D14G04T04 Dekidling,T04 Dekidling,D14,D14G04
+tshowog,D14G04T05 Maenchhana,T05 Maenchhana,D14,D14G04
+tshowog,D14G05T01 Mendrelgang,T01 Mendrelgang,D14,D14G05
+tshowog,D14G05T02 Dzamlingzor,T02 Dzamlingzor,D14,D14G05
+tshowog,D14G05T03 Pemashong Samshinggaden,T03 Pemashong Samshinggaden,D14,D14G05
+tshowog,D14G05T04 Tashipang,T04 Tashipang,D14,D14G05
+tshowog,D14G05T05 Riserboo,T05 Riserboo,D14,D14G05
+tshowog,D14G06T01 Pantshaling Toed,T01 Pantshaling Toed,D14,D14G06
+tshowog,D14G06T02 Pantshaling Maed Tsakaling,T02 Pantshaling Maed Tsakaling,D14,D14G06
+tshowog,D14G06T03 Thakorling,T03 Thakorling,D14,D14G06
+tshowog,D14G06T04 Chhuzomsa,T04 Chhuzomsa,D14,D14G06
+tshowog,D14G06T05 Pangthang,T05 Pangthang,D14,D14G06
+tshowog,D14G07T01 Serzhong,T01 Serzhong,D14,D14G07
+tshowog,D14G07T02 Norboothang,T02 Norboothang,D14,D14G07
+tshowog,D14G07T03 Tashichhoeling,T03 Tashichhoeling,D14,D14G07
+tshowog,D14G07T04 Peljorling,T04 Peljorling,D14,D14G07
+tshowog,D14G07T05 Goentegkha Tongshinggang,T05 Goentegkha Tongshinggang,D14,D14G07
+tshowog,D14G08T01 Chringma Rangthangling,T01 Chringma Rangthangling,D14,D14G08
+tshowog,D14G08T02 Neymedsa,T02 Neymedsa,D14,D14G08
+tshowog,D14G08T03 Darchhargang,T03 Darchhargang,D14,D14G08
+tshowog,D14G08T04 Gagaling Nyimazor,T04 Gagaling Nyimazor,D14,D14G08
+tshowog,D14G08T05 Soonkosh,T05 Soonkosh,D14,D14G08
+tshowog,D14G09T01 Dekidling,T01 Dekidling,D14,D14G09
+tshowog,D14G09T02 Dangreygang,T02 Dangreygang,D14,D14G09
+tshowog,D14G09T03 Dzomling,T03 Dzomling,D14,D14G09
+tshowog,D14G09T04 Tashiling Maed,T04 Tashiling Maed,D14,D14G09
+tshowog,D14G09T05 Tashiling Toed,T05 Tashiling Toed,D14,D14G09
+tshowog,D14G10T01 Sergithang Toed,T01 Sergithang Toed,D14,D14G10
+tshowog,D14G10T02 Sergithang Maed,T02 Sergithang Maed,D14,D14G10
+tshowog,D14G10T03 Norboogang,T03 Norboogang,D14,D14G10
+tshowog,D14G10T04 Tashithang,T04 Tashithang,D14,D14G10
+tshowog,D14G10T05 Semdenjong,T05 Semdenjong,D14,D14G10
+tshowog,D14G11T01 Tsholingkhar Maed,T01 Tsholingkhar Maed,D14,D14G11
+tshowog,D14G11T02 Tsholingkhar Toe,T02 Tsholingkhar Toe,D14,D14G11
+tshowog,D14G11T03 Droobchhugang,T03 Droobchhugang,D14,D14G11
+tshowog,D14G11T04 Kapazhing,T04 Kapazhing,D14,D14G11
+tshowog,D14G11T05 Gomsoom,T05 Gomsoom,D14,D14G11
+tshowog,D14G12T01 Tsirang Toed,T01 Tsirang Toed,D14,D14G12
+tshowog,D14G12T02 Kabelzhing,T02 Kabelzhing,D14,D14G12
+tshowog,D14G12T03 Tongshingnang,T03 Tongshingnang,D14,D14G12
+tshowog,D14G12T04 Soentabsa,T04 Soentabsa,D14,D14G12
+tshowog,D14G12T05 Tagthang Wangphoo,T05 Tagthang Wangphoo,D14,D14G12
+tshowog,D15G01T01 Bjagchhog,T01 Bjagchhog,D15,D15G01
+tshowog,D15G01T02 Tsimakha Tsimasham,T02 Tsimakha Tsimasham,D15,D15G01
+tshowog,D15G01T03 Mebisa,T03 Mebisa,D15,D15G01
+tshowog,D15G01T04 Tashi Gatshel,T04 Tashi Gatshel,D15,D15G01
+tshowog,D15G01T05 Wangkha,T05 Wangkha,D15,D15G01
+tshowog,D15G02T01 Togtokha Togtogongm,T01 Togtokha Togtogongm,D15,D15G02
+tshowog,D15G02T02 Choogkha Chhasilakha,T02 Choogkha Chhasilakha,D15,D15G02
+tshowog,D15G02T03 Gedu Miritsemo,T03 Gedu Miritsemo,D15,D15G02
+tshowog,D15G02T04 Ketogkha,T04 Ketogkha,D15,D15G02
+tshowog,D15G02T05 Bongo Phasooma,T05 Bongo Phasooma,D15,D15G02
+tshowog,D15G02T06 Baeyuel Kunzang,T06 Baeyuel Kunzang,D15,D15G02
+tshowog,D15G03T01 Pagga,T01 Pagga,D15,D15G03
+tshowog,D15G03T02 Tshamdrag,T02 Tshamdrag,D15,D15G03
+tshowog,D15G03T03 Gangkha Shelyuel,T03 Gangkha Shelyuel,D15,D15G03
+tshowog,D15G03T04 Dokharchhu Rimtekha,T04 Dokharchhu Rimtekha,D15,D15G03
+tshowog,D15G03T05 Lang Nyelsa,T05 Lang Nyelsa,D15,D15G03
+tshowog,D15G03T06 Bunakha,T06 Bunakha,D15,D15G03
+tshowog,D15G03T07 Lombayhka,T07 Lombayhka,D15,D15G03
+tshowog,D15G03T08 Lobaykha,T08 Lobaykha,D15,D15G03
+tshowog,D15G04T01 Tagp Thang Boog,T01 Tagp Thang Boog,D15,D15G04
+tshowog,D15G04T02 Nyimgang,T02 Nyimgang,D15,D15G04
+tshowog,D15G04T03 Gengu Yagang,T03 Gengu Yagang,D15,D15G04
+tshowog,D15G04T04 Samarchen Sinchula,T04 Samarchen Sinchula,D15,D15G04
+tshowog,D15G04T05 Gamanang Kalzangri,T05 Gamanang Kalzangri,D15,D15G04
+tshowog,D15G04T06 Sharphug,T06 Sharphug,D15,D15G04
+tshowog,D15G05T01 Babana Papaling,T01 Babana Papaling,D15,D15G05
+tshowog,D15G05T02 Chhulakha Mangdokha,T02 Chhulakha Mangdokha,D15,D15G05
+tshowog,D15G05T03 Doongna Pagsel Lhakha,T03 Doongna Pagsel Lhakha,D15,D15G05
+tshowog,D15G05T04 Drukdingsa Khori,T04 Drukdingsa Khori,D15,D15G05
+tshowog,D15G05T05 Damchekha Uezhi,T05 Damchekha Uezhi,D15,D15G05
+tshowog,D15G06T01 Gelingkha Tsanglina,T01 Gelingkha Tsanglina,D15,D15G06
+tshowog,D15G06T02 Dagpa Sorchhen,T02 Dagpa Sorchhen,D15,D15G06
+tshowog,D15G06T03 Geling Geygoen,T03 Geling Geygoen,D15,D15G06
+tshowog,D15G06T04 Kamji Nayekha,T04 Kamji Nayekha,D15,D15G06
+tshowog,D15G06T05 Dilibkha Lamjokha,T05 Dilibkha Lamjokha,D15,D15G06
+tshowog,D15G07T01 Darga Tshebji,T01 Darga Tshebji,D15,D15G07
+tshowog,D15G07T02 Tashigang,T02 Tashigang,D15,D15G07
+tshowog,D15G07T03 Janamo Phootsha,T03 Janamo Phootsha,D15,D15G07
+tshowog,D15G07T04 Bachhu Getana,T04 Bachhu Getana,D15,D15G07
+tshowog,D15G07T05 Chiyuel Getag,T05 Chiyuel Getag,D15,D15G07
+tshowog,D15G08T01 Chagdokha Damchekha,T01 Chagdokha Damchekha,D15,D15G08
+tshowog,D15G08T02 Dolepchen Biagchhu,T02 Dolepchen Biagchhu,D15,D15G08
+tshowog,D15G08T03 Aamleg Dofam,T03 Aamleg Dofam,D15,D15G08
+tshowog,D15G08T04 Dzedokha,T04 Dzedokha,D15,D15G08
+tshowog,D15G08T05 Mongna Lhasarp,T05 Mongna Lhasarp,D15,D15G08
+tshowog,D15G09T01 Pangu,T01 Pangu,D15,D15G09
+tshowog,D15G09T02 Jozhingkha Maedtab Toed,T02 Jozhingkha Maedtab Toed,D15,D15G09
+tshowog,D15G09T03 Maedtab Maed,T03 Maedtab Maed,D15,D15G09
+tshowog,D15G09T04 Uekha,T04 Uekha,D15,D15G09
+tshowog,D15G09T05 Gumina Tenchhukha,T05 Gumina Tenchhukha,D15,D15G09
+tshowog,D15G10T01 Lingdaen,T01 Lingdaen,D15,D15G10
+tshowog,D15G10T02 Pachhu,T02 Pachhu,D15,D15G10
+tshowog,D15G10T03 Dophugchen Wangduegatshel,T03 Dophugchen Wangduegatshel,D15,D15G10
+tshowog,D15G10T04 Deling Marpji,T04 Deling Marpji,D15,D15G10
+tshowog,D15G10T05 Choggeykha Dophulakha,T05 Choggeykha Dophulakha,D15,D15G10
+tshowog,D15G11T01 Pekarling Rigzinglng,T01 Pekarling Rigzinglng,D15,D15G11
+tshowog,D15G11T02 Sengyagang Tshochhoongna,T02 Sengyagang Tshochhoongna,D15,D15G11
+tshowog,D15G11T03 Khenpaithang Soramthang,T03 Khenpaithang Soramthang,D15,D15G11
+tshowog,D15G11T04 Gorgboogang Pangna,T04 Gorgboogang Pangna,D15,D15G11
+tshowog,D15G11T05 Pedtshelnang,T05 Pedtshelnang,D15,D15G11
+tshowog,D15G12T01 Changyakha-B,T01 Changyakha-B,D15,D15G12
+tshowog,D16G01T01 Sakarna,T01 Sakarna,D16,D16G01
+tshowog,D16G01T02 Tsha Loogna,T02 Tsha Loogna,D16,D16G01
+tshowog,D16G01T03 Jigminang,T03 Jigminang,D16,D16G01
+tshowog,D16G01T04 Danglo Namsaeling,T04 Danglo Namsaeling,D16,D16G01
+tshowog,D16G01T05 Kharsadrupchhu,T05 Kharsadrupchhu,D16,D16G01
+tshowog,D16G01T06 Sisinang,T06 Sisinang,D16,D16G01
+tshowog,D16G02T01 Ramtoktok,T01 Ramtoktok,D16,D16G02
+tshowog,D16G02T02 Yoeselpang,T02 Yoeselpang,D16,D16G02
+tshowog,D16G02T03 Lhoongtsho,T03 Lhoongtsho,D16,D16G02
+tshowog,D16G02T04 Gangchhe Talakha,T04 Gangchhe Talakha,D16,D16G02
+tshowog,D16G02T05 Changyokha Debsid,T05 Changyokha Debsid,D16,D16G02
+tshowog,D16G03T01   Chakphu,T01   Chakphu,D16,D16G03
+tshowog,D16G03T02 Shayuel,T02 Shayuel,D16,D16G03
+tshowog,D16G03T03 Gangyuel,T03 Gangyuel,D16,D16G03
+tshowog,D16G03T04 Chhuzarkha,T04 Chhuzarkha,D16,D16G03
+tshowog,D16G03T05 Khangkiyuel,T05 Khangkiyuel,D16,D16G03
+tshowog,D16G04T01 Jangothang,T01 Jangothang,D16,D16G04
+tshowog,D16G04T02 Damgochong,T02 Damgochong,D16,D16G04
+tshowog,D16G04T03 Dotagpaithang,T03 Dotagpaithang,D16,D16G04
+tshowog,D16G04T04 Dozotoen,T04 Dozotoen,D16,D16G04
+tshowog,D16G04T05 Jomphu,T05 Jomphu,D16,D16G04
+tshowog,D16G05T01 Tsho Chekha Zamtog,T01 Tsho Chekha Zamtog,D16,D16G05
+tshowog,D16G05T02 Wangbama,T02 Wangbama,D16,D16G05
+tshowog,D16G05T03 Chizhi,T03 Chizhi,D16,D16G05
+tshowog,D16G05T04 Zang Legkha,T04 Zang Legkha,D16,D16G05
+tshowog,D16G05T05 Ge Nyenkha,T05 Ge Nyenkha,D16,D16G05
+tshowog,D16G06T01 Boegarna Dodennang,T01 Boegarna Dodennang,D16,D16G06
+tshowog,D16G06T02 Chhamina Chhokhor,T02 Chhamina Chhokhor,D16,D16G06
+tshowog,D16G06T03 Dazhi Zhoshuel,T03 Dazhi Zhoshuel,D16,D16G06
+tshowog,D16G06T04 Chhangadang Chhoekhortse,T04 Chhangadang Chhoekhortse,D16,D16G06
+tshowog,D16G06T05 Kuzugchen,T05 Kuzugchen,D16,D16G06
+tshowog,D16G07T01 Moentsiphu,T01 Moentsiphu,D16,D16G07
+tshowog,D16G07T02 Barshong Nango,T02 Barshong Nango,D16,D16G07
+tshowog,D16G07T03 Pagoed,T03 Pagoed,D16,D16G07
+tshowog,D16G07T04 Tagsidthang,T04 Tagsidthang,D16,D16G07
+tshowog,D16G07T05 Zhomthang,T05 Zhomthang,D16,D16G07
+tshowog,D16G08T01 Wangdrog,T01 Wangdrog,D16,D16G08
+tshowog,D16G08T02 Doongdrog,T02 Doongdrog,D16,D16G08
+tshowog,D16G08T03 Gyaltala,T03 Gyaltala,D16,D16G08
+tshowog,D16G08T04 Chamgang Toed,T04 Chamgang Toed,D16,D16G08
+tshowog,D16G08T05 Chamgang Maed,T05 Chamgang Maed,D16,D16G08
+tshowog,D17G01T01 Tenchhekha Tsiphu,T01 Tenchhekha Tsiphu,D17,D17G01
+tshowog,D17G01T02 Gongsakha Phuchhaekha,T02 Gongsakha Phuchhaekha,D17,D17G01
+tshowog,D17G01T03 Mendrel Uesuna,T03 Mendrel Uesuna,D17,D17G01
+tshowog,D17G01T04 Dawakha Tshongkha,T04 Dawakha Tshongkha,D17,D17G01
+tshowog,D17G01T05 Khamdrang Sali,T05 Khamdrang Sali,D17,D17G01
+tshowog,D17G02T01 Dnezhi Jipa,T01 Dnezhi Jipa,D17,D17G02
+tshowog,D17G02T02 Kempa Kuduphu,T02 Kempa Kuduphu,D17,D17G02
+tshowog,D17G02T03 Rinchhending Shar Ri,T03 Rinchhending Shar Ri,D17,D17G02
+tshowog,D17G02T04 Jangsa Jooka,T04 Jangsa Jooka,D17,D17G02
+tshowog,D17G02T05 Jizhigang,T05 Jizhigang,D17,D17G02
+tshowog,D17G03T01 Phooshar,T01 Phooshar,D17,D17G03
+tshowog,D17G03T02 Aa Tsho Phunoob,T02 Aa Tsho Phunoob,D17,D17G03
+tshowog,D17G03T03 Chhubar,T03 Chhubar,D17,D17G03
+tshowog,D17G03T04 Jabi Loogchhoed,T04 Jabi Loogchhoed,D17,D17G03
+tshowog,D17G03T05 Joogrel Pachhu,T05 Joogrel Pachhu,D17,D17G03
+tshowog,D17G04T01 Gaupel ,T01 Gaupel ,D17,D17G04
+tshowog,D17G04T02 Hoongrelkha Jangsarbu,T02 Hoongrelkha Jangsarbu,D17,D17G04
+tshowog,D17G04T03 Loongchhungna,T03 Loongchhungna,D17,D17G04
+tshowog,D17G04T04 Chhubjagchhu,T04 Chhubjagchhu,D17,D17G04
+tshowog,D17G04T05 Goenkha,T05 Goenkha,D17,D17G04
+tshowog,D17G05T01 Chhukha,T01 Chhukha,D17,D17G05
+tshowog,D17G05T02 Tsendonang,T02 Tsendonang,D17,D17G05
+tshowog,D17G05T03 Jagarthang,T03 Jagarthang,D17,D17G05
+tshowog,D17G05T04 Ngopa Shomo,T04 Ngopa Shomo,D17,D17G05
+tshowog,D17G05T05 Gangjoog Kyidchhu,T05 Gangjoog Kyidchhu,D17,D17G05
+tshowog,D17G06T01 Naemjog,T01 Naemjog,D17,D17G06
+tshowog,D17G06T02 Jieu Woochu,T02 Jieu Woochu,D17,D17G06
+tshowog,D17G06T03 Dzongdraag Gadraag,T03 Dzongdraag Gadraag,D17,D17G06
+tshowog,D17G06T04 Baangadey,T04 Baangadey,D17,D17G06
+tshowog,D17G06T05 Pangbisa,T05 Pangbisa,D17,D17G06
+tshowog,D17G07T01 Bemphu Lingzhi Nagu,T01 Bemphu Lingzhi Nagu,D17,D17G07
+tshowog,D17G07T02 Bueltikha Jagoen,T02 Bueltikha Jagoen,D17,D17G07
+tshowog,D17G07T03 Rangzhin Gang Tshebji,T03 Rangzhin Gang Tshebji,D17,D17G07
+tshowog,D17G07T04 Wangkha Zursoona,T04 Wangkha Zursoona,D17,D17G07
+tshowog,D17G07T05 Jazhina Tsoen Goen,T05 Jazhina Tsoen Goen,D17,D17G07
+tshowog,D17G08T01 Bara Zhunggar,T01 Bara Zhunggar,D17,D17G08
+tshowog,D17G08T02 Drugyaldingkha ,T02 Drugyaldingkha ,D17,D17G08
+tshowog,D17G08T03 Dochhoeten Neyphu,T03 Dochhoeten Neyphu,D17,D17G08
+tshowog,D17G08T04 Bjizhikha Phubarna,T04 Bjizhikha Phubarna,D17,D17G08
+tshowog,D17G08T05 Chhukha Gangjoogkha,T05 Chhukha Gangjoogkha,D17,D17G08
+tshowog,D17G09T01 Soe Yagsa,T01 Soe Yagsa,D17,D17G09
+tshowog,D17G09T02 Mitshing Shana,T02 Mitshing Shana,D17,D17G09
+tshowog,D17G09T03 Chhungjey Zamsar,T03 Chhungjey Zamsar,D17,D17G09
+tshowog,D17G09T04 Nyamjey Phangdo,T04 Nyamjey Phangdo,D17,D17G09
+tshowog,D17G09T05 Nyechhu Shar Ri,T05 Nyechhu Shar Ri,D17,D17G09
+tshowog,D17G10T01 Gebtoed Olathang Tajoog,T01 Gebtoed Olathang Tajoog,D17,D17G10
+tshowog,D17G10T02 Changmethangkha,T02 Changmethangkha,D17,D17G10
+tshowog,D17G10T03 Dungkar Namkar,T03 Dungkar Namkar,D17,D17G10
+tshowog,D17G10T04 Mendral Namkha,T04 Mendral Namkha,D17,D17G10
+tshowog,D17G10T05 Changkar Jangteyna,T05 Changkar Jangteyna,D17,D17G10
+tshowog,D18G01T01 Gensa Tokey,T01 Gensa Tokey,D18,D18G01
+tshowog,D18G01T02 Chenpa Geychhukha,T02 Chenpa Geychhukha,D18,D18G01
+tshowog,D18G01T03 Tsenka Taloong,T03 Tsenka Taloong,D18,D18G01
+tshowog,D18G01T04 Choompa Tamgoen,T04 Choompa Tamgoen,D18,D18G01
+tshowog,D18G01T05 Yangthang,T05 Yangthang,D18,D18G01
+tshowog,D18G02T01 Betso,T01 Betso,D18,D18G02
+tshowog,D18G02T02 Geyruna Karang,T02 Geyruna Karang,D18,D18G02
+tshowog,D18G02T03 Pajekha Shangkiri,T03 Pajekha Shangkiri,D18,D18G02
+tshowog,D18G02T04 Kipri Tagchhu,T04 Kipri Tagchhu,D18,D18G02
+tshowog,D18G02T05 Tshaphel Tsiloongkha,T05 Tshaphel Tsiloongkha,D18,D18G02
+tshowog,D18G03T01 Dorithasa Kwkha Yangtse,T01 Dorithasa Kwkha Yangtse,D18,D18G03
+tshowog,D18G03T02 Rangtse Ta Nga Yokha,T02 Rangtse Ta Nga Yokha,D18,D18G03
+tshowog,D18G03T03 Sai Dzong Thangdokha,T03 Sai Dzong Thangdokha,D18,D18G03
+tshowog,D18G03T04 Phootsena Ngatse,T04 Phootsena Ngatse,D18,D18G03
+tshowog,D18G03T05 Fentena Sertena,T05 Fentena Sertena,D18,D18G03
+tshowog,D18G04T01 Bali Mombitshokha,T01 Bali Mombitshokha,D18,D18G04
+tshowog,D18G04T02 Kargding Hatam,T02 Kargding Hatam,D18,D18G04
+tshowog,D18G04T03 Dragding Karjena,T03 Dragding Karjena,D18,D18G04
+tshowog,D18G04T04 Ingo Pharikha,T04 Ingo Pharikha,D18,D18G04
+tshowog,D18G04T05 Wangtsa,T05 Wangtsa,D18,D18G04
+tshowog,D18G05T01 Machu,T01 Machu,D18,D18G05
+tshowog,D18G05T02 Nakha,T02 Nakha,D18,D18G05
+tshowog,D18G05T03 Anakha Shepji,T03 Anakha Shepji,D18,D18G05
+tshowog,D18G05T04 Shema Yaba,T04 Shema Yaba,D18,D18G05
+tshowog,D18G05T05 Sangbay Ama,T05 Sangbay Ama,D18,D18G05
+tshowog,D18G06T01 Dorikha_langjogang,T01 Dorikha_langjogang,D18,D18G06
+tshowog,D18G06T02 Langpa_norbugang,T02 Langpa_norbugang,D18,D18G06
+tshowog,D18G06T03 Balamnang,T03 Balamnang,D18,D18G06
+tshowog,D18G06T04 Jenkanang_pudunang,T04 Jenkanang_pudunang,D18,D18G06
+tshowog,D18G06T05 Shar-Ri,T05 Shar-Ri,D18,D18G06
+tshowog,D20G01T01 Doongtoed Chhewa,T01 Doongtoed Chhewa,D20,D20G01
+tshowog,D20G01T02 Doongtoed Chhungwa Jarikha,T02 Doongtoed Chhungwa Jarikha,D20,D20G01
+tshowog,D20G01T03 Maedgang,T03 Maedgang,D20,D20G01
+tshowog,D20G01T04 Doongtoed Khaling ,T04 Doongtoed Khaling ,D20,D20G01
+tshowog,D20G01T05 Gebji Kuzhugang,T05 Gebji Kuzhugang,D20,D20G01
+tshowog,D20G03T01 Biloong Pongthra,T01 Biloong Pongthra,D20,D20G03
+tshowog,D20G03T02 Gesarling Yomdeling,T02 Gesarling Yomdeling,D20,D20G03
+tshowog,D20G03T03 Dhuenchhukha Gabji,T03 Dhuenchhukha Gabji,D20,D20G03
+tshowog,D20G03T04 Domchhukha Shitakha,T04 Domchhukha Shitakha,D20,D20G03
+tshowog,D20G03T05 Gawaling Karzhing,T05 Gawaling Karzhing,D20,D20G03
+tshowog,D20G04T01 Gyalposhing Satsangsa,T01 Gyalposhing Satsangsa,D20,D20G04
+tshowog,D20G04T02 Sernyagang Tsholingkhar,T02 Sernyagang Tsholingkhar,D20,D20G04
+tshowog,D20G04T03 Chhunag Chhoedleling,T03 Chhunag Chhoedleling,D20,D20G04
+tshowog,D20G04T04 Pagshingkha Tshachhugang,T04 Pagshingkha Tshachhugang,D20,D20G04
+tshowog,D20G04T05 Namgaychholing,T05 Namgaychholing,D20,D20G04
+tshowog,D20G06T01 Chongzhu Tshachhu,T01 Chongzhu Tshachhu,D20,D20G06
+tshowog,D20G06T02 Chhugoo Phendagang,T02 Chhugoo Phendagang,D20,D20G06
+tshowog,D20G06T03 Khabaabgang Norgoy,T03 Khabaabgang Norgoy,D20,D20G06
+tshowog,D20G06T04 Joenpang Lingarnang,T04 Joenpang Lingarnang,D20,D20G06
+tshowog,D20G06T05 Dangrayboog Patshaling,T05 Dangrayboog Patshaling,D20,D20G06
+tshowog,D20G06T06 Miphelgang Samphelgang,T06 Miphelgang Samphelgang,D20,D20G06
+tshowog,D20G07T01 Thangchhennang Dantshangna,T01 Thangchhennang Dantshangna,D20,D20G07
+tshowog,D20G07T02 Chhusilgang Dramedsa,T02 Chhusilgang Dramedsa,D20,D20G07
+tshowog,D20G07T03 Norgayling Singdregang,T03 Norgayling Singdregang,D20,D20G07
+tshowog,D20G07T04 Dizanggang Nakeling ,T04 Dizanggang Nakeling ,D20,D20G07
+tshowog,D20G07T05 Manigang Tashigang,T05 Manigang Tashigang,D20,D20G07
+staffcode,S0301,S0301 Pema Tenzin,M,
+staffcode,S0306,S0306 Nima Gyeltshen,M,
+staffcode,S0307,S0307 Tashi Dawa,M,
+staffcode,S0308,S0308 Phuntsho Norbu,M,
+staffcode,S0310,S0310 Tashi Chogay,M,
+staffcode,S0311,S0311 Singye Dorji,M,
+staffcode,S0312,S0312 Chimmi Wangchuk,M,
+staffcode,S0313,S0313 Rinzin,M,
+staffcode,S0314,S0314 Cheku,M,
+staffcode,S0315,S0315 Lhendup,M,
+staffcode,S0317,S0317 Dorji Yangki,M,
+staffcode,S0322,S0322 Cheten Duba,M,
+staffcode,S0323,S0323 Deki Yangzom,M,
+staffcode,S0324,S0324 Dorji,M,
+staffcode,S0326,S0326 Karma Wangdi,M,
+staffcode,S0327,S0327 Ngawang Namgyel ,M,
+staffcode,S0328,S0328 Ngawang Tshering ,M,
+staffcode,S0330,S0330 Rinchen Khandu,M,
+staffcode,S0332,S0332 Sonam Chophel,M,
+staffcode,S0333,S0333 Sonam Phuntsho ,M,
+staffcode,S0334,S0334 Tenzin Wangdi ,M,
+staffcode,S0335,S0335 Tshewang Namgay,M,
+staffcode,S0336,S0336 Tshewang Rinzin,M,
+staffcode,S0341,S0341 Tshering Wangchuk,M,
+staffcode,S0342,S0342 Pema Loday ,M,
+staffcode,S0343,S0343 Ugyen Wangdi ,M,
+staffcode,S0344,S0344 Tashi Tshering,M,
+staffcode,S0345,S0345 Khandu Wangchuck,M,
+staffcode,S0346,S0346 Jamyang Tenzin,M,
+staffcode,S0347,S0347 Thinley Penjor,M,
+staffcode,S0348,S0348 Wangchuck,M,
+staffcode,S0350,S0350 Sherub Dorji,M,
+staffcode,S0351,S0351 Sonam Dargay,M,
+staffcode,S0352,S0352 Karma Tashi,M,
+staffcode,S0359,S0359 Sangay Tshewang ,M,
+staffcode,S0360,S0360 Sonam Tobgay,M,
+staffcode,S0361,S0361 Chedup Tenzin,M,
+staffcode,S0362,S0362 Dawa Tshering,M,
+staffcode,S0365,S0365 Dorji Gyeltshen,M,
+staffcode,S0366,S0366 Nima Dhendup,M,
+staffcode,S0367,S0367 Sangay Ghalley,M,
+staffcode,S0368,S0368 Dorji Wangmo,M,
+staffcode,S0369,S0369 Gyenden,M,
+staffcode,S0370,S0370 Choki Wangmo,M,
+staffcode,S0371,S0371 Sonam Rabten,M,
+staffcode,S0372,S0372 Sangay Tshuten,M,
+staffcode,S0373,S0373 Sonam Dhendup,M,
+staffcode,S0374,S0374 Pema Yangchen,M,
+staffcode,S0375,S0375 Tashi Duba,M,
+staffcode,S0376,S0376 Sonam Jamtsho,M,
+staffcode,S0377,S0377 Norbu Wangdi,M,
+staffcode,S0378,S0378 Tenzin Wangchuk,M,
+staffcode,S0379,S0379 Tashi Penjor,M,
+staffcode,S0380,S0380 Sonam Tshering,M,
+staffcode,S0381,S0381 Chimi Dorji,M,
+staffcode,S0398,S0398 Rinzin Lhamo,M,
+staffcode,S0399,S0399  Sonam Yuden ,M,
+staffcode,S0419,S0419 Tenzin Wangchuk ,M,
+staffcode,S0422,S0422 Dorji Choden ,M,
+staffcode,S0423,S0423 Sonam Jamtsho,M,
+staffcode,S0424,S0424 Jigme Rabten,M,
+staffcode,S0426,S0426 Chencho Thinley,M,
+staffcode,S0427,S0427 Yeshi Rabgay,M,
+staffcode,S0428,S0428 Tshewang Choden ,M,
+staffcode,S0429,S0429 Sonam Tshering,M,
+staffcode,S0430,S0430 Dorji Wangchuk,M,
+staffcode,S0431,S0431 Karma Jamtsho,M,
+staffcode,S0432,S0432 Sonam Chedup,M,
+staffcode,S0434,S0434 Cheki Gyeltshen,M,
+staffcode,S0435,S0435 Tashi Dorji,M,
+staffcode,S0436,S0436 Pema Rinzin,M,
+staffcode,S0437,S0437 Tshering Penjor,M,
+staffcode,S0438,S0438 Passang Dorji,M,
+staffcode,S0439,S0439 Yeshi Jurmin,M,
+staffcode,S0440,S0440 Dorji Phuntsho,M,
+staffcode,S0441,S0441 Ngawang Tenzin,M,
+staffcode,S0442,S0442 Tshering Dorji,M,
+staffcode,S0443,S0443 Jigme Namgyal,M,
+staffcode,S0445,S0445 Rinchen,M,
+staffcode,S0446,S0446 Tenzin Wangchuk ,M,
+staffcode,S0448,S0448 Penden Zam,M,
+staffcode,S0449,S0449 Dorji Tshewang,M,
+staffcode,S0450,S0450 Rinzin Dorji,M,
+staffcode,S0451,S0451 Dawa Gyeltshen ,M,
+staffcode,S0452,S0452 Pasang  ,M,
+staffcode,S0453,S0453 Kinley Wangdi,M,
+staffcode,S0454,S0454 Jigme Norbu,M,
+staffcode,S0479,S0479 Rinchen Zangmo,M,
+staffcode,S0480,S0480 Tshering Choki,M,
+staffcode,S0481,S0481 Tshering Pelden,M,
+staffcode,S0482,S0482 Kiran Rai,M,
+staffcode,S0483,S0483 Sonamla,M,
+staffcode,S0484,S0484 Chabilal Timsina,M,
+staffcode,S0485,S0485 Kinley Gyeltshen,M,
+staffcode,S0486,S0486 Sonam Tshewang,M,
+staffcode,S0487,S0487 Sangay Jamtsho,M,
+staffcode,S0488,S0488 Kelzang Dorji,M,
+staffcode,S0489,S0489 Kamal Ghalley,M,
+staffcode,S0490,S0490 Tashi Lhendup,M,
+staffcode,S0491,S0491 Rekay Dawa,M,
+staffcode,S0492,S0492 Ugyen Jamtsho,M,
+staffcode,S0493,S0493 Tshering Namgay,M,
+staffcode,S0494,S0494 Karma Tshewang,M,
+staffcode,S0495,S0495 Dawa Gyeltshen,M,
+staffcode,S0496,S0496 Tandin Dem,M,
+staffcode,S0497,S0497 Jigme Norbu,M,
+staffcode,S0498,S0498 Kezang,M,
+staffcode,S0499,S0499 Namgay Tenzin,M,
+staffcode,S0500,S0500 Sonam Rinzin,M,
+staffcode,S0508,S0508 Jamyang Dorji,M,
+staffcode,S0509,S0509 Ngawang Tenzin,M,
+staffcode,S0510,S0510  Choki Dorji,M,
+staffcode,S0511,S0511 Dorji Wangchuk,M,
+staffcode,S0512,S0512 Kuenzang Tenzin,M,
+staffcode,S0513,S0513 Tashi Tobgay,M,
+staffcode,S0514,S0514 Tshewang Dema,M,
+staffcode,S0515,S0515 Karma Tshering Tashi,M,
+staffcode,S0516,S0516 Tshering Phuntsho,M,
+staffcode,S0517,S0517 Kinzang Dechen Wangmo,M,
+staffcode,S0518,S0518 Tsheten Dorji,M,
+staffcode,S0519,S0519 Sonam Jamtsho,M,
+staffcode,S0520,S0520 Tandin Zangpo,M,
+staffcode,S0523,S0523 Passang Tobgyel,M,
+staffcode,S0741,S0741 Rinzin Wangchuk,M,
+staffcode,S0742,S0742 Dawa Gyeltshen,M,
+staffcode,S0743,S0743 Thinley,M,
+staffcode,S0744,S0744 Leki Zangmo,M,
+staffcode,S0745,S0745 Sonam Yeshi,M,
+staffcode,S0746,S0746 Rinchen Dema,M,
+staffcode,S0747,S0747 Pema Wangchuk,M,
+staffcode,S0748,S0748 Dewakar Bujel,M,
+staffcode,S0749,S0749 Sangay Tenzin,M,
+staffcode,S0750,S0750 Dorji Tempa,M,
+staffcode,S0751,S0751 Kinley Tshering,M,
+staffcode,S0752,S0752 Phuntsho Norbu,M,
+staffcode,S0753,S0753 Pema Tshewang,M,
+staffcode,S0754,S0754 Tula Ram Ghalley,M,
+staffcode,S0755,S0755 Nima Dorji,M,
+staffcode,S0756,S0756 Tashi Wangchuk,M,
+staffcode,S0757,S0757 Karma Tshewang,M,
+staffcode,S0758,S0758 Tashi Phuntsho,M,
+staffcode,S0759,S0759 Sonam Wangchuk,M,
+staffcode,S0760,S0760 Jigme Dorji,M,
+staffcode,S0761,S0761 Dorji Tshering,M,
+staffcode,S0762,S0762 Damcho Wangmo,M,
+staffcode,S0763,S0763 Pema Loday,M,
+staffcode,S0764,S0764 Karma Dupchu,M,
+staffcode,S0765,S0765 Youden,M,
+staffcode,S0766,S0766 Samten Pelzang,M,
+staffcode,S0767,S0767 Jamyang Tenzin,M,
+staffcode,S0768,S0768 Sangay Lethro,M,
+staffcode,S0769,S0769 Sonam Tenzin,M,
+farmercode,1,1,FC,
+farmercode,2,2,FC,
+farmercode,3,3,FC,
+farmercode,4,4,FC,
+farmercode,5,5,FC,
+farmercode,6,6,FC,
+farmercode,7,7,FC,
+farmercode,8,8,FC,
+farmercode,9,9,FC,
+farmercode,10,10,FC,
+farmercode,11,11,FC,
+farmercode,12,12,FC,
+farmercode,13,13,FC,
+farmercode,14,14,FC,
+farmercode,15,15,FC,
+farmercode,16,16,FC,
+farmercode,17,17,FC,
+farmercode,18,18,FC,
+farmercode,19,19,FC,
+farmercode,20,20,FC,
+farmercode,21,21,FC,
+farmercode,22,22,FC,
+farmercode,23,23,FC,
+farmercode,24,24,FC,
+farmercode,25,25,FC,
+farmercode,26,26,FC,
+farmercode,27,27,FC,
+farmercode,28,28,FC,
+farmercode,29,29,FC,
+farmercode,30,30,FC,
+farmercode,31,31,FC,
+farmercode,32,32,FC,
+farmercode,33,33,FC,
+farmercode,34,34,FC,
+farmercode,35,35,FC,
+farmercode,36,36,FC,
+farmercode,37,37,FC,
+farmercode,38,38,FC,
+farmercode,39,39,FC,
+farmercode,40,40,FC,
+farmercode,41,41,FC,
+farmercode,42,42,FC,
+farmercode,43,43,FC,
+farmercode,44,44,FC,
+farmercode,45,45,FC,
+farmercode,46,46,FC,
+farmercode,47,47,FC,
+farmercode,48,48,FC,
+farmercode,49,49,FC,
+farmercode,50,50,FC,
+farmercode,51,51,FC,
+farmercode,52,52,FC,
+farmercode,53,53,FC,
+farmercode,54,54,FC,
+farmercode,55,55,FC,
+farmercode,56,56,FC,
+farmercode,57,57,FC,
+farmercode,58,58,FC,
+farmercode,59,59,FC,
+farmercode,60,60,FC,
+farmercode,61,61,FC,
+farmercode,62,62,FC,
+farmercode,63,63,FC,
+farmercode,64,64,FC,
+farmercode,65,65,FC,
+farmercode,66,66,FC,
+farmercode,67,67,FC,
+farmercode,68,68,FC,
+farmercode,69,69,FC,
+farmercode,70,70,FC,
+farmercode,71,71,FC,
+farmercode,72,72,FC,
+farmercode,73,73,FC,
+farmercode,74,74,FC,
+farmercode,75,75,FC,
+farmercode,76,76,FC,
+farmercode,77,77,FC,
+farmercode,78,78,FC,
+farmercode,79,79,FC,
+farmercode,80,80,FC,
+farmercode,81,81,FC,
+farmercode,82,82,FC,
+farmercode,83,83,FC,
+farmercode,84,84,FC,
+farmercode,85,85,FC,
+farmercode,86,86,FC,
+farmercode,87,87,FC,
+farmercode,88,88,FC,
+farmercode,89,89,FC,
+farmercode,90,90,FC,
+farmercode,91,91,FC,
+farmercode,92,92,FC,
+farmercode,93,93,FC,
+farmercode,94,94,FC,
+farmercode,95,95,FC,
+farmercode,96,96,FC,
+farmercode,97,97,FC,
+farmercode,98,98,FC,
+farmercode,99,99,FC,
+farmercode,100,100,FC,
+farmercode,101,101,FC,
+farmercode,102,102,FC,
+farmercode,103,103,FC,
+farmercode,104,104,FC,
+farmercode,105,105,FC,
+farmercode,106,106,FC,
+farmercode,107,107,FC,
+farmercode,108,108,FC,
+farmercode,109,109,FC,
+farmercode,110,110,FC,
+farmercode,111,111,FC,
+farmercode,112,112,FC,
+farmercode,113,113,FC,
+farmercode,114,114,FC,
+farmercode,115,115,FC,
+farmercode,116,116,FC,
+farmercode,117,117,FC,
+farmercode,118,118,FC,
+farmercode,119,119,FC,
+farmercode,120,120,FC,
+farmercode,121,121,FC,
+farmercode,122,122,FC,
+farmercode,123,123,FC,
+farmercode,124,124,FC,
+farmercode,125,125,FC,
+farmercode,126,126,FC,
+farmercode,127,127,FC,
+farmercode,128,128,FC,
+farmercode,129,129,FC,
+farmercode,130,130,FC,
+farmercode,131,131,FC,
+farmercode,132,132,FC,
+farmercode,133,133,FC,
+farmercode,134,134,FC,
+farmercode,135,135,FC,
+farmercode,136,136,FC,
+farmercode,137,137,FC,
+farmercode,138,138,FC,
+farmercode,139,139,FC,
+farmercode,140,140,FC,
+farmercode,141,141,FC,
+farmercode,142,142,FC,
+farmercode,143,143,FC,
+farmercode,144,144,FC,
+farmercode,145,145,FC,
+farmercode,146,146,FC,
+farmercode,147,147,FC,
+farmercode,148,148,FC,
+farmercode,149,149,FC,
+farmercode,150,150,FC,
+farmercode,151,151,FC,
+farmercode,152,152,FC,
+farmercode,153,153,FC,
+farmercode,154,154,FC,
+farmercode,155,155,FC,
+farmercode,156,156,FC,
+farmercode,157,157,FC,
+farmercode,158,158,FC,
+farmercode,159,159,FC,
+farmercode,160,160,FC,
+farmercode,161,161,FC,
+farmercode,162,162,FC,
+farmercode,163,163,FC,
+farmercode,164,164,FC,
+farmercode,165,165,FC,
+farmercode,166,166,FC,
+farmercode,167,167,FC,
+farmercode,168,168,FC,
+farmercode,169,169,FC,
+farmercode,170,170,FC,
+farmercode,171,171,FC,
+farmercode,172,172,FC,
+farmercode,173,173,FC,
+farmercode,174,174,FC,
+farmercode,175,175,FC,
+farmercode,176,176,FC,
+farmercode,177,177,FC,
+farmercode,178,178,FC,
+farmercode,179,179,FC,
+farmercode,180,180,FC,
+farmercode,181,181,FC,
+farmercode,182,182,FC,
+farmercode,183,183,FC,
+farmercode,184,184,FC,
+farmercode,185,185,FC,
+farmercode,186,186,FC,
+farmercode,187,187,FC,
+farmercode,188,188,FC,
+farmercode,189,189,FC,
+farmercode,190,190,FC,
+farmercode,191,191,FC,
+farmercode,192,192,FC,
+farmercode,193,193,FC,
+farmercode,194,194,FC,
+farmercode,195,195,FC,
+farmercode,196,196,FC,
+farmercode,197,197,FC,
+farmercode,198,198,FC,
+farmercode,199,199,FC,
+farmercode,200,200,FC,
+farmercode,201,201,FC,
+farmercode,202,202,FC,
+farmercode,203,203,FC,
+farmercode,204,204,FC,
+farmercode,205,205,FC,
+farmercode,206,206,FC,
+farmercode,207,207,FC,
+farmercode,208,208,FC,
+farmercode,209,209,FC,
+farmercode,210,210,FC,
+farmercode,211,211,FC,
+farmercode,212,212,FC,
+farmercode,213,213,FC,
+farmercode,214,214,FC,
+farmercode,215,215,FC,
+farmercode,216,216,FC,
+farmercode,217,217,FC,
+farmercode,218,218,FC,
+farmercode,219,219,FC,
+farmercode,220,220,FC,
+farmercode,221,221,FC,
+farmercode,222,222,FC,
+farmercode,223,223,FC,
+farmercode,224,224,FC,
+farmercode,225,225,FC,
+farmercode,226,226,FC,
+farmercode,227,227,FC,
+farmercode,228,228,FC,
+farmercode,229,229,FC,
+farmercode,230,230,FC,
+farmercode,231,231,FC,
+farmercode,232,232,FC,
+farmercode,233,233,FC,
+farmercode,234,234,FC,
+farmercode,235,235,FC,
+farmercode,236,236,FC,
+farmercode,237,237,FC,
+farmercode,238,238,FC,
+farmercode,239,239,FC,
+farmercode,240,240,FC,
+farmercode,241,241,FC,
+farmercode,242,242,FC,
+farmercode,243,243,FC,
+farmercode,244,244,FC,
+farmercode,245,245,FC,
+farmercode,246,246,FC,
+farmercode,247,247,FC,
+farmercode,248,248,FC,
+farmercode,249,249,FC,
+farmercode,250,250,FC,
+farmercode,251,251,FC,
+farmercode,252,252,FC,
+farmercode,253,253,FC,
+farmercode,254,254,FC,
+farmercode,255,255,FC,
+farmercode,256,256,FC,
+farmercode,257,257,FC,
+farmercode,258,258,FC,
+farmercode,259,259,FC,
+farmercode,260,260,FC,
+farmercode,261,261,FC,
+farmercode,262,262,FC,
+farmercode,263,263,FC,
+farmercode,264,264,FC,
+farmercode,265,265,FC,
+farmercode,266,266,FC,
+farmercode,267,267,FC,
+farmercode,268,268,FC,
+farmercode,269,269,FC,
+farmercode,270,270,FC,
+farmercode,271,271,FC,
+farmercode,272,272,FC,
+farmercode,273,273,FC,
+farmercode,274,274,FC,
+farmercode,275,275,FC,
+farmercode,276,276,FC,
+farmercode,277,277,FC,
+farmercode,278,278,FC,
+farmercode,279,279,FC,
+farmercode,280,280,FC,
+farmercode,281,281,FC,
+farmercode,282,282,FC,
+farmercode,283,283,FC,
+farmercode,284,284,FC,
+farmercode,285,285,FC,
+farmercode,286,286,FC,
+farmercode,287,287,FC,
+farmercode,288,288,FC,
+farmercode,289,289,FC,
+farmercode,290,290,FC,
+farmercode,291,291,FC,
+farmercode,292,292,FC,
+farmercode,293,293,FC,
+farmercode,294,294,FC,
+farmercode,295,295,FC,
+farmercode,296,296,FC,
+farmercode,297,297,FC,
+farmercode,298,298,FC,
+farmercode,299,299,FC,
+farmercode,300,300,FC,
+farmercode,301,301,FC,
+farmercode,302,302,FC,
+farmercode,303,303,FC,
+farmercode,304,304,FC,
+farmercode,305,305,FC,
+farmercode,306,306,FC,
+farmercode,307,307,FC,
+farmercode,308,308,FC,
+farmercode,309,309,FC,
+farmercode,310,310,FC,
+farmercode,311,311,FC,
+farmercode,312,312,FC,
+farmercode,313,313,FC,
+farmercode,314,314,FC,
+farmercode,315,315,FC,
+farmercode,316,316,FC,
+farmercode,317,317,FC,
+farmercode,318,318,FC,
+farmercode,319,319,FC,
+farmercode,320,320,FC,
+farmercode,321,321,FC,
+farmercode,322,322,FC,
+farmercode,323,323,FC,
+farmercode,324,324,FC,
+farmercode,325,325,FC,
+farmercode,326,326,FC,
+farmercode,327,327,FC,
+farmercode,328,328,FC,
+farmercode,329,329,FC,
+farmercode,330,330,FC,
+farmercode,331,331,FC,
+farmercode,332,332,FC,
+farmercode,333,333,FC,
+farmercode,334,334,FC,
+farmercode,335,335,FC,
+farmercode,336,336,FC,
+farmercode,337,337,FC,
+farmercode,338,338,FC,
+farmercode,339,339,FC,
+farmercode,340,340,FC,
+farmercode,341,341,FC,
+farmercode,342,342,FC,
+farmercode,343,343,FC,
+farmercode,344,344,FC,
+farmercode,345,345,FC,
+farmercode,346,346,FC,
+farmercode,347,347,FC,
+farmercode,348,348,FC,
+farmercode,349,349,FC,
+farmercode,350,350,FC,
+farmercode,351,351,FC,
+farmercode,352,352,FC,
+farmercode,353,353,FC,
+farmercode,354,354,FC,
+farmercode,355,355,FC,
+farmercode,356,356,FC,
+farmercode,357,357,FC,
+farmercode,358,358,FC,
+farmercode,359,359,FC,
+farmercode,360,360,FC,
+farmercode,361,361,FC,
+farmercode,362,362,FC,
+farmercode,363,363,FC,
+farmercode,364,364,FC,
+farmercode,365,365,FC,
+farmercode,366,366,FC,
+farmercode,367,367,FC,
+farmercode,368,368,FC,
+farmercode,369,369,FC,
+farmercode,370,370,FC,
+farmercode,371,371,FC,
+farmercode,372,372,FC,
+farmercode,373,373,FC,
+farmercode,374,374,FC,
+farmercode,375,375,FC,
+farmercode,376,376,FC,
+farmercode,377,377,FC,
+farmercode,378,378,FC,
+farmercode,379,379,FC,
+farmercode,380,380,FC,
+farmercode,381,381,FC,
+farmercode,382,382,FC,
+farmercode,383,383,FC,
+farmercode,384,384,FC,
+farmercode,385,385,FC,
+farmercode,386,386,FC,
+farmercode,387,387,FC,
+farmercode,388,388,FC,
+farmercode,389,389,FC,
+farmercode,390,390,FC,
+farmercode,391,391,FC,
+farmercode,392,392,FC,
+farmercode,393,393,FC,
+farmercode,394,394,FC,
+farmercode,395,395,FC,
+farmercode,396,396,FC,
+farmercode,397,397,FC,
+farmercode,398,398,FC,
+farmercode,399,399,FC,
+yesno,yes,Yes,YN,
+yesno,no,No,YN,
+fieldcode,1,1,FDC,
+fieldcode,2,2,FDC,
+fieldcode,3,3,FDC,
+fieldcode,4,4,FDC,
+fieldcode,5,5,FDC,
+farmertype,F,Private Land,FT,
+farmertype,G,Grf/Srf Land,FT,
+treelocation,H,Farmer House,TL,
+treelocation,O,Other Place Next to Water Source,TL,
+treelocation,F,Field,TL,

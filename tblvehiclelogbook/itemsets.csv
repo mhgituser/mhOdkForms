@@ -1,0 +1,45 @@
+list_name,name,label,identifier
+yesno,yes,Yes,YN
+yesno,no,No,YN
+fuelstation,1,BOD-Kheri,FS
+fuelstation,2,BOD-Womrong,FS
+fuelstation,3,BOD-Mongar,FS
+fuelstation,4,BOD-Gyelposhing,FS
+fuelstation,5,BOD-S/Jongkhar,FS
+fuelstation,6,BOD-Zhemgang,FS
+fuelstation,7,BOD-Bumthang,FS
+fuelstation,8,BOD-Trongsa,FS
+fuelstation,9,BOD-Wangdi,FS
+fuelstation,10,BOD-Tsirang,FS
+fuelstation,11,BOD-P'Ling Town,FS
+fuelstation,12,BOD-P'Ling Lower Market,FS
+fuelstation,13,BOD-Tsimasham,FS
+fuelstation,14,BOD-Thimphu Town,FS
+fuelstation,15,BOD-Thimphu Motithang,FS
+fuelstation,16,BOD-Paro,FS
+fuelstation,18,BOD-Haa,FS
+fuelstation,19,BOD-Sarpang,FS
+fuelstation,20,BOD-Gelephug,FS
+fuelstation,21,BOD-Samtse,FS
+fuelstation,22,BOD-Gomtu,FS
+fuelstation,999,Other,FS
+vehicle,1,veh001 Santa Fe BP-2-B1933,C
+vehicle,2,veh002 Bolero BP-2-B1462,C
+vehicle,3,veh003 Bolero BP-2-B1461,C
+vehicle,6,veh004 Bolero BP-2-B3006,C
+vehicle,11,veh005 Bolero BP-2-B5914,C
+vehicle,12,veh006 Bolero BP-2-B5915,C
+vehicle,13,veh007 Bolero BP-2-B5916,C
+vehicle,4,veh008 DCM BP-2-A7925,C
+vehicle,5,veh009 DCM BP-2-A7926,C
+vehicle,14,veh010 DCM BP-2-A8547,C
+staffcode,S0405,S0405 Sangay ,M
+staffcode,S0406,S0406 Tshering Dargay,M
+staffcode,S0409,S0409 Sonam Rinchen,M
+staffcode,S0410,S0410 Karma Wangdi,M
+staffcode,S0472,S0472 Kencho,M
+staffcode,S0474,S0474 Phuntsho Dorji,M
+staffcode,S0614,S0614 Nima Tshering,M
+staffcode,S0682,S0682 Dorji Gyeltshen,M
+staffcode,S0683,S0683 Tshering Penjor,M
+staffcode,S0722,S0722  Tandin Tshewang,M
