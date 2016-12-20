@@ -4,7 +4,7 @@
     <h:title>MTR -  Daily Activity</h:title>
     <model>
       <instance>
-        <Dailyacthub9 id="Dailyacthub9" version="1006">
+        <DailyActivityMonitoring id="Dailyacthub9" version="1004">
           <start/>
           <end/>
           <deviceid/>
@@ -41,53 +41,53 @@
           <meta>
             <instanceID/>
           </meta>
-        </Dailyacthub9>
+        </DailyActivityMonitoring>
       </instance>
-      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/Dailyacthub9/start" type="dateTime"/>
-      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/Dailyacthub9/end" type="dateTime"/>
-      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/Dailyacthub9/deviceid" type="string"/>
-      <bind jr:preload="date" jr:preloadParams="today" nodeset="/Dailyacthub9/today" type="date"/>
-      <bind nodeset="/Dailyacthub9/tdate" required="true()" type="date"/>
-      <bind nodeset="/Dailyacthub9/gps_coordinates" required="true()" type="geopoint"/>
-      <bind nodeset="/Dailyacthub9/Staffid" required="true()" type="select1"/>
-      <bind nodeset="/Dailyacthub9/dcode" required="true()" type="select1"/>
-      <bind nodeset="/Dailyacthub9/gcode" required="true()" type="string"/>
-      <bind nodeset="/Dailyacthub9/tcode" required="true()" type="string"/>
-      <bind nodeset="/Dailyacthub9/accompanier" required="true()" type="select"/>
-      <bind nodeset="/Dailyacthub9/other" relevant="selected( /Dailyacthub9/accompanier ,'person6')" required="true()" type="string"/>
-      <bind nodeset="/Dailyacthub9/activities" required="true()" type="select"/>
-      <bind nodeset="/Dailyacthub9/field" relevant="selected( /Dailyacthub9/activities ,'activity4')" required="true()" type="int"/>
-      <bind nodeset="/Dailyacthub9/nofailed" relevant="selected( /Dailyacthub9/activities ,'activity4')" type="int"/>
-      <bind nodeset="/Dailyacthub9/qcfailed" relevant="selected( /Dailyacthub9/activities ,'activity4')" type="select"/>
-      <bind nodeset="/Dailyacthub9/storage" relevant="selected( /Dailyacthub9/activities ,'activity4')" required="true()" type="int"/>
-      <bind nodeset="/Dailyacthub9/nofailed1" relevant="selected( /Dailyacthub9/activities ,'activity4')" type="int"/>
-      <bind nodeset="/Dailyacthub9/qcfailed1" relevant="selected( /Dailyacthub9/activities ,'activity4')" type="select"/>
-      <bind nodeset="/Dailyacthub9/norepresentative1" relevant="selected( /Dailyacthub9/activities ,'activity2')" required="true()" type="int"/>
-      <bind nodeset="/Dailyacthub9/norepresentative" relevant="selected( /Dailyacthub9/activities ,'activity2')" required="true()" type="int"/>
-      <bind constraint=".&gt;.49" jr:constraintMsg="Must be greater than .50" nodeset="/Dailyacthub9/registered" relevant="selected( /Dailyacthub9/activities ,'activity5')" required="true()" type="string"/>
-      <bind nodeset="/Dailyacthub9/privateland" relevant="selected( /Dailyacthub9/activities ,'activity5')" required="true()" type="string"/>
-      <bind nodeset="/Dailyacthub9/individual" relevant="selected( /Dailyacthub9/activities ,'activity3')" required="true()" type="int"/>
-      <bind nodeset="/Dailyacthub9/travel1" relevant="selected( /Dailyacthub9/activities ,'activity7')" required="true()" type="string"/>
-      <bind nodeset="/Dailyacthub9/travel2" relevant="selected( /Dailyacthub9/activities ,'activity7')" required="true()" type="string"/>
-      <bind nodeset="/Dailyacthub9/gtruthing" relevant="selected( /Dailyacthub9/activities ,'activity8')" required="true()" type="int"/>
-      <bind nodeset="/Dailyacthub9/gtruthing1" relevant="selected( /Dailyacthub9/activities ,'activity8')" required="true()" type="int"/>
-      <bind nodeset="/Dailyacthub9/gtruthing2" relevant="selected( /Dailyacthub9/activities ,'activity8')" type="select"/>
-      <bind nodeset="/Dailyacthub9/other1" relevant="selected( /Dailyacthub9/gtruthing2 ,'failedgtruthing9')" required="true()" type="string"/>
-      <bind nodeset="/Dailyacthub9/distribution" relevant="selected( /Dailyacthub9/activities ,'activity1')" type="select1"/>
-      <bind nodeset="/Dailyacthub9/notvisited" relevant=" /Dailyacthub9/distribution =&quot;no3&quot;" required="true()" type="int"/>
-      <bind nodeset="/Dailyacthub9/comments" type="string"/>
-      <bind calculate="concat('uuid:', uuid())" nodeset="/Dailyacthub9/meta/instanceID" readonly="true()" type="string"/>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/DailyActivityMonitoring/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/DailyActivityMonitoring/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/DailyActivityMonitoring/deviceid" type="string"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/DailyActivityMonitoring/today" type="date"/>
+      <bind nodeset="/DailyActivityMonitoring/tdate" required="true()" type="date"/>
+      <bind nodeset="/DailyActivityMonitoring/gps_coordinates" required="true()" type="geopoint"/>
+      <bind nodeset="/DailyActivityMonitoring/Staffid" required="true()" type="select1"/>
+      <bind nodeset="/DailyActivityMonitoring/dcode" required="true()" type="select1"/>
+      <bind nodeset="/DailyActivityMonitoring/gcode" required="true()" type="string"/>
+      <bind nodeset="/DailyActivityMonitoring/tcode" required="true()" type="string"/>
+      <bind nodeset="/DailyActivityMonitoring/accompanier" required="true()" type="select"/>
+      <bind nodeset="/DailyActivityMonitoring/other" relevant="selected( /DailyActivityMonitoring/accompanier ,'person6')" required="true()" type="string"/>
+      <bind nodeset="/DailyActivityMonitoring/activities" required="true()" type="select"/>
+      <bind nodeset="/DailyActivityMonitoring/field" relevant="selected( /DailyActivityMonitoring/activities ,'activity4')" required="true()" type="int"/>
+      <bind nodeset="/DailyActivityMonitoring/nofailed" relevant="selected( /DailyActivityMonitoring/activities ,'activity4')" type="int"/>
+      <bind nodeset="/DailyActivityMonitoring/qcfailed" relevant="selected( /DailyActivityMonitoring/activities ,'activity4')" type="select"/>
+      <bind nodeset="/DailyActivityMonitoring/storage" relevant="selected( /DailyActivityMonitoring/activities ,'activity4')" required="true()" type="int"/>
+      <bind nodeset="/DailyActivityMonitoring/nofailed1" relevant="selected( /DailyActivityMonitoring/activities ,'activity4')" type="int"/>
+      <bind nodeset="/DailyActivityMonitoring/qcfailed1" relevant="selected( /DailyActivityMonitoring/activities ,'activity4')" type="select"/>
+      <bind nodeset="/DailyActivityMonitoring/norepresentative1" relevant="selected( /DailyActivityMonitoring/activities ,'activity2')" required="true()" type="int"/>
+      <bind nodeset="/DailyActivityMonitoring/norepresentative" relevant="selected( /DailyActivityMonitoring/activities ,'activity2')" required="true()" type="int"/>
+      <bind constraint=".&gt;.49" jr:constraintMsg="Must be greater than .50" nodeset="/DailyActivityMonitoring/registered" relevant="selected( /DailyActivityMonitoring/activities ,'activity5')" required="true()" type="string"/>
+      <bind nodeset="/DailyActivityMonitoring/privateland" relevant="selected( /DailyActivityMonitoring/activities ,'activity5')" required="true()" type="string"/>
+      <bind nodeset="/DailyActivityMonitoring/individual" relevant="selected( /DailyActivityMonitoring/activities ,'activity3')" required="true()" type="int"/>
+      <bind nodeset="/DailyActivityMonitoring/travel1" relevant="selected( /DailyActivityMonitoring/activities ,'activity7')" required="true()" type="string"/>
+      <bind nodeset="/DailyActivityMonitoring/travel2" relevant="selected( /DailyActivityMonitoring/activities ,'activity7')" required="true()" type="string"/>
+      <bind nodeset="/DailyActivityMonitoring/gtruthing" relevant="selected( /DailyActivityMonitoring/activities ,'activity8')" required="true()" type="int"/>
+      <bind nodeset="/DailyActivityMonitoring/gtruthing1" relevant="selected( /DailyActivityMonitoring/activities ,'activity8')" required="true()" type="int"/>
+      <bind nodeset="/DailyActivityMonitoring/gtruthing2" relevant="selected( /DailyActivityMonitoring/activities ,'activity8')" type="select"/>
+      <bind nodeset="/DailyActivityMonitoring/other1" relevant="selected( /DailyActivityMonitoring/gtruthing2 ,'failedgtruthing9')" required="true()" type="string"/>
+      <bind nodeset="/DailyActivityMonitoring/distribution" relevant="selected( /DailyActivityMonitoring/activities ,'activity1')" type="select1"/>
+      <bind nodeset="/DailyActivityMonitoring/notvisited" relevant=" /DailyActivityMonitoring/distribution =&quot;no3&quot;" required="true()" type="int"/>
+      <bind nodeset="/DailyActivityMonitoring/comments" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/DailyActivityMonitoring/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
   <h:body>
-    <input appearance="no-calendar" ref="/Dailyacthub9/tdate">
+    <input appearance="no-calendar" ref="/DailyActivityMonitoring/tdate">
       <label>Select todays date</label>
     </input>
-    <input ref="/Dailyacthub9/gps_coordinates">
+    <input ref="/DailyActivityMonitoring/gps_coordinates">
       <label>Field GPS co-ordinates</label>
       <hint>GPS coordinates can only be collected when outside.</hint>
     </input>
-    <select1 appearance="minimal" ref="/Dailyacthub9/Staffid">
+    <select1 appearance="minimal" ref="/DailyActivityMonitoring/Staffid">
       <label>Select your name</label>
       <item>
         <label>S0301 Pema Tenzin</label>
@@ -698,7 +698,7 @@
         <value>S0769</value>
       </item>
     </select1>
-    <select1 appearance="minimal" ref="/Dailyacthub9/dcode">
+    <select1 appearance="minimal" ref="/DailyActivityMonitoring/dcode">
       <label>Select Dzongkhag</label>
       <item>
         <label>D01 Trashigang</label>
@@ -781,13 +781,13 @@
         <value>D20</value>
       </item>
     </select1>
-    <input appearance="minimal" query="instance('gewog')/root/item[dzongkhag= /Dailyacthub9/dcode ]" ref="/Dailyacthub9/gcode">
+    <input appearance="minimal" query="instance('gewog')/root/item[dzongkhag= /DailyActivityMonitoring/dcode ]" ref="/DailyActivityMonitoring/gcode">
       <label>Select Gewog</label>
     </input>
-    <input appearance="minimal" query="instance('tshowog')/root/item[gewog= /Dailyacthub9/gcode ]" ref="/Dailyacthub9/tcode">
+    <input appearance="minimal" query="instance('tshowog')/root/item[gewog= /DailyActivityMonitoring/gcode ]" ref="/DailyActivityMonitoring/tcode">
       <label>Select Tshowog</label>
     </input>
-    <select ref="/Dailyacthub9/accompanier">
+    <select ref="/DailyActivityMonitoring/accompanier">
       <label>Persons Accompanying Surveyor</label>
       <item>
         <label>Contact Grower</label>
@@ -818,10 +818,10 @@
         <value>person7</value>
       </item>
     </select>
-    <input ref="/Dailyacthub9/other">
+    <input ref="/DailyActivityMonitoring/other">
       <label>Please specify&quot;Other&quot; persons</label>
     </input>
-    <select ref="/Dailyacthub9/activities">
+    <select ref="/DailyActivityMonitoring/activities">
       <label>Activities on this day</label>
       <item>
         <label>Plant Distribution</label>
@@ -868,14 +868,14 @@
         <value>activity11</value>
       </item>
     </select>
-    <input ref="/Dailyacthub9/field">
+    <input ref="/DailyActivityMonitoring/field">
       <label>Number of Field QC Visits on this day</label>
     </input>
-    <input ref="/Dailyacthub9/nofailed">
+    <input ref="/DailyActivityMonitoring/nofailed">
       <label>Number of failed field QC visits on this day</label>
       <hint>Failed &gt;20% dead, &gt;50% weak, No moisture, or Bad Layout</hint>
     </input>
-    <select ref="/Dailyacthub9/qcfailed">
+    <select ref="/DailyActivityMonitoring/qcfailed">
       <label>Reasons for Field QC failures</label>
       <item>
         <label>&gt;50% Weak Trees</label>
@@ -914,14 +914,14 @@
         <value>fieldfailed9</value>
       </item>
     </select>
-    <input ref="/Dailyacthub9/storage">
+    <input ref="/DailyActivityMonitoring/storage">
       <label>Number of Storage QC Visits on this day</label>
     </input>
-    <input ref="/Dailyacthub9/nofailed1">
+    <input ref="/DailyActivityMonitoring/nofailed1">
       <label>Number of failed storage QC visits</label>
       <hint>Failed &gt;20% dead, &gt;50% weak, &gt;20%bags No Moisture, &gt;20%waterlogged bags, Poor Storage Location, or &gt;20% other serious problem</hint>
     </input>
-    <select ref="/Dailyacthub9/qcfailed1">
+    <select ref="/DailyActivityMonitoring/qcfailed1">
       <label>Reasons for Storage QC failures</label>
       <item>
         <label>&gt;50% Weak Trees</label>
@@ -960,36 +960,36 @@
         <value>storagefailed9</value>
       </item>
     </select>
-    <input ref="/Dailyacthub9/norepresentative1">
+    <input ref="/DailyActivityMonitoring/norepresentative1">
       <label>Actual number of farmers that received trees and should be present for the meeting</label>
     </input>
-    <input ref="/Dailyacthub9/norepresentative">
+    <input ref="/DailyActivityMonitoring/norepresentative">
       <label>Numbers of farmers who receive trees but did NOT have a representative present for demo planting</label>
     </input>
-    <input ref="/Dailyacthub9/registered">
+    <input ref="/DailyActivityMonitoring/registered">
       <label>Total Number Private Farmers Registered Today</label>
       <hint>Minimum area 0.5 acres</hint>
     </input>
-    <input ref="/Dailyacthub9/privateland">
+    <input ref="/DailyActivityMonitoring/privateland">
       <label>Total Area of Private Land Registered Today (acres)</label>
     </input>
-    <input ref="/Dailyacthub9/individual">
+    <input ref="/DailyActivityMonitoring/individual">
       <label>Number of individual field trainings on this day</label>
     </input>
-    <input ref="/Dailyacthub9/travel1">
+    <input ref="/DailyActivityMonitoring/travel1">
       <label>Travelling from</label>
     </input>
-    <input ref="/Dailyacthub9/travel2">
+    <input ref="/DailyActivityMonitoring/travel2">
       <label>Travelling to</label>
     </input>
-    <input ref="/Dailyacthub9/gtruthing">
+    <input ref="/DailyActivityMonitoring/gtruthing">
       <label>Total number ground truthing field visits today</label>
     </input>
-    <input ref="/Dailyacthub9/gtruthing1">
+    <input ref="/DailyActivityMonitoring/gtruthing1">
       <label>Total number ground truthing field visits failed</label>
       <hint>Altitude, Insufficient Area, No Owner, Too Many Large Trees, Gov't Land</hint>
     </input>
-    <select ref="/Dailyacthub9/gtruthing2">
+    <select ref="/DailyActivityMonitoring/gtruthing2">
       <label>Reasons for ground truthing failures</label>
       <item>
         <label>Outside altitude range</label>
@@ -1028,10 +1028,10 @@
         <value>failedgtruthing9</value>
       </item>
     </select>
-    <input ref="/Dailyacthub9/other1">
+    <input ref="/DailyActivityMonitoring/other1">
       <label>Other reasons for Ground Truthing Failure</label>
     </input>
-    <select1 ref="/Dailyacthub9/distribution">
+    <select1 ref="/DailyActivityMonitoring/distribution">
       <label>Have you just completed a plant distribution</label>
       <item>
         <label>Yes</label>
@@ -1042,10 +1042,10 @@
         <value>no3</value>
       </item>
     </select1>
-    <input ref="/Dailyacthub9/notvisited">
+    <input ref="/DailyActivityMonitoring/notvisited">
       <label>How many farmers still left for distribution ?</label>
     </input>
-    <input ref="/Dailyacthub9/comments">
+    <input ref="/DailyActivityMonitoring/comments">
       <label>Other important comments about todays works</label>
     </input>
   </h:body>

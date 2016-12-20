@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Socio economic survey</h:title>
+    <model>
+      <instance>
+        <tbleconomicsurvey id="tbleconomicsurvey" version="1003">
+          <start/>
+          <end/>
+          <deviceid/>
+          <today/>
+          <email/>
+          <phonenumber/>
+          <simserial/>
+          <gennote/>
+          <staffid/>
+          <farmerbarcode/>
+          <dcode/>
+          <gcode/>
+          <tcode/>
+          <fcode/>
+          <fname/>
+          <gps_coordinates/>
+          <thanknote/>
+          <household>
+            <hmember/>
+            <children/>
+            <female/>
+          </household>
+          <totland>
+            <totalland/>
+          </totland>
+          <totlanduse>
+            <useland/>
+          </totlanduse>
+          <notefieldcrop/>
+          <fcrop jr:template="">
+            <fieldcrop/>
+            <otherfieldcrop/>
+            <unitarea/>
+            <cultivatedacres/>
+            <cultivateddecimals/>
+            <incomperyear/>
+            <uomfieldcrop/>
+            <unit/>
+          </fcrop>
+          <notetreecrop/>
+          <tcrop jr:template="">
+            <treecrop/>
+            <othertreecrop/>
+            <trees/>
+            <incomperyear/>
+            <uomtreecrop/>
+            <unit/>
+          </tcrop>
+          <incomenote/>
+          <wagessalaryincome/>
+          <farmincome/>
+          <businessincome/>
+          <remittanceincome/>
+          <pensionincome/>
+          <rentalrealestateincome/>
+          <otherassetincome/>
+          <otherincome/>
+          <othersource/>
+          <roofmaterial/>
+          <otherfoormaterial/>
+          <householdequipment>
+            <ricecooker/>
+            <currycooker/>
+            <waterboiler/>
+            <simplephone/>
+            <smartphone/>
+            <fixedphoneline/>
+            <personalcomputer/>
+            <refrigerator/>
+            <washingmachine/>
+            <radio/>
+            <tv/>
+            <fourwheeler/>
+            <twowheeler/>
+          </householdequipment>
+          <toiletfacility/>
+          <othertoiletfacilitylist/>
+          <watersource/>
+          <otherwatersourcelist/>
+          <agritool/>
+          <otheragritoollist/>
+          <happinesslevel/>
+          <anycomment/>
+          <thanksgiving/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </tbleconomicsurvey>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/tbleconomicsurvey/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/tbleconomicsurvey/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/tbleconomicsurvey/deviceid" type="string"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/tbleconomicsurvey/today" type="date"/>
+      <bind jr:preload="property" jr:preloadParams="email" nodeset="/tbleconomicsurvey/email" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/tbleconomicsurvey/phonenumber" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/tbleconomicsurvey/simserial" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/gennote" readonly="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/staffid" required="true()" type="string"/>
+      <bind jr:constraintMsg="Invalid barcode" nodeset="/tbleconomicsurvey/farmerbarcode" type="barcode"/>
+      <bind nodeset="/tbleconomicsurvey/dcode" relevant=" /tbleconomicsurvey/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/gcode" relevant=" /tbleconomicsurvey/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/tcode" relevant=" /tbleconomicsurvey/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/fcode" relevant=" /tbleconomicsurvey/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/fname" relevant=" /tbleconomicsurvey/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/gps_coordinates" required="true()" type="geopoint"/>
+      <bind nodeset="/tbleconomicsurvey/thanknote" readonly="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/household/hmember" required="true()" type="int"/>
+      <bind constraint=" /tbleconomicsurvey/household/hmember &gt; /tbleconomicsurvey/household/children " jr:constraintMsg="Number of children canot be higher than number of overall household members" nodeset="/tbleconomicsurvey/household/children" required="true()" type="int"/>
+      <bind constraint=" /tbleconomicsurvey/household/hmember &gt; /tbleconomicsurvey/household/female -1" jr:constraintMsg="Number of female household members canot be higher than number of overall household members" nodeset="/tbleconomicsurvey/household/female" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/totland/totalland" required="true()" type="decimal"/>
+      <bind constraint=" /tbleconomicsurvey/totland/totalland &gt; /tbleconomicsurvey/totlanduse/useland -1" jr:constraintMsg="Your land use cant be higher than land right." nodeset="/tbleconomicsurvey/totlanduse/useland" required="true()" type="decimal"/>
+      <bind nodeset="/tbleconomicsurvey/notefieldcrop" readonly="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/fcrop/fieldcrop" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/fcrop/otherfieldcrop" relevant=" /tbleconomicsurvey/fcrop/fieldcrop ='Other'" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/fcrop/unitarea" required="true()" type="string"/>
+      <bind constraint=" /tbleconomicsurvey/totland/totalland &gt; /tbleconomicsurvey/fcrop/cultivatedacres -1" jr:constraintMsg="Cultivated areas canot be higher than land right use" nodeset="/tbleconomicsurvey/fcrop/cultivatedacres" relevant=" /tbleconomicsurvey/fcrop/unitarea ='acres'" required="true()" type="decimal"/>
+      <bind constraint=" /tbleconomicsurvey/totland/totalland &gt;( /tbleconomicsurvey/fcrop/cultivateddecimals  div 100)-1" jr:constraintMsg="Cultivated areas canot be higher than land right use" nodeset="/tbleconomicsurvey/fcrop/cultivateddecimals" relevant=" /tbleconomicsurvey/fcrop/unitarea ='decimals'" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/fcrop/incomperyear" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/fcrop/uomfieldcrop" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/fcrop/unit" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/notetreecrop" readonly="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/tcrop/treecrop" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/tcrop/othertreecrop" relevant=" /tbleconomicsurvey/tcrop/treecrop ='Other'" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/tcrop/trees" required="true()" type="decimal"/>
+      <bind nodeset="/tbleconomicsurvey/tcrop/incomperyear" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/tcrop/uomtreecrop" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/tcrop/unit" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/incomenote" readonly="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/wagessalaryincome" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/farmincome" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/businessincome" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/remittanceincome" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/pensionincome" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/rentalrealestateincome" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/otherassetincome" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/otherincome" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/othersource" relevant=" /tbleconomicsurvey/otherincome &gt;0" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/roofmaterial" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/otherfoormaterial" relevant="selected( /tbleconomicsurvey/roofmaterial ,'roofmaterial8')" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/householdequipment" required="true()"/>
+      <bind nodeset="/tbleconomicsurvey/householdequipment/ricecooker" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/householdequipment/currycooker" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/householdequipment/waterboiler" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/householdequipment/simplephone" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/householdequipment/smartphone" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/householdequipment/fixedphoneline" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/householdequipment/personalcomputer" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/householdequipment/refrigerator" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/householdequipment/washingmachine" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/householdequipment/radio" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/householdequipment/tv" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/householdequipment/fourwheeler" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/householdequipment/twowheeler" required="true()" type="int"/>
+      <bind nodeset="/tbleconomicsurvey/toiletfacility" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/othertoiletfacilitylist" relevant="selected( /tbleconomicsurvey/toiletfacility ,'toiletfacility9')" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/watersource" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/otherwatersourcelist" relevant="selected( /tbleconomicsurvey/watersource ,'watersource8')" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/agritool" required="true()" type="select"/>
+      <bind nodeset="/tbleconomicsurvey/otheragritoollist" relevant="selected( /tbleconomicsurvey/agritool ,'agritoollist10')" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/happinesslevel" required="true()" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/anycomment" type="string"/>
+      <bind nodeset="/tbleconomicsurvey/thanksgiving" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/tbleconomicsurvey/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/tbleconomicsurvey/gennote">
+      <label>Mountain Hazelnut Venture
+
+Form Name: Socioeconomic Survey 
+Form ID: ODK-MO-001
+Revision Date: 20 Apr 2016
+Revision Number: 1.1</label>
+      <hint>Every farmer should be asked all of these questions during the first QC visit for new farmers and the first QC visit after training was provided</hint>
+    </input>
+    <input query="instance('staffcode')/root/item[dzongkhag=&quot;M&quot;]" ref="/tbleconomicsurvey/staffid">
+      <label>Select your name</label>
+    </input>
+    <input ref="/tbleconomicsurvey/farmerbarcode">
+      <label>Scan farmer details from barcode sheet</label>
+    </input>
+    <input query="instance('dzongkhag')/root/item[dzongkhag=&quot;D&quot;]" ref="/tbleconomicsurvey/dcode">
+      <label>Select Dzongkhag</label>
+    </input>
+    <input query="instance('gewog')/root/item[dzongkhag= /tbleconomicsurvey/dcode ]" ref="/tbleconomicsurvey/gcode">
+      <label>Select Gewog</label>
+    </input>
+    <input query="instance('tshowog')/root/item[gewog= /tbleconomicsurvey/gcode ]" ref="/tbleconomicsurvey/tcode">
+      <label>Select Tshowog</label>
+    </input>
+    <input query="instance('farmercode')/root/item[dzongkhag=&quot;FC&quot;]" ref="/tbleconomicsurvey/fcode">
+      <label>Farmer code</label>
+      <hint>select 999 for all new farmers.</hint>
+    </input>
+    <input ref="/tbleconomicsurvey/fname">
+      <label>Farmer name</label>
+    </input>
+    <input ref="/tbleconomicsurvey/gps_coordinates">
+      <label>GPS co-ordinates</label>
+      <hint>GPS coordinates can only be collected when outside.</hint>
+    </input>
+    <input ref="/tbleconomicsurvey/thanknote">
+      <hint>Please kindly thank the farmer that he is taking the time to go through this 15min survey with you. Explain to him that all his answers will be treated confidentially and strictly not shared with anyone outside the Company. Then proceed with the questions</hint>
+    </input>
+    <group appearance="field-list" ref="/tbleconomicsurvey/household">
+      <label>Q1. How many people live in your household?</label>
+      <input ref="/tbleconomicsurvey/household/hmember">
+        <label>Overall Household member</label>
+        <hint>Children are defined as all people living in the household below the age of 18 years.
+Overall household members shall be defined as all members who permanently stay in the household</hint>
+      </input>
+      <input ref="/tbleconomicsurvey/household/children">
+        <label>Children</label>
+      </input>
+      <input ref="/tbleconomicsurvey/household/female">
+        <label>Female Household members</label>
+      </input>
+    </group>
+    <group ref="/tbleconomicsurvey/totland">
+      <label>Q2. How much land do you have the right to use?</label>
+      <input ref="/tbleconomicsurvey/totland/totalland">
+        <label>Land right</label>
+        <hint>‘Right to use’ includes all land that the surveyed person holds a Thram for or has another legal right to use (e.g., GRF/SRF land that the surveyed person is leasing from the government or private land the person is leasing from someone else)</hint>
+      </input>
+    </group>
+    <group ref="/tbleconomicsurvey/totlanduse">
+      <label>Q3. How much land do you normally use in acres for your subsistence (food) cropping needs in a normal year?</label>
+      <input ref="/tbleconomicsurvey/totlanduse/useland">
+        <label>Use land</label>
+        <hint>Land that is used for subsistence (food) cropping shall refer to all land that the farmer is using to grow crops / fruits / vegetables that are used only for consumption and not for sale</hint>
+      </input>
+    </group>
+    <input ref="/tbleconomicsurvey/notefieldcrop">
+      <label>This section deals with various field crops. We have prepared templates for common crops. If you can’t find the crop in the list, use the “other” field. If you do not want to add any more field crops click on “Do not add”.</label>
+      <hint>Hint: ask the farmer which crops he/she grows when you add the first group and note those crops down in your notebook. Then ask questions for each of the crops.</hint>
+    </input>
+    <group ref="/tbleconomicsurvey/fcrop">
+      <label>Q4. Over the past 12 months, what crops did you grow, and how much money did you earn from them?</label>
+      <repeat nodeset="/tbleconomicsurvey/fcrop">
+        <input query="instance('fieldcrop')/root/item[dzongkhag=&quot;FC&quot;]" ref="/tbleconomicsurvey/fcrop/fieldcrop">
+          <label>Field Crop</label>
+          <hint>If the farmer does not know an amount, enter -1.
+Note: Production should include ALL production of the year, even if no income was generated (i.e., product was consumed by farmer or donated)</hint>
+        </input>
+        <input ref="/tbleconomicsurvey/fcrop/otherfieldcrop">
+          <label>Other field crop</label>
+        </input>
+        <input query="instance('unitarea')/root/item[dzongkhag=&quot;UAC&quot;]" ref="/tbleconomicsurvey/fcrop/unitarea">
+          <label>Unit for cultivated area</label>
+        </input>
+        <input ref="/tbleconomicsurvey/fcrop/cultivatedacres">
+          <label>Cultivated area (in acres)</label>
+        </input>
+        <input ref="/tbleconomicsurvey/fcrop/cultivateddecimals">
+          <label>Cultivated area (in decimals)</label>
+          <hint>100 decimal is equal to 1 Acre</hint>
+        </input>
+        <input ref="/tbleconomicsurvey/fcrop/incomperyear">
+          <label>Income per year (in Nu)</label>
+        </input>
+        <input query="instance('unitfieldcrop')/root/item[dzongkhag=&quot;UF&quot;]" ref="/tbleconomicsurvey/fcrop/uomfieldcrop">
+          <label>Unit for production</label>
+        </input>
+        <input ref="/tbleconomicsurvey/fcrop/unit">
+          <label>Production in <output value=" /tbleconomicsurvey/fcrop/uomfieldcrop "/></label></input>
+      </repeat>
+    </group>
+    <input ref="/tbleconomicsurvey/notetreecrop">
+      <label>This section deals with various tree crops. We have prepared templates for common crops. If you can’t find the crop in the list, use the “other” field. If you do not want to add any more tree crops click on “Do not add”.</label>
+      <hint>Ask the farmer which crops he/she grows when you add the first group and note those crops down in your notebook. Then ask questions for each of the crops.</hint>
+    </input>
+    <group ref="/tbleconomicsurvey/tcrop">
+      <label>Q5. Over the past 12 months, what tree crops did you grow, and how much money did you earn from them?</label>
+      <repeat nodeset="/tbleconomicsurvey/tcrop">
+        <input query="instance('treecrop')/root/item[dzongkhag=&quot;TC&quot;]" ref="/tbleconomicsurvey/tcrop/treecrop">
+          <label>Tree Crop</label>
+        </input>
+        <input ref="/tbleconomicsurvey/tcrop/othertreecrop">
+          <label>Other tree crop</label>
+        </input>
+        <input ref="/tbleconomicsurvey/tcrop/trees">
+          <label>Number of trees (including trees not producing yet)</label>
+        </input>
+        <input ref="/tbleconomicsurvey/tcrop/incomperyear">
+          <label>Income per year (in Nu)</label>
+        </input>
+        <input query="instance('unittreecrop')/root/item[dzongkhag=&quot;UT&quot;]" ref="/tbleconomicsurvey/tcrop/uomtreecrop">
+          <label>Unit</label>
+        </input>
+        <input ref="/tbleconomicsurvey/tcrop/unit">
+          <label>Production in <output value=" /tbleconomicsurvey/tcrop/uomtreecrop "/></label></input>
+      </repeat>
+    </group>
+    <input ref="/tbleconomicsurvey/incomenote">
+      <hint>Please say the following to the farmer: “The next questions will refer to income generated in your household. Please include the income all members of your household in these replies”.</hint>
+    </input>
+    <input ref="/tbleconomicsurvey/wagessalaryincome">
+      <label>Q6. Over the past 12 months, approximately how much cash income did you receive from wages / salary (including casual labour)?</label>
+    </input>
+    <input ref="/tbleconomicsurvey/farmincome">
+      <label>Q7. Over the past 12 months, approximately how much cash income did you receive farm income (examples: money earned from crop sales including hazelnuts, animal products)?</label>
+    </input>
+    <input ref="/tbleconomicsurvey/businessincome">
+      <label>Q8. Over the past 12 months, approximately how much cash income did you receive from any other businesses (examples: hiring out of machines, shop owner, weaving, taxi)?</label>
+    </input>
+    <input ref="/tbleconomicsurvey/remittanceincome">
+      <label>Q9. Over the past 12 months, approximately how much cash income did you receive from remittances?</label>
+    </input>
+    <input ref="/tbleconomicsurvey/pensionincome">
+      <label>Q10. Over the past 12 months, approximately how much cash income did you receive from pensions?</label>
+    </input>
+    <input ref="/tbleconomicsurvey/rentalrealestateincome">
+      <label>Q11. Over the past 12 months, approximately how much cash income did you receive from rental/real estate (money earned from renting property to others)?</label>
+    </input>
+    <input ref="/tbleconomicsurvey/otherassetincome">
+      <label>Q12. Over the past 12 months, approximately how much cash income did you receive sale of land or other assets?</label>
+    </input>
+    <input ref="/tbleconomicsurvey/otherincome">
+      <label>Q13. Over the past 12 months, approximately how much cash income did you receive from any other source of income?</label>
+    </input>
+    <input ref="/tbleconomicsurvey/othersource">
+      <label>Specify other income source.</label>
+    </input>
+    <input query="instance('roofmateriallist')/root/item[dzongkhag=&quot;RM&quot;]" ref="/tbleconomicsurvey/roofmaterial">
+      <label>Q14.What type of roof-material is mainly used for your house?</label>
+      <hint>Fill this questions direct from observation and confirm with the farmer.</hint>
+    </input>
+    <input ref="/tbleconomicsurvey/otherfoormaterial">
+      <label>Specify other</label>
+    </input>
+    <group appearance="field-list" ref="/tbleconomicsurvey/householdequipment">
+      <label>Q15.How many pieces of household equipment does your household own and use?[Go through each item and give the respondent time to reply. If the respondent has no such items then enter 0.]</label>
+      <input ref="/tbleconomicsurvey/householdequipment/ricecooker">
+        <label>Rice cooker</label>
+      </input>
+      <input ref="/tbleconomicsurvey/householdequipment/currycooker">
+        <label>Curry cooker</label>
+      </input>
+      <input ref="/tbleconomicsurvey/householdequipment/waterboiler">
+        <label>Water boiler</label>
+      </input>
+      <input ref="/tbleconomicsurvey/householdequipment/simplephone">
+        <label>Simple Mobile telephone</label>
+      </input>
+      <input ref="/tbleconomicsurvey/householdequipment/smartphone">
+        <label>Smartphone</label>
+      </input>
+      <input ref="/tbleconomicsurvey/householdequipment/fixedphoneline">
+        <label>Fixed line telephone</label>
+      </input>
+      <input ref="/tbleconomicsurvey/householdequipment/personalcomputer">
+        <label>Personal computer</label>
+      </input>
+      <input ref="/tbleconomicsurvey/householdequipment/refrigerator">
+        <label>Refrigerator</label>
+      </input>
+      <input ref="/tbleconomicsurvey/householdequipment/washingmachine">
+        <label>Washing machine</label>
+      </input>
+      <input ref="/tbleconomicsurvey/householdequipment/radio">
+        <label>Radio or transistor</label>
+      </input>
+      <input ref="/tbleconomicsurvey/householdequipment/tv">
+        <label>Television</label>
+      </input>
+      <input ref="/tbleconomicsurvey/householdequipment/fourwheeler">
+        <label>Four-wheel vehicles</label>
+      </input>
+      <input ref="/tbleconomicsurvey/householdequipment/twowheeler">
+        <label>Two-wheel vehicles</label>
+      </input>
+    </group>
+    <input query="instance('toiletfacilitylist')/root/item[dzongkhag=&quot;TF&quot;]" ref="/tbleconomicsurvey/toiletfacility">
+      <label>Q16.What kind of toilet facility does your household use?</label>
+    </input>
+    <input ref="/tbleconomicsurvey/othertoiletfacilitylist">
+      <label>Specify other</label>
+    </input>
+    <input query="instance('watersourcelist')/root/item[dzongkhag=&quot;WS&quot;]" ref="/tbleconomicsurvey/watersource">
+      <label>Q17.What is the current main source of water for your household?</label>
+    </input>
+    <input ref="/tbleconomicsurvey/otherwatersourcelist">
+      <label>Specify other</label>
+    </input>
+    <select ref="/tbleconomicsurvey/agritool">
+      <label>Q18.What kind of agricultural tools does the farmer have?</label>
+      <item>
+        <label>Tractor</label>
+        <value>agritoollist1</value>
+      </item>
+      <item>
+        <label>Power tiller</label>
+        <value>agritoollist2</value>
+      </item>
+      <item>
+        <label>Power thresher</label>
+        <value>agritoollist3</value>
+      </item>
+      <item>
+        <label>Paddle thresher</label>
+        <value>agritoollist4</value>
+      </item>
+      <item>
+        <label>Rice mill set</label>
+        <value>agritoollist5</value>
+      </item>
+      <item>
+        <label>Oil mill set</label>
+        <value>agritoollist6</value>
+      </item>
+      <item>
+        <label>Power reaper</label>
+        <value>agritoollist7</value>
+      </item>
+      <item>
+        <label>Chainsaw / Power chain</label>
+        <value>agritoollist8</value>
+      </item>
+      <item>
+        <label>Tengma mill</label>
+        <value>agritoollist9</value>
+      </item>
+      <item>
+        <label>Other</label>
+        <value>agritoollist10</value>
+      </item>
+      <item>
+        <label>None</label>
+        <value>agritoollist11</value>
+      </item>
+    </select>
+    <input ref="/tbleconomicsurvey/otheragritoollist">
+      <label>Specify other</label>
+    </input>
+    <input query="instance('happinesslevellist')/root/item[dzongkhag=&quot;HL&quot;]" ref="/tbleconomicsurvey/happinesslevel">
+      <label>Q19.Do you consider yourself?</label>
+    </input>
+    <input ref="/tbleconomicsurvey/anycomment">
+      <label>Comments (if any)</label>
+    </input>
+    <input ref="/tbleconomicsurvey/thanksgiving">
+      <label>Please thank the farmer for his precious time and reassure him once again that all his data will be treated confidentially.</label>
+      <hint>Session completed</hint>
+    </input>
+  </h:body>
+</h:html>
