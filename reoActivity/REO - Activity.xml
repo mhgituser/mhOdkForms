@@ -779,6 +779,18 @@
           <text id="static_instance-farmercode-268">
             <value>132</value>
           </text>
+          <text id="static_instance-dzongkhag-16">
+            <value>D17 Paro</value>
+          </text>
+          <text id="static_instance-dzongkhag-17">
+            <value>D18 Haa</value>
+          </text>
+          <text id="static_instance-dzongkhag-18">
+            <value>D19 Sarpang</value>
+          </text>
+          <text id="static_instance-dzongkhag-19">
+            <value>D20 Samtse</value>
+          </text>
           <text id="static_instance-farmercode-269">
             <value>131</value>
           </text>
@@ -1886,6 +1898,9 @@
           <text id="static_instance-farmercode-387">
             <value>13</value>
           </text>
+          <text id="static_instance-dzongkhag-15">
+            <value>D16 Thimphu</value>
+          </text>
           <text id="static_instance-farmvisitreason-8">
             <value>Other</value>
           </text>
@@ -2069,7 +2084,7 @@
         </translation>
       </itext>
       <instance>
-        <reoActivity id="reoactivity" version="1008">
+        <reoActivity id="reoactivity" version="1009">
           <start/>
           <end/>
           <today/>
@@ -4827,6 +4842,26 @@
             <itextId>static_instance-dzongkhag-14</itextId>
             <name>D15</name>
           </item>
+          <item>
+            <itextId>static_instance-dzongkhag-15</itextId>
+            <name>D16</name>
+          </item>
+          <item>
+            <itextId>static_instance-dzongkhag-16</itextId>
+            <name>D17</name>
+          </item>
+          <item>
+            <itextId>static_instance-dzongkhag-17</itextId>
+            <name>D18</name>
+          </item>
+          <item>
+            <itextId>static_instance-dzongkhag-18</itextId>
+            <name>D19</name>
+          </item>
+          <item>
+            <itextId>static_instance-dzongkhag-19</itextId>
+            <name>D20</name>
+          </item>
         </root>
       </instance>
       <instance id="soilmoisturetype">
@@ -5406,6 +5441,26 @@
       <item>
         <label>D15 Chhukha</label>
         <value>D15</value>
+      </item>
+      <item>
+        <label>D16 Thimphu</label>
+        <value>D16</value>
+      </item>
+      <item>
+        <label>D17 Paro</label>
+        <value>D17</value>
+      </item>
+      <item>
+        <label>D18 Haa</label>
+        <value>D18</value>
+      </item>
+      <item>
+        <label>D19 Sarpang</label>
+        <value>D19</value>
+      </item>
+      <item>
+        <label>D20 Samtse</label>
+        <value>D20</value>
       </item>
     </select1>
     <input appearance="minimal" query="instance('gewog')/root/item[dzongkhag= /reoActivity/dcode ]" ref="/reoActivity/gcode">
@@ -7852,6 +7907,26 @@
         <item>
           <label>D15 Chhukha</label>
           <value>D15</value>
+        </item>
+        <item>
+          <label>D16 Thimphu</label>
+          <value>D16</value>
+        </item>
+        <item>
+          <label>D17 Paro</label>
+          <value>D17</value>
+        </item>
+        <item>
+          <label>D18 Haa</label>
+          <value>D18</value>
+        </item>
+        <item>
+          <label>D19 Sarpang</label>
+          <value>D19</value>
+        </item>
+        <item>
+          <label>D20 Samtse</label>
+          <value>D20</value>
         </item>
       </select1>
       <input appearance="minimal" query="instance('gewog')/root/item[dzongkhag= /reoActivity/visit/visitdcode ]" ref="/reoActivity/visit/visitgcode">
