@@ -11,14 +11,8 @@
           <text id="static_instance-fieldstorage-0">
             <value>Field</value>
           </text>
-          <text id="static_instance-staffcode-2">
-            <value>S0743 Thinley</value>
-          </text>
           <text id="static_instance-farmvisitreason-0">
             <value>Spraying chemicals</value>
-          </text>
-          <text id="static_instance-staffcode-3">
-            <value>S0744 Leki Zangmo</value>
           </text>
           <text id="static_instance-farmercode-330">
             <value>70</value>
@@ -80,17 +74,11 @@
           <text id="static_instance-farmertype-1">
             <value>Grf/Srf Land</value>
           </text>
-          <text id="static_instance-staffcode-8">
-            <value>S0749 Sangay Tenzin</value>
-          </text>
           <text id="static_instance-imagecategory-4">
             <value>Individual tree</value>
           </text>
           <text id="static_instance-imagecategory-5">
             <value>Other</value>
-          </text>
-          <text id="static_instance-staffcode-9">
-            <value>S0750 Dorji Tempa</value>
           </text>
           <text id="static_instance-imagecategory-0">
             <value>Pest</value>
@@ -143,6 +131,9 @@
           <text id="static_instance-farmercode-360">
             <value>40</value>
           </text>
+          <text id="static_instance-farmercode-195">
+            <value>205</value>
+          </text>
           <text id="static_instance-farmercode-213">
             <value>187</value>
           </text>
@@ -175,6 +166,9 @@
           </text>
           <text id="static_instance-farmercode-60">
             <value>340</value>
+          </text>
+          <text id="static_instance-farmercode-210">
+            <value>190</value>
           </text>
           <text id="static_instance-farmercode-219">
             <value>181</value>
@@ -251,6 +245,9 @@
           <text id="static_instance-farmercode-3">
             <value>397</value>
           </text>
+          <text id="static_instance-staff-137">
+            <value>S0741 Rinzin Wangchuk</value>
+          </text>
           <text id="static_instance-staff-136">
             <value>S0523 Passang Tobgyel</value>
           </text>
@@ -277,6 +274,12 @@
           </text>
           <text id="static_instance-fertilizerlist-5">
             <value>Suphala/Urea mix</value>
+          </text>
+          <text id="static_instance-staff-139">
+            <value>S0743 Thinley</value>
+          </text>
+          <text id="static_instance-staff-138">
+            <value>S0742 Dawa Gyeltshen</value>
           </text>
           <text id="static_instance-farmercode-389">
             <value>11</value>
@@ -386,9 +389,6 @@
           <text id="static_instance-farmercode-212">
             <value>188</value>
           </text>
-          <text id="static_instance-staffcode-10">
-            <value>S0751 Kinley Tshering</value>
-          </text>
           <text id="static_instance-farmercode-338">
             <value>62</value>
           </text>
@@ -464,9 +464,6 @@
           <text id="static_instance-farmercode-33">
             <value>367</value>
           </text>
-          <text id="static_instance-staffcode-12">
-            <value>S0753 Pema Tshewang</value>
-          </text>
           <text id="static_instance-farmercode-38">
             <value>362</value>
           </text>
@@ -524,14 +521,35 @@
           <text id="static_instance-farmercode-258">
             <value>142</value>
           </text>
+          <text id="static_instance-staff-0">
+            <value>S0356 Jimba Dorji</value>
+          </text>
           <text id="static_instance-reoofficelocation-3">
             <value>LMT</value>
           </text>
           <text id="static_instance-fencingtype-4">
             <value>None</value>
           </text>
+          <text id="static_instance-staff-155">
+            <value>S0759 Sonam Wangchuk</value>
+          </text>
+          <text id="static_instance-staff-154">
+            <value>S0758 Tashi Phuntsho</value>
+          </text>
+          <text id="static_instance-staff-157">
+            <value>S0761 Dorji Tshering</value>
+          </text>
+          <text id="static_instance-reoofficework-1">
+            <value>Research</value>
+          </text>
+          <text id="static_instance-staff-151">
+            <value>S0755 Nima Dorji</value>
+          </text>
           <text id="static_instance-fencingtype-3">
             <value>Electrical</value>
+          </text>
+          <text id="static_instance-staff-150">
+            <value>S0754 Tula Ram Ghalley</value>
           </text>
           <text id="static_instance-reasonoftravell-4">
             <value>Reo regional gatherings</value>
@@ -548,14 +566,17 @@
           <text id="static_instance-reasonoftravell-0">
             <value>Farm visit</value>
           </text>
-          <text id="static_instance-reasonoftravell-1">
-            <value>Training</value>
+          <text id="static_instance-staff-153">
+            <value>S0757 Karma Tshewang</value>
           </text>
           <text id="static_instance-reasonoftravell-2">
             <value>MH official meeting</value>
           </text>
           <text id="static_instance-reasonoftravell-3">
             <value>Monitor regional gatherings</value>
+          </text>
+          <text id="static_instance-staff-152">
+            <value>S0756 Tashi Wangchuk</value>
           </text>
           <text id="static_instance-reasonoftravell-8">
             <value>Other</value>
@@ -635,8 +656,8 @@
           <text id="static_instance-farmercode-194">
             <value>206</value>
           </text>
-          <text id="static_instance-farmercode-195">
-            <value>205</value>
+          <text id="static_instance-farmercode-138">
+            <value>262</value>
           </text>
           <text id="static_instance-farmercode-196">
             <value>204</value>
@@ -653,8 +674,8 @@
           <text id="static_instance-farmercode-211">
             <value>189</value>
           </text>
-          <text id="static_instance-farmercode-210">
-            <value>190</value>
+          <text id="static_instance-farmercode-139">
+            <value>261</value>
           </text>
           <text id="static_instance-farmercode-217">
             <value>183</value>
@@ -692,9 +713,6 @@
           <text id="static_instance-farmercode-79">
             <value>321</value>
           </text>
-          <text id="static_instance-staffcode-11">
-            <value>S0752 Phuntsho Norbu</value>
-          </text>
           <text id="static_instance-farmercode-70">
             <value>330</value>
           </text>
@@ -719,26 +737,11 @@
           <text id="static_instance-farmercode-77">
             <value>323</value>
           </text>
-          <text id="static_instance-staffcode-13">
-            <value>S0754 Tula Ram Ghalley</value>
-          </text>
-          <text id="static_instance-staffcode-14">
-            <value>S0755 Nima Dorji</value>
-          </text>
-          <text id="static_instance-staffcode-15">
-            <value>S0756 Tashi Wangchuk</value>
-          </text>
           <text id="static_instance-reoofficelocation-4">
             <value>Thimphu</value>
           </text>
-          <text id="static_instance-staffcode-16">
-            <value>S0757 Karma Tshewang</value>
-          </text>
           <text id="static_instance-reoofficelocation-5">
             <value>Farm</value>
-          </text>
-          <text id="static_instance-staffcode-17">
-            <value>S0758 Tashi Phuntsho</value>
           </text>
           <text id="static_instance-reoofficelocation-6">
             <value>Other</value>
@@ -1106,11 +1109,23 @@
           <text id="static_instance-staff-1">
             <value>S0357 Bidur Rai</value>
           </text>
-          <text id="static_instance-farmercode-138">
-            <value>262</value>
+          <text id="static_instance-staff-164">
+            <value>S0768 Sangay Lethro</value>
           </text>
-          <text id="static_instance-farmercode-139">
-            <value>261</value>
+          <text id="static_instance-staff-165">
+            <value>S0769 Sonam Tenzin</value>
+          </text>
+          <text id="static_instance-staff-160">
+            <value>S0764 Karma Dupchu</value>
+          </text>
+          <text id="static_instance-staff-161">
+            <value>S0765 Youden</value>
+          </text>
+          <text id="static_instance-staff-162">
+            <value>S0766 Samten Pelzang</value>
+          </text>
+          <text id="static_instance-staff-163">
+            <value>S0767 Jamyang Tenzin</value>
           </text>
           <text id="static_instance-farmercode-136">
             <value>264</value>
@@ -1205,8 +1220,8 @@
           <text id="static_instance-treedamagepresentproblem-5">
             <value>Other</value>
           </text>
-          <text id="static_instance-staff-0">
-            <value>S0356 Jimba Dorji</value>
+          <text id="static_instance-farmercode-93">
+            <value>307</value>
           </text>
           <text id="static_instance-staff-11">
             <value>S0307 Tashi Dawa</value>
@@ -1475,9 +1490,6 @@
           <text id="static_instance-reoactivity-6">
             <value>Others</value>
           </text>
-          <text id="static_instance-staffcode-18">
-            <value>S0759 Sonam Wangchuk</value>
-          </text>
           <text id="static_instance-farmercode-369">
             <value>31</value>
           </text>
@@ -1486,6 +1498,12 @@
           </text>
           <text id="static_instance-farmercode-368">
             <value>32</value>
+          </text>
+          <text id="static_instance-staff-159">
+            <value>S0763 Pema Loday</value>
+          </text>
+          <text id="static_instance-staff-158">
+            <value>S0762 Damcho Wangmo</value>
           </text>
           <text id="static_instance-reoofficework-2">
             <value>Working with MS</value>
@@ -1496,8 +1514,8 @@
           <text id="static_instance-reoofficework-0">
             <value>Weekly summary / Skype Call</value>
           </text>
-          <text id="static_instance-reoofficework-1">
-            <value>Research</value>
+          <text id="static_instance-staff-156">
+            <value>S0760 Jigme Dorji</value>
           </text>
           <text id="static_instance-reoofficework-6">
             <value>Weekly plan</value>
@@ -1540,33 +1558,6 @@
           </text>
           <text id="static_instance-staff-52">
             <value>S0369 Gyenden</value>
-          </text>
-          <text id="static_instance-staffcode-21">
-            <value>S0762 Damcho Wangmo</value>
-          </text>
-          <text id="static_instance-staffcode-20">
-            <value>S0761 Dorji Tshering</value>
-          </text>
-          <text id="static_instance-staffcode-23">
-            <value>S0764 Karma Dupchu</value>
-          </text>
-          <text id="static_instance-staffcode-22">
-            <value>S0763 Pema Loday</value>
-          </text>
-          <text id="static_instance-staffcode-25">
-            <value>S0766 Samten Pelzang</value>
-          </text>
-          <text id="static_instance-staffcode-24">
-            <value>S0765 Youden</value>
-          </text>
-          <text id="static_instance-staffcode-27">
-            <value>S0768 Sangay Lethro</value>
-          </text>
-          <text id="static_instance-staffcode-26">
-            <value>S0767 Jamyang Tenzin</value>
-          </text>
-          <text id="static_instance-staffcode-28">
-            <value>S0769 Sonam Tenzin</value>
           </text>
           <text id="static_instance-staff-28">
             <value>S0332 Sonam Chophel</value>
@@ -1630,9 +1621,6 @@
           </text>
           <text id="static_instance-farmercode-249">
             <value>151</value>
-          </text>
-          <text id="static_instance-staffcode-19">
-            <value>S0760 Jigme Dorji</value>
           </text>
           <text id="static_instance-pesttype-4">
             <value>Other</value>
@@ -1757,29 +1745,11 @@
           <text id="static_instance-farmercode-238">
             <value>162</value>
           </text>
-          <text id="static_instance-staffcode-6">
-            <value>S0747 Pema Wangchuk</value>
-          </text>
-          <text id="static_instance-staffcode-7">
-            <value>S0748 Dewakar Bujel</value>
-          </text>
-          <text id="static_instance-staffcode-4">
-            <value>S0745 Sonam Yeshi</value>
-          </text>
-          <text id="static_instance-staffcode-5">
-            <value>S0746 Rinchen Dema</value>
-          </text>
           <text id="static_instance-farmercode-129">
             <value>271</value>
           </text>
           <text id="static_instance-farmercode-128">
             <value>272</value>
-          </text>
-          <text id="static_instance-staffcode-0">
-            <value>S0741 Rinzin Wangchuk</value>
-          </text>
-          <text id="static_instance-staffcode-1">
-            <value>S0742 Dawa Gyeltshen</value>
           </text>
           <text id="static_instance-farmercode-125">
             <value>275</value>
@@ -1834,6 +1804,9 @@
           </text>
           <text id="static_instance-chemicallist-3">
             <value>Coragen</value>
+          </text>
+          <text id="static_instance-visitreason-3">
+            <value>Orchard management</value>
           </text>
           <text id="static_instance-staff-102">
             <value>S0481 Tshering Pelden</value>
@@ -2156,8 +2129,8 @@
           <text id="static_instance-visitreason-2">
             <value>Readvocacy</value>
           </text>
-          <text id="static_instance-visitreason-3">
-            <value>Orchard management</value>
+          <text id="static_instance-reasonoftravell-1">
+            <value>Training</value>
           </text>
           <text id="static_instance-fieldhealthproblem-7">
             <value>Other</value>
@@ -2165,13 +2138,40 @@
           <text id="static_instance-staff-78">
             <value>S0432 Sonam Chedup</value>
           </text>
-          <text id="static_instance-farmercode-93">
-            <value>307</value>
+          <text id="static_instance-staff-148">
+            <value>S0752 Phuntsho Norbu</value>
+          </text>
+          <text id="static_instance-staff-149">
+            <value>S0753 Pema Tshewang</value>
+          </text>
+          <text id="static_instance-staff-146">
+            <value>S0750 Dorji Tempa</value>
+          </text>
+          <text id="static_instance-staff-147">
+            <value>S0751 Kinley Tshering</value>
+          </text>
+          <text id="static_instance-staff-144">
+            <value>S0748 Dewakar Bujel</value>
+          </text>
+          <text id="static_instance-staff-145">
+            <value>S0749 Sangay Tenzin</value>
+          </text>
+          <text id="static_instance-staff-142">
+            <value>S0746 Rinchen Dema</value>
+          </text>
+          <text id="static_instance-staff-143">
+            <value>S0747 Pema Wangchuk</value>
+          </text>
+          <text id="static_instance-staff-140">
+            <value>S0744 Leki Zangmo</value>
+          </text>
+          <text id="static_instance-staff-141">
+            <value>S0745 Sonam Yeshi</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <reoActivity id="reoactivity" version="1010">
+        <reoActivity id="reoactivity" version="1012">
           <start/>
           <end/>
           <today/>
@@ -3044,6 +3044,151 @@
             <itextId>static_instance-staff-136</itextId>
             <stafftype>FM</stafftype>
             <name>S0523</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-137</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0741</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-138</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0742</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-139</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0743</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-140</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0744</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-141</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0745</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-142</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0746</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-143</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0747</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-144</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0748</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-145</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0749</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-146</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0750</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-147</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0751</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-148</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0752</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-149</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0753</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-150</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0754</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-151</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0755</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-152</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0756</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-153</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0757</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-154</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0758</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-155</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0759</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-156</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0760</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-157</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0761</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-158</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0762</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-159</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0763</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-160</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0764</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-161</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0765</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-162</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0766</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-163</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0767</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-164</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0768</name>
+          </item>
+          <item>
+            <itextId>static_instance-staff-165</itextId>
+            <stafftype>FM</stafftype>
+            <name>S0769</name>
           </item>
         </root>
       </instance>
@@ -4948,155 +5093,6 @@
           <item>
             <itextId>static_instance-dzongkhag-19</itextId>
             <name>D20</name>
-          </item>
-        </root>
-      </instance>
-      <instance id="staffcode">
-        <root>
-          <item>
-            <itextId>static_instance-staffcode-0</itextId>
-            <stafftype>M</stafftype>
-            <name>S0741</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-1</itextId>
-            <stafftype>M</stafftype>
-            <name>S0742</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-2</itextId>
-            <stafftype>M</stafftype>
-            <name>S0743</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-3</itextId>
-            <stafftype>M</stafftype>
-            <name>S0744</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-4</itextId>
-            <stafftype>M</stafftype>
-            <name>S0745</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-5</itextId>
-            <stafftype>M</stafftype>
-            <name>S0746</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-6</itextId>
-            <stafftype>M</stafftype>
-            <name>S0747</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-7</itextId>
-            <stafftype>M</stafftype>
-            <name>S0748</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-8</itextId>
-            <stafftype>M</stafftype>
-            <name>S0749</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-9</itextId>
-            <stafftype>M</stafftype>
-            <name>S0750</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-10</itextId>
-            <stafftype>M</stafftype>
-            <name>S0751</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-11</itextId>
-            <stafftype>M</stafftype>
-            <name>S0752</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-12</itextId>
-            <stafftype>M</stafftype>
-            <name>S0753</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-13</itextId>
-            <stafftype>M</stafftype>
-            <name>S0754</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-14</itextId>
-            <stafftype>M</stafftype>
-            <name>S0755</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-15</itextId>
-            <stafftype>M</stafftype>
-            <name>S0756</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-16</itextId>
-            <stafftype>M</stafftype>
-            <name>S0757</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-17</itextId>
-            <stafftype>M</stafftype>
-            <name>S0758</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-18</itextId>
-            <stafftype>M</stafftype>
-            <name>S0759</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-19</itextId>
-            <stafftype>M</stafftype>
-            <name>S0760</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-20</itextId>
-            <stafftype>M</stafftype>
-            <name>S0761</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-21</itextId>
-            <stafftype>M</stafftype>
-            <name>S0762</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-22</itextId>
-            <stafftype>M</stafftype>
-            <name>S0763</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-23</itextId>
-            <stafftype>M</stafftype>
-            <name>S0764</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-24</itextId>
-            <stafftype>M</stafftype>
-            <name>S0765</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-25</itextId>
-            <stafftype>M</stafftype>
-            <name>S0766</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-26</itextId>
-            <stafftype>M</stafftype>
-            <name>S0767</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-27</itextId>
-            <stafftype>M</stafftype>
-            <name>S0768</name>
-          </item>
-          <item>
-            <itextId>static_instance-staffcode-28</itextId>
-            <stafftype>M</stafftype>
-            <name>S0769</name>
           </item>
         </root>
       </instance>
