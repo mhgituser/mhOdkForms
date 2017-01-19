@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>MTR - Negligent Farmer</h:title>
+    <model>
+      <instance>
+        <tblnegligentfarmer id="tblnegligentfarmer" version="1000">
+          <start/>
+          <end/>
+          <deviceid/>
+          <today/>
+          <email/>
+          <phonenumber/>
+          <simserial/>
+          <gennote/>
+          <form/>
+          <staffid/>
+          <farmerbarcode/>
+          <dcode/>
+          <gcode/>
+          <tcode/>
+          <fcode/>
+          <fname/>
+          <vno/>
+          <landuse/>
+          <pperforming/>
+          <fmadvice1/>
+          <duedate1/>
+          <fagree1/>
+          <isreopresent/>
+          <reo/>
+          <isrmopresent/>
+          <rmo/>
+          <ismspresent/>
+          <ms/>
+          <advicev1/>
+          <reason2/>
+          <improvement2/>
+          <fmadvice2/>
+          <status2/>
+          <duedate2/>
+          <fagree2/>
+          <advicev2/>
+          <reason3/>
+          <improvement3/>
+          <status3/>
+          <reocomment/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </tblnegligentfarmer>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/tblnegligentfarmer/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/tblnegligentfarmer/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/tblnegligentfarmer/deviceid" type="string"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/tblnegligentfarmer/today" type="date"/>
+      <bind jr:preload="property" jr:preloadParams="email" nodeset="/tblnegligentfarmer/email" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/tblnegligentfarmer/phonenumber" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/tblnegligentfarmer/simserial" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/gennote" readonly="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/form" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/staffid" required="true()" type="string"/>
+      <bind jr:constraintMsg="Invalid barcode" nodeset="/tblnegligentfarmer/farmerbarcode" type="barcode"/>
+      <bind nodeset="/tblnegligentfarmer/dcode" relevant=" /tblnegligentfarmer/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/gcode" relevant=" /tblnegligentfarmer/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/tcode" relevant=" /tblnegligentfarmer/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/fcode" relevant=" /tblnegligentfarmer/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/fname" relevant=" /tblnegligentfarmer/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/vno" required="true()" type="select1"/>
+      <bind nodeset="/tblnegligentfarmer/landuse" relevant=" /tblnegligentfarmer/vno ='visit1'" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/pperforming" relevant=" /tblnegligentfarmer/vno ='visit1'" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/fmadvice1" relevant=" /tblnegligentfarmer/vno ='visit1'" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/duedate1" relevant=" /tblnegligentfarmer/vno ='visit1'" required="true()" type="date"/>
+      <bind nodeset="/tblnegligentfarmer/fagree1" relevant=" /tblnegligentfarmer/vno ='visit1'" required="true()" type="select1"/>
+      <bind nodeset="/tblnegligentfarmer/isreopresent" required="true()" type="select1"/>
+      <bind nodeset="/tblnegligentfarmer/reo" relevant=" /tblnegligentfarmer/isreopresent ='yes'" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/isrmopresent" required="true()" type="select1"/>
+      <bind nodeset="/tblnegligentfarmer/rmo" relevant=" /tblnegligentfarmer/isrmopresent ='yes'" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/ismspresent" required="true()" type="select1"/>
+      <bind nodeset="/tblnegligentfarmer/ms" relevant=" /tblnegligentfarmer/ismspresent ='yes'" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/advicev1" relevant=" /tblnegligentfarmer/vno ='visit2'" required="true()" type="select1"/>
+      <bind nodeset="/tblnegligentfarmer/reason2" relevant="selected( /tblnegligentfarmer/advicev1 , 'no')" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/improvement2" relevant=" /tblnegligentfarmer/vno ='visit2'" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/fmadvice2" relevant=" /tblnegligentfarmer/vno ='visit2'" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/status2" relevant=" /tblnegligentfarmer/vno ='visit2'" required="true()" type="select1"/>
+      <bind nodeset="/tblnegligentfarmer/duedate2" relevant=" /tblnegligentfarmer/vno ='visit2'" required="true()" type="date"/>
+      <bind nodeset="/tblnegligentfarmer/fagree2" relevant=" /tblnegligentfarmer/vno ='visit2'" required="true()" type="select1"/>
+      <bind nodeset="/tblnegligentfarmer/advicev2" relevant=" /tblnegligentfarmer/vno ='visit3'" required="true()" type="select1"/>
+      <bind nodeset="/tblnegligentfarmer/reason3" relevant="selected( /tblnegligentfarmer/advicev2 , 'no')" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/improvement3" relevant=" /tblnegligentfarmer/vno ='visit3'" required="true()" type="string"/>
+      <bind nodeset="/tblnegligentfarmer/status3" relevant=" /tblnegligentfarmer/vno ='visit3'" required="true()" type="select1"/>
+      <bind nodeset="/tblnegligentfarmer/reocomment" relevant=" /tblnegligentfarmer/vno ='visit3'" required="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/tblnegligentfarmer/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/tblnegligentfarmer/gennote">
+      <label>Mountain Hazelnut Venture
+
+Form Name: Neglient Farmer Tracker
+Form ID: MH-FF-06
+Revision Date: 08-01-2015
+Revision Number: 0.1</label>
+      <hint>----------------------------------------
+
+Important:This form contains field geo location option which must be taken at the field site.</hint>
+    </input>
+    <input ref="/tblnegligentfarmer/form">
+      <label>Form No.</label>
+    </input>
+    <input query="instance('staffcode')/root/item[dzongkhag=&quot;FM&quot;]" ref="/tblnegligentfarmer/staffid">
+      <label>Select your name</label>
+    </input>
+    <input ref="/tblnegligentfarmer/farmerbarcode">
+      <label>Scan farmer details from barcode sheet</label>
+    </input>
+    <input query="instance('dzongkhag')/root/item[dzongkhag=&quot;D&quot;]" ref="/tblnegligentfarmer/dcode">
+      <label>Select Dzongkhag</label>
+    </input>
+    <input query="instance('gewog')/root/item[dzongkhag= /tblnegligentfarmer/dcode ]" ref="/tblnegligentfarmer/gcode">
+      <label>Select Gewog</label>
+    </input>
+    <input query="instance('tshowog')/root/item[gewog= /tblnegligentfarmer/gcode ]" ref="/tblnegligentfarmer/tcode">
+      <label>Select Tshowog</label>
+    </input>
+    <input query="instance('farmercode')/root/item[dzongkhag=&quot;FC&quot;]" ref="/tblnegligentfarmer/fcode">
+      <label>Farmer code</label>
+    </input>
+    <input ref="/tblnegligentfarmer/fname">
+      <label>Farmer name</label>
+    </input>
+    <select1 ref="/tblnegligentfarmer/vno">
+      <label>select Visit number</label>
+      <item>
+        <label>Visit 1</label>
+        <value>visit1</value>
+      </item>
+      <item>
+        <label>Visit 2</label>
+        <value>visit2</value>
+      </item>
+      <item>
+        <label>Visit 3</label>
+        <value>visit3</value>
+      </item>
+    </select1>
+    <input ref="/tblnegligentfarmer/landuse">
+      <label>History of land use prior to Hazel plantation</label>
+    </input>
+    <input ref="/tblnegligentfarmer/pperforming">
+      <label>Why is his orchard poor performing?</label>
+    </input>
+    <input ref="/tblnegligentfarmer/fmadvice1">
+      <label>FM advice to the farmer visit 1</label>
+    </input>
+    <input appearance="no-calendar" ref="/tblnegligentfarmer/duedate1">
+      <label>Due Date</label>
+    </input>
+    <select1 ref="/tblnegligentfarmer/fagree1">
+      <label>Did farmer agree to follow the advice</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <select1 ref="/tblnegligentfarmer/isreopresent">
+      <label>Is REO present?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <input query="instance('staffcode')/root/item[dzongkhag=&quot;REO&quot;]" ref="/tblnegligentfarmer/reo">
+      <label>Select REO</label>
+    </input>
+    <select1 ref="/tblnegligentfarmer/isrmopresent">
+      <label>Is RMO present?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <input query="instance('staffcode')/root/item[dzongkhag=&quot;RMO&quot;]" ref="/tblnegligentfarmer/rmo">
+      <label>Select RMO</label>
+    </input>
+    <select1 ref="/tblnegligentfarmer/ismspresent">
+      <label>Is MS present?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <input query="instance('staffcode')/root/item[dzongkhag=&quot;MS&quot;]" ref="/tblnegligentfarmer/ms">
+      <label>Select MS</label>
+    </input>
+    <select1 ref="/tblnegligentfarmer/advicev1">
+      <label>Has farmer carried advice from visit 1</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <input ref="/tblnegligentfarmer/reason2">
+      <label>Reason why farmer has not carried advice from visit 1</label>
+    </input>
+    <input ref="/tblnegligentfarmer/improvement2">
+      <label>Improvement comment on orchard visit 2</label>
+    </input>
+    <input ref="/tblnegligentfarmer/fmadvice2">
+      <label>FM advice to the farmer visit 2</label>
+    </input>
+    <select1 ref="/tblnegligentfarmer/status2">
+      <label>Status visit 2</label>
+      <item>
+        <label>Completed</label>
+        <value>completed</value>
+      </item>
+      <item>
+        <label>Incompleted</label>
+        <value>incompleted</value>
+      </item>
+      <item>
+        <label>Not Started</label>
+        <value>notstarted</value>
+      </item>
+    </select1>
+    <input appearance="no-calendar" ref="/tblnegligentfarmer/duedate2">
+      <label>Due Date</label>
+    </input>
+    <select1 ref="/tblnegligentfarmer/fagree2">
+      <label>Did farmer agree to follow the advice</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <select1 ref="/tblnegligentfarmer/advicev2">
+      <label>Has farmer carried advice from visit 2</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <input ref="/tblnegligentfarmer/reason3">
+      <label>Reason why farmer has not carried advice from visit 2</label>
+    </input>
+    <input ref="/tblnegligentfarmer/improvement3">
+      <label>Improvement comment on orchard visit 3</label>
+    </input>
+    <select1 ref="/tblnegligentfarmer/status3">
+      <label>Status visit 3</label>
+      <item>
+        <label>Completed</label>
+        <value>completed</value>
+      </item>
+      <item>
+        <label>Incompleted</label>
+        <value>incompleted</value>
+      </item>
+      <item>
+        <label>Not Started</label>
+        <value>notstarted</value>
+      </item>
+    </select1>
+    <input ref="/tblnegligentfarmer/reocomment">
+      <label>REO's Comment if the farmer should be issued with letter</label>
+    </input>
+  </h:body>
+</h:html>
