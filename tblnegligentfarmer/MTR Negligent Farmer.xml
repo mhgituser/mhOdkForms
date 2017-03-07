@@ -27,6 +27,7 @@
           <fmadvice1/>
           <duedate1/>
           <fagree1/>
+          <disagree/>
           <isreopresent/>
           <reo/>
           <isrmopresent/>
@@ -72,6 +73,7 @@
       <bind nodeset="/tblnegligentfarmer/fmadvice1" relevant=" /tblnegligentfarmer/vno ='visit1'" required="true()" type="string"/>
       <bind nodeset="/tblnegligentfarmer/duedate1" relevant=" /tblnegligentfarmer/vno ='visit1'" required="true()" type="date"/>
       <bind nodeset="/tblnegligentfarmer/fagree1" relevant=" /tblnegligentfarmer/vno ='visit1'" required="true()" type="select1"/>
+      <bind nodeset="/tblnegligentfarmer/disagree" relevant="selected( /tblnegligentfarmer/fagree1 , 'no')" required="true()" type="string"/>
       <bind nodeset="/tblnegligentfarmer/isreopresent" required="true()" type="select1"/>
       <bind nodeset="/tblnegligentfarmer/reo" relevant=" /tblnegligentfarmer/isreopresent ='yes'" required="true()" type="string"/>
       <bind nodeset="/tblnegligentfarmer/isrmopresent" required="true()" type="select1"/>
@@ -148,7 +150,8 @@ Important:This form contains field geo location option which must be taken at th
       <label>History of land use prior to Hazel plantation</label>
     </input>
     <input ref="/tblnegligentfarmer/pperforming">
-      <label>Why is his orchard poor performing?</label>
+      <label>Farmers Grivances/Story</label>
+      <hint>Why is his orchard poor performing?</hint>
     </input>
     <input ref="/tblnegligentfarmer/fmadvice1">
       <label>FM advice to the farmer visit 1</label>
@@ -167,6 +170,9 @@ Important:This form contains field geo location option which must be taken at th
         <value>no</value>
       </item>
     </select1>
+    <input ref="/tblnegligentfarmer/disagree">
+      <label>Reason for disagreeing FM advice</label>
+    </input>
     <select1 ref="/tblnegligentfarmer/isreopresent">
       <label>Is REO present?</label>
       <item>

@@ -17,6 +17,8 @@ dzongkhag,D15,D15 Chhukha,D,
 dzongkhag,D16,D16 Thimphu,D,
 dzongkhag,D17,D17 Paro,D,
 dzongkhag,D18,D18 Haa,D,
+dzongkhag,D19,D19 Sarpang,D,
+dzongkhag,D20,D20 Samtse,D,
 gewog,D01G01,G01 Shongphu,D01,
 gewog,D01G02,G02 Samkhar,D01,
 gewog,D01G03,G03 Kanglung,D01,
@@ -56,6 +58,7 @@ gewog,D03G13,G13 Mongar,D03,
 gewog,D03G14,G14 Kengkhar,D03,
 gewog,D03G15,G15 Silambi,D03,
 gewog,D03G16,G16 Jurmey,D03,
+gewog,D03G17,G17 Gongdue,D03,
 gewog,D04G01,G01 Menbee,D04,
 gewog,D04G02,G02 Tshenkhar,D04,
 gewog,D04G03,G03 Dungkhar,D04,
@@ -79,10 +82,12 @@ gewog,D06G03,G03 Martshala,D06,
 gewog,D06G04,G04 Orong,D06,
 gewog,D06G05,G05 Serthi,D06,
 gewog,D06G06,G06 Lauri,D06,
+gewog,D06G07,G07 Pemathang,D06,
 gewog,D07G01,G01 Trong,D07,
 gewog,D07G02,G02 Nangkhor,D07,
 gewog,D07G03,G03 Shingkhar,D07,
 gewog,D07G04,G04 Bardo,D07,
+gewog,D07G05,G05 Phangkha,D07,
 gewog,D08G01,G01 Chhokhor,D08,
 gewog,D08G02,G02 Chamkhar Town,D08,
 gewog,D08G03,G03 Tang,D08,
@@ -184,6 +189,33 @@ gewog,D18G03,G03 Gakling,D18,
 gewog,D18G04,G04 Kartshog,D18,
 gewog,D18G05,G05 Sangbay,D18,
 gewog,D18G06,G06 Samar,D18,
+gewog,D19G01,G01 Chhuzagang,D19,
+gewog,D19G02,G02 Chhudzom,D19,
+gewog,D19G03,G03 Dekiling,D19,
+gewog,D19G04,G04 Gakiling,D19,
+gewog,D19G05,G05 Gelephu,D19,
+gewog,D19G06,G06 Jigmechholing,D19,
+gewog,D19G07,G07 Samtenling,D19,
+gewog,D19G08,G08 Senggey,D19,
+gewog,D19G09,G09 Sherzhong,D19,
+gewog,D19G10,G10 Shompangkha,D19,
+gewog,D19G11,G11 Tareythang,D19,
+gewog,D19G12,G12 Umling,D19,
+gewog,D20G01,G01 Dungtoe,D20,
+gewog,D20G02,G02 Dophoogchen,D20,
+gewog,D20G03,G03 Duenchukha,D20,
+gewog,D20G04,G04 Namgaychhoeling,D20,
+gewog,D20G05,G05 Norbugang,D20,
+gewog,D20G06,G06 Norgaygang,D20,
+gewog,D20G07,G07 Pemaling,D20,
+gewog,D20G08,G08 Phuentshogpelri,D20,
+gewog,D20G09,G09 Sangngagchhoeling,D20,
+gewog,D20G10,G10 Samtse,D20,
+gewog,D20G11,G11 Tading,D20,
+gewog,D20G12,G12 Tashicholing,D20,
+gewog,D20G13,G13 Tendruk,D20,
+gewog,D20G14,G14 Ugentse,D20,
+gewog,D20G15,G15 Yoeseltse,D20,
 tshowog,D01G01T01 Chaling,T01 Chaling,D01,D01G01
 tshowog,D01G01T02 Galing,T02 Galing,D01,D01G01
 tshowog,D01G01T03 Gongseyphangma,T03 Gongseyphangma,D01,D01G01
@@ -217,12 +249,13 @@ tshowog,D01G05T05 Moshi,T05 Moshi,D01,D01G05
 tshowog,D01G05T07 Riserbo,T07 Riserbo,D01,D01G05
 tshowog,D01G05T08 Kharphu,T08 Kharphu,D01,D01G05
 tshowog,D01G05T09 Shatsari,T09 Shatsari,D01,D01G05
+tshowog,D01G05T10 Drubkhang,T10 Drubkhang,D01,D01G05
 tshowog,D01G06T01 Thrimshing,T01 Thrimshing,D01,D01G06
 tshowog,D01G06T02 Tsangpo,T02 Tsangpo,D01,D01G06
 tshowog,D01G06T03 Bardungma,T03 Bardungma,D01,D01G06
 tshowog,D01G06T04 Phushing,T04 Phushing,D01,D01G06
 tshowog,D01G06T05 Phegpheri/wemkhar,T05 Phegpheri/wemkhar,D01,D01G06
-tshowog,D01G07T01 Mixed,T01 Mixed,D01,D01G07
+tshowog,D01G07T01 Yangneer,T01 Yangneer,D01,D01G07
 tshowog,D01G07T02 Gungthung,T02 Gungthung,D01,D01G07
 tshowog,D01G07T03 Shokhang,T03 Shokhang,D01,D01G07
 tshowog,D01G07T04 Dhaliphangma,T04 Dhaliphangma,D01,D01G07
@@ -279,20 +312,22 @@ tshowog,D02G01T03 Baney,T03 Baney,D02,D02G01
 tshowog,D02G01T04 Luchen,T04 Luchen,D02,D02G01
 tshowog,D02G01T05 Gangkha,T05 Gangkha,D02,D02G01
 tshowog,D02G01T06 Rabti,T06 Rabti,D02,D02G01
-tshowog,D02G02T01 Shaling and kuncholing,T01 Shaling and kuncholing,D02,D02G02
-tshowog,D02G02T02 Nomaring and yartse,T02 Nomaring and yartse,D02,D02G02
+tshowog,D02G02T01 Shali,T01 Shali,D02,D02G02
+tshowog,D02G02T02 Nomaring,T02 Nomaring,D02,D02G02
 tshowog,D02G02T03 Gardung,T03 Gardung,D02,D02G02
-tshowog,D02G02T04 Lengkhar and karmazom,T04 Lengkhar and karmazom,D02,D02G02
+tshowog,D02G02T04 Lengkhar,T04 Lengkhar,D02,D02G02
 tshowog,D02G02T05 Saripang,T05 Saripang,D02,D02G02
 tshowog,D02G02T07 Shalam,T07 Shalam,D02,D02G02
 tshowog,D02G02T08 Domtshang,T08 Domtshang,D02,D02G02
 tshowog,D02G02T09 Khamdrang,T09 Khamdrang,D02,D02G02
+tshowog,D02G02T10 Karmazom,T10 Karmazom,D02,D02G02
 tshowog,D02G03T01 Banangkhar & Bhaksha,T01 Banangkhar & Bhaksha,D02,D02G03
-tshowog,D02G03T02 Kenmong and Changmadung,T02 Kenmong and Changmadung,D02,D02G03
-tshowog,D02G03T03 Menchu and Tsengadung,T03 Menchu and Tsengadung,D02,D02G03
+tshowog,D02G03T02 Kenmong,T02 Kenmong,D02,D02G03
+tshowog,D02G03T03 Menchu,T03 Menchu,D02,D02G03
 tshowog,D02G03T04 Pang and Maimung,T04 Pang and Maimung,D02,D02G03
 tshowog,D02G03T05 Kunzaling,T05 Kunzaling,D02,D02G03
 tshowog,D02G03T06 Tsangadung,T06 Tsangadung,D02,D02G03
+tshowog,D02G03T07 Changmadung,T07 Changmadung,D02,D02G03
 tshowog,D02G04T01 Takshema,T01 Takshema,D02,D02G04
 tshowog,D02G04T02 Shingkhar,T02 Shingkhar,D02,D02G04
 tshowog,D02G04T03 Domshing ,T03 Domshing ,D02,D02G04
@@ -581,6 +616,7 @@ tshowog,D09G03T04 Taktse/ Trashitinga,T04 Taktse/ Trashitinga,D09,D09G03
 tshowog,D09G04T01 Baling,T01 Baling,D09,D09G04
 tshowog,D09G04T02 Yuendrupcholing,T02 Yuendrupcholing,D09,D09G04
 tshowog,D09G04T03 Langthel,T03 Langthel,D09,D09G04
+tshowog,D09G04T04 Sheling,T04 Sheling,D09,D09G04
 tshowog,D09G05T01 Korphu Toed,T01 Korphu Toed,D09,D09G05
 tshowog,D09G05T02 Korphu Meath,T02 Korphu Meath,D09,D09G05
 tshowog,D09G05T03 Nimshong Toed,T03 Nimshong Toed,D09,D09G05
@@ -1036,6 +1072,32 @@ tshowog,D18G06T02 Langpa_norbugang,T02 Langpa_norbugang,D18,D18G06
 tshowog,D18G06T03 Balamnang,T03 Balamnang,D18,D18G06
 tshowog,D18G06T04 Jenkanang_pudunang,T04 Jenkanang_pudunang,D18,D18G06
 tshowog,D18G06T05 Shar-Ri,T05 Shar-Ri,D18,D18G06
+tshowog,D20G01T01 Doongtoed Chhewa,T01 Doongtoed Chhewa,D20,D20G01
+tshowog,D20G01T02 Doongtoed Chhungwa Jarikha,T02 Doongtoed Chhungwa Jarikha,D20,D20G01
+tshowog,D20G01T03 Maedgang,T03 Maedgang,D20,D20G01
+tshowog,D20G01T04 Doongtoed Khaling ,T04 Doongtoed Khaling ,D20,D20G01
+tshowog,D20G01T05 Gebji Kuzhugang,T05 Gebji Kuzhugang,D20,D20G01
+tshowog,D20G03T01 Biloong Pongthra,T01 Biloong Pongthra,D20,D20G03
+tshowog,D20G03T02 Gesarling Yomdeling,T02 Gesarling Yomdeling,D20,D20G03
+tshowog,D20G03T03 Dhuenchhukha Gabji,T03 Dhuenchhukha Gabji,D20,D20G03
+tshowog,D20G03T04 Domchhukha Shitakha,T04 Domchhukha Shitakha,D20,D20G03
+tshowog,D20G03T05 Gawaling Karzhing,T05 Gawaling Karzhing,D20,D20G03
+tshowog,D20G04T01 Gyalposhing Satsangsa,T01 Gyalposhing Satsangsa,D20,D20G04
+tshowog,D20G04T02 Sernyagang Tsholingkhar,T02 Sernyagang Tsholingkhar,D20,D20G04
+tshowog,D20G04T03 Chhunag Chhoedleling,T03 Chhunag Chhoedleling,D20,D20G04
+tshowog,D20G04T04 Pagshingkha Tshachhugang,T04 Pagshingkha Tshachhugang,D20,D20G04
+tshowog,D20G04T05 Namgaychholing,T05 Namgaychholing,D20,D20G04
+tshowog,D20G06T01 Chongzhu Tshachhu,T01 Chongzhu Tshachhu,D20,D20G06
+tshowog,D20G06T02 Chhugoo Phendagang,T02 Chhugoo Phendagang,D20,D20G06
+tshowog,D20G06T03 Khabaabgang Norgoy,T03 Khabaabgang Norgoy,D20,D20G06
+tshowog,D20G06T04 Joenpang Lingarnang,T04 Joenpang Lingarnang,D20,D20G06
+tshowog,D20G06T05 Dangrayboog Patshaling,T05 Dangrayboog Patshaling,D20,D20G06
+tshowog,D20G06T06 Miphelgang Samphelgang,T06 Miphelgang Samphelgang,D20,D20G06
+tshowog,D20G07T01 Thangchhennang Dantshangna,T01 Thangchhennang Dantshangna,D20,D20G07
+tshowog,D20G07T02 Chhusilgang Dramedsa,T02 Chhusilgang Dramedsa,D20,D20G07
+tshowog,D20G07T03 Norgayling Singdregang,T03 Norgayling Singdregang,D20,D20G07
+tshowog,D20G07T04 Dizanggang Nakeling ,T04 Dizanggang Nakeling ,D20,D20G07
+tshowog,D20G07T05 Manigang Tashigang,T05 Manigang Tashigang,D20,D20G07
 staffcode,S0020,S0020 Sonam Rabten,M,
 staffcode,S0502,S0502 Phuntsho Chejay,M,
 staffcode,S0475,S0475 Lindsay Cummings,M,
@@ -1162,7 +1224,49 @@ staffcode,S0497,S0497 Jigme Norbu,M,
 staffcode,S0498,S0498 Kezang,M,
 staffcode,S0499,S0499 Namgay Tenzin,M,
 staffcode,S0500,S0500 Sonam Rinzin,M,
-farmercode,999,999,FC,
+staffcode,S0508,S0508 Jamyang Dorji,M,
+staffcode,S0509,S0509 Ngawang Tenzin,M,
+staffcode,S0510,S0510  Choki Dorji,M,
+staffcode,S0511,S0511 Dorji Wangchuk,M,
+staffcode,S0512,S0512 Kuenzang Tenzin,M,
+staffcode,S0513,S0513 Tashi Tobgay,M,
+staffcode,S0514,S0514 Tshewang Dema,M,
+staffcode,S0515,S0515 Karma Tshering Tashi,M,
+staffcode,S0516,S0516 Tshering Phuntsho,M,
+staffcode,S0517,S0517 Kinzang Dechen Wangmo,M,
+staffcode,S0518,S0518 Tsheten Dorji,M,
+staffcode,S0519,S0519 Sonam Jamtsho,M,
+staffcode,S0520,S0520 Tandin Zangpo,M,
+staffcode,S0523,S0523 Passang Tobgyel,M,
+staffcode,S0741,S0741 Rinzin Wangchuk,M,
+staffcode,S0742,S0742 Dawa Gyeltshen,M,
+staffcode,S0743,S0743 Thinley,M,
+staffcode,S0744,S0744 Leki Zangmo,M,
+staffcode,S0745,S0745 Sonam Yeshi,M,
+staffcode,S0746,S0746 Rinchen Dema,M,
+staffcode,S0747,S0747 Pema Wangchuk,M,
+staffcode,S0748,S0748 Dewakar Bujel,M,
+staffcode,S0749,S0749 Sangay Tenzin,M,
+staffcode,S0750,S0750 Dorji Tempa,M,
+staffcode,S0751,S0751 Kinley Tshering,M,
+staffcode,S0752,S0752 Phuntsho Norbu,M,
+staffcode,S0753,S0753 Pema Tshewang,M,
+staffcode,S0754,S0754 Tula Ram Ghalley,M,
+staffcode,S0755,S0755 Nima Dorji,M,
+staffcode,S0756,S0756 Tashi Wangchuk,M,
+staffcode,S0757,S0757 Karma Tshewang,M,
+staffcode,S0758,S0758 Tashi Phuntsho,M,
+staffcode,S0759,S0759 Sonam Wangchuk,M,
+staffcode,S0760,S0760 Jigme Dorji,M,
+staffcode,S0761,S0761 Dorji Tshering,M,
+staffcode,S0762,S0762 Damcho Wangmo,M,
+staffcode,S0763,S0763 Pema Loday,M,
+staffcode,S0764,S0764 Karma Dupchu,M,
+staffcode,S0765,S0765 Youden,M,
+staffcode,S0766,S0766 Samten Pelzang,M,
+staffcode,S0767,S0767 Jamyang Tenzin,M,
+staffcode,S0768,S0768 Sangay Lethro,M,
+staffcode,S0769,S0769 Sonam Tenzin,M,
 farmercode,1,1,FC,
 farmercode,2,2,FC,
 farmercode,3,3,FC,
@@ -1571,3 +1675,8 @@ fieldcode,4,4,FDC,
 fieldcode,5,5,FDC,
 farmertype,F,Private Land,FT,
 farmertype,G,Grf/Srf Land,FT,
+applicationno,1,1,APN,
+applicationno,2,2,APN,
+applicationno,3,3,APN,
+applicationno,4,4,APN,
+applicationno,5,5,APN,

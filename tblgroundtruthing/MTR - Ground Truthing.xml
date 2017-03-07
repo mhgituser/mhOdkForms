@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>MTR - Ground Truthing</h:title>
+    <model>
+      <instance>
+        <tblgroundtruthing id="tblgroundtruthing" version="1003">
+          <start/>
+          <end/>
+          <deviceid/>
+          <today/>
+          <email/>
+          <phonenumber/>
+          <simserial/>
+          <gennote/>
+          <booklet/>
+          <staffid/>
+          <farmerbarcode/>
+          <dcode/>
+          <gcode/>
+          <tcode/>
+          <fcode/>
+          <fname/>
+          <farmertype/>
+          <fdcode/>
+          <farmerpresent/>
+          <gps_coordinates/>
+          <mfcode/>
+          <minfo/>
+          <checkno0/>
+          <checkno01/>
+          <isabsentee/>
+          <absenteerepresent/>
+          <isinfluential/>
+          <regacre/>
+          <plantedacre/>
+          <isacrevisuallycorrect/>
+          <disttohouse/>
+          <distfieldtohouse/>
+          <distroadtofield/>
+          <slopeaspect/>
+          <slopedegree/>
+          <fieldclearcompleteddate/>
+          <plantingcompleteddate/>
+          <islayoutcorrest/>
+          <largetreecoveragepercent/>
+          <erodedsurfacepercent/>
+          <floodedareapercent/>
+          <surfacestonepercent/>
+          <totothers/>
+          <suitableland/>
+          <trigger1/>
+          <fencetype/>
+          <isirrigable/>
+          <disttowatersource/>
+          <comment/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </tblgroundtruthing>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/tblgroundtruthing/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/tblgroundtruthing/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/tblgroundtruthing/deviceid" type="string"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/tblgroundtruthing/today" type="date"/>
+      <bind jr:preload="property" jr:preloadParams="email" nodeset="/tblgroundtruthing/email" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/tblgroundtruthing/phonenumber" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/tblgroundtruthing/simserial" type="string"/>
+      <bind nodeset="/tblgroundtruthing/gennote" readonly="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/booklet" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/staffid" required="true()" type="string"/>
+      <bind jr:constraintMsg="Invalid barcode" nodeset="/tblgroundtruthing/farmerbarcode" type="barcode"/>
+      <bind nodeset="/tblgroundtruthing/dcode" relevant=" /tblgroundtruthing/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/gcode" relevant=" /tblgroundtruthing/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/tcode" relevant=" /tblgroundtruthing/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/fcode" relevant=" /tblgroundtruthing/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/fname" relevant=" /tblgroundtruthing/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/farmertype" relevant=" /tblgroundtruthing/farmerbarcode =''" required="true()" type="string"/>
+      <bind constraint=".&gt;0" jr:constraintMsg="Field code must be 1, 2, 3 etc." nodeset="/tblgroundtruthing/fdcode" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/farmerpresent" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/gps_coordinates" required="true()" type="geopoint"/>
+      <bind calculate="if(string-length( /tblgroundtruthing/fcode )='1', concat('000', /tblgroundtruthing/fcode ), if(string-length( /tblgroundtruthing/fcode )='2', concat('00', /tblgroundtruthing/fcode ), if(string-length( /tblgroundtruthing/fcode )='3', concat('0', /tblgroundtruthing/fcode ), /tblgroundtruthing/fcode )))" nodeset="/tblgroundtruthing/mfcode" type="string"/>
+      <bind calculate="concat(substr( /tblgroundtruthing/tcode ,0,9), /tblgroundtruthing/farmertype , /tblgroundtruthing/mfcode )" nodeset="/tblgroundtruthing/minfo" type="string"/>
+      <bind nodeset="/tblgroundtruthing/checkno0" relevant=" /tblgroundtruthing/farmerbarcode =''" required="true()"/>
+      <bind nodeset="/tblgroundtruthing/checkno01" relevant=" /tblgroundtruthing/farmerbarcode !=''" required="true()"/>
+      <bind nodeset="/tblgroundtruthing/isabsentee" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/absenteerepresent" relevant=" /tblgroundtruthing/isabsentee ='yes'" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/isinfluential" required="true()" type="string"/>
+      <bind constraint=".&gt;0" nodeset="/tblgroundtruthing/regacre" required="true()" type="decimal"/>
+      <bind constraint=".&gt;0" nodeset="/tblgroundtruthing/plantedacre" required="true()" type="decimal"/>
+      <bind nodeset="/tblgroundtruthing/isacrevisuallycorrect" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/disttohouse" required="true()" type="int"/>
+      <bind nodeset="/tblgroundtruthing/distfieldtohouse" required="true()" type="int"/>
+      <bind nodeset="/tblgroundtruthing/distroadtofield" required="true()" type="int"/>
+      <bind nodeset="/tblgroundtruthing/slopeaspect" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/slopedegree" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/fieldclearcompleteddate" required="true()" type="date"/>
+      <bind nodeset="/tblgroundtruthing/plantingcompleteddate" required="true()" type="date"/>
+      <bind nodeset="/tblgroundtruthing/islayoutcorrest" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/largetreecoveragepercent" required="true()" type="int"/>
+      <bind nodeset="/tblgroundtruthing/erodedsurfacepercent" required="true()" type="int"/>
+      <bind nodeset="/tblgroundtruthing/floodedareapercent" required="true()" type="int"/>
+      <bind nodeset="/tblgroundtruthing/surfacestonepercent" required="true()" type="int"/>
+      <bind calculate=" /tblgroundtruthing/largetreecoveragepercent + /tblgroundtruthing/erodedsurfacepercent + /tblgroundtruthing/floodedareapercent + /tblgroundtruthing/surfacestonepercent " nodeset="/tblgroundtruthing/totothers" required="true()" type="string"/>
+      <bind calculate="100- /tblgroundtruthing/totothers " constraint="( /tblgroundtruthing/largetreecoveragepercent + /tblgroundtruthing/erodedsurfacepercent + /tblgroundtruthing/floodedareapercent + /tblgroundtruthing/surfacestonepercent )&lt;=100" nodeset="/tblgroundtruthing/suitableland" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/trigger1" required="true()"/>
+      <bind nodeset="/tblgroundtruthing/fencetype" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/isirrigable" required="true()" type="string"/>
+      <bind nodeset="/tblgroundtruthing/disttowatersource" required="true()" type="int"/>
+      <bind nodeset="/tblgroundtruthing/comment" required="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/tblgroundtruthing/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/tblgroundtruthing/gennote">
+      <label>Mountain Hazelnut Venture
+
+Form Name: Ground Truthing
+Form ID: MH-FF-01
+Revision Date: 06-02-2017
+Revision Number: 2.1</label>
+      <hint>----------------------------------------
+
+Important:This form contains field geo location option which must be taken at the field site.</hint>
+    </input>
+    <input ref="/tblgroundtruthing/booklet">
+      <label>Farmer booklet No.</label>
+    </input>
+    <input query="instance('staffcode')/root/item[dzongkhag=&quot;M&quot;]" ref="/tblgroundtruthing/staffid">
+      <label>Select your name</label>
+    </input>
+    <input ref="/tblgroundtruthing/farmerbarcode">
+      <label>Scan farmer details from barcode sheet</label>
+    </input>
+    <input query="instance('dzongkhag')/root/item[dzongkhag=&quot;D&quot;]" ref="/tblgroundtruthing/dcode">
+      <label>Select Dzongkhag</label>
+    </input>
+    <input query="instance('gewog')/root/item[dzongkhag= /tblgroundtruthing/dcode ]" ref="/tblgroundtruthing/gcode">
+      <label>Select Gewog</label>
+    </input>
+    <input query="instance('tshowog')/root/item[gewog= /tblgroundtruthing/gcode ]" ref="/tblgroundtruthing/tcode">
+      <label>Select Tshowog</label>
+    </input>
+    <input query="instance('farmercode')/root/item[dzongkhag=&quot;FC&quot;]" ref="/tblgroundtruthing/fcode">
+      <label>Farmer code</label>
+    </input>
+    <input ref="/tblgroundtruthing/fname">
+      <label>Farmer name</label>
+    </input>
+    <input query="instance('farmertype')/root/item[dzongkhag=&quot;FT&quot;]" ref="/tblgroundtruthing/farmertype">
+      <label>Select farmer type</label>
+    </input>
+    <input query="instance('fieldcode')/root/item[dzongkhag=&quot;FDC&quot;]" ref="/tblgroundtruthing/fdcode">
+      <label>Field code</label>
+      <hint>First field - 1, second 2, etc. Visit ALL farmers fields</hint>
+    </input>
+    <input query="instance('yesno')/root/item[dzongkhag=&quot;YN&quot;]" ref="/tblgroundtruthing/farmerpresent">
+      <label>Is the farmer present ?</label>
+      <hint>Call farmer to field and explain him his field condition</hint>
+    </input>
+    <input ref="/tblgroundtruthing/gps_coordinates">
+      <label>Field GPS co-ordinates</label>
+      <hint>GPS coordinates can only be collected when outside.</hint>
+    </input>
+    <trigger ref="/tblgroundtruthing/checkno0">
+      <label>Check your information, are these all correct? If not go back and correct!</label>
+      <hint>Your staffcode: <output value=" /tblgroundtruthing/staffid "/>
+Farmer code: <output value=" /tblgroundtruthing/minfo "/>
+Field code: <output value=" /tblgroundtruthing/fdcode "/></hint></trigger>
+    <trigger ref="/tblgroundtruthing/checkno01">
+      <label>Check your information, are these all correct? If not go back and correct!</label>
+      <hint>Your staffcode: <output value=" /tblgroundtruthing/staffid "/>
+Farmer code: <output value=" /tblgroundtruthing/farmerbarcode "/>
+Field code: <output value=" /tblgroundtruthing/fdcode "/></hint></trigger>
+    <input query="instance('yesno')/root/item[dzongkhag=&quot;YN&quot;]" ref="/tblgroundtruthing/isabsentee">
+      <label>Is the farmer absentee ?</label>
+    </input>
+    <input ref="/tblgroundtruthing/absenteerepresent">
+      <label>Who looks after the orchard?</label>
+    </input>
+    <input query="instance('yesno')/root/item[dzongkhag=&quot;YN&quot;]" ref="/tblgroundtruthing/isinfluential">
+      <label>Is the farmer influential ?</label>
+    </input>
+    <input ref="/tblgroundtruthing/regacre">
+      <label>Acre Registered</label>
+    </input>
+    <input ref="/tblgroundtruthing/plantedacre">
+      <label>Acre Planted</label>
+    </input>
+    <input query="instance('yesno')/root/item[dzongkhag=&quot;YN&quot;]" ref="/tblgroundtruthing/isacrevisuallycorrect">
+      <label>Is the area registered visually correct?</label>
+    </input>
+    <input ref="/tblgroundtruthing/disttohouse">
+      <label>Distance road head to farmer's house</label>
+      <hint>Minutes walk</hint>
+    </input>
+    <input ref="/tblgroundtruthing/distfieldtohouse">
+      <label>Distance field to farmer's house</label>
+      <hint>Minutes walk</hint>
+    </input>
+    <input ref="/tblgroundtruthing/distroadtofield">
+      <label>Distance road head to farmer's field</label>
+      <hint>Minutes walk</hint>
+    </input>
+    <input query="instance('slopeaspect')/root/item[dzongkhag=&quot;SA&quot;]" ref="/tblgroundtruthing/slopeaspect">
+      <label>What is the slope aspect?</label>
+    </input>
+    <input query="instance('slopedegree')/root/item[dzongkhag=&quot;SD&quot;]" ref="/tblgroundtruthing/slopedegree">
+      <label>Average slope degrees</label>
+      <hint>Select which represents more surface orchard.</hint>
+    </input>
+    <input appearance="no-calendar" ref="/tblgroundtruthing/fieldclearcompleteddate">
+      <label>Field clearing complete date</label>
+    </input>
+    <input appearance="no-calendar" ref="/tblgroundtruthing/plantingcompleteddate">
+      <label>Planting complete date</label>
+    </input>
+    <input query="instance('yesno')/root/item[dzongkhag=&quot;YN&quot;]" ref="/tblgroundtruthing/islayoutcorrest">
+      <label>is the orchard layout correct?</label>
+    </input>
+    <input ref="/tblgroundtruthing/largetreecoveragepercent">
+      <label>Large tree cover (%)</label>
+      <hint>more then 5 mtr.</hint>
+    </input>
+    <input ref="/tblgroundtruthing/erodedsurfacepercent">
+      <label>Eroded surface (%)</label>
+    </input>
+    <input ref="/tblgroundtruthing/floodedareapercent">
+      <label>Flooded marshy areas (%)</label>
+    </input>
+    <input ref="/tblgroundtruthing/surfacestonepercent">
+      <label>Surface stones (%)</label>
+    </input>
+    <trigger ref="/tblgroundtruthing/trigger1">
+      <label>Check your information, are these all correct? If not go back and correct!</label>
+      <hint>Large tree cover (%):<output value=" /tblgroundtruthing/largetreecoveragepercent "/>
+Eroded surface (%):<output value=" /tblgroundtruthing/erodedsurfacepercent "/>
+Flooded marshy areas (%):<output value=" /tblgroundtruthing/floodedareapercent "/>
+Surface stones (%):<output value=" /tblgroundtruthing/surfacestonepercent "/>
+Field suitable for planting (%):<output value=" /tblgroundtruthing/suitableland "/></hint></trigger>
+    <input query="instance('fencetype')/root/item[dzongkhag=&quot;FN&quot;]" ref="/tblgroundtruthing/fencetype">
+      <label>Fence Type</label>
+    </input>
+    <input query="instance('yesno')/root/item[dzongkhag=&quot;YN&quot;]" ref="/tblgroundtruthing/isirrigable">
+      <label>Is irrigation possible?</label>
+    </input>
+    <input ref="/tblgroundtruthing/disttowatersource">
+      <label>Distance to nearest water source</label>
+      <hint>Minutes Walk</hint>
+    </input>
+    <input ref="/tblgroundtruthing/comment">
+      <label>Comment</label>
+    </input>
+  </h:body>
+</h:html>

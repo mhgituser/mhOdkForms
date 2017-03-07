@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head><!-- ODK Aggregate upload time: 2017-01-25T03:28:32.387+0000 on http://192.157.233.175:8080/ODKAggregate -->
+    <h:title>REO - Pollination</h:title>
+    <model>
+      <instance>
+        <tblpollination id="tblpolination" version="1004">
+          <start/>
+          <end/>
+          <deviceid/>
+          <today/>
+          <email/>
+          <phonenumber/>
+          <simserial/>
+          <gennote/>
+          <poldate/>
+          <staffid/>
+          <applicationno/>
+          <farmerbarcode/>
+          <dcode/>
+          <gcode/>
+          <tcode/>
+          <fcode/>
+          <fname/>
+          <farmertype/>
+          <fdcode/>
+          <gps_coordinates/>
+          <polstarttime/>
+          <polendtime/>
+          <nooftrees/>
+          <comment/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </tblpollination>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/tblpollination/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/tblpollination/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/tblpollination/deviceid" type="string"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/tblpollination/today" type="date"/>
+      <bind jr:preload="property" jr:preloadParams="email" nodeset="/tblpollination/email" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/tblpollination/phonenumber" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/tblpollination/simserial" type="string"/>
+      <bind nodeset="/tblpollination/gennote" readonly="true()" type="string"/>
+      <bind nodeset="/tblpollination/poldate" required="true()" type="date"/>
+      <bind nodeset="/tblpollination/staffid" required="true()" type="string"/>
+      <bind nodeset="/tblpollination/applicationno" required="true()" type="string"/>
+      <bind jr:constraintMsg="Invalid barcode" nodeset="/tblpollination/farmerbarcode" type="barcode"/>
+      <bind nodeset="/tblpollination/dcode" relevant=" /tblpollination/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblpollination/gcode" relevant=" /tblpollination/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblpollination/tcode" relevant=" /tblpollination/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblpollination/fcode" relevant=" /tblpollination/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblpollination/fname" relevant=" /tblpollination/farmerbarcode =''" required="true()" type="string"/>
+      <bind nodeset="/tblpollination/farmertype" relevant=" /tblpollination/farmerbarcode =''" required="true()" type="string"/>
+      <bind constraint=".&gt;0" jr:constraintMsg="Field code must be 1, 2, 3 etc." nodeset="/tblpollination/fdcode" required="true()" type="string"/>
+      <bind nodeset="/tblpollination/gps_coordinates" required="true()" type="geopoint"/>
+      <bind nodeset="/tblpollination/polstarttime" required="true()" type="time"/>
+      <bind nodeset="/tblpollination/polendtime" required="true()" type="time"/>
+      <bind nodeset="/tblpollination/nooftrees" required="true()" type="int"/>
+      <bind nodeset="/tblpollination/comment" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/tblpollination/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/tblpollination/gennote">
+      <label>Mountain Hazelnut Venture
+
+Form Name:Polination
+Form ID:None
+Revision Date: 11-02-2016
+Revision Number: 1.0</label>
+      <hint>----------------------------------------
+
+Important:This form contains field geo location option which must be taken at the field site.</hint>
+    </input>
+    <input appearance="no-calendar" ref="/tblpollination/poldate">
+      <label>Polination Date</label>
+    </input>
+    <input query="instance('staffcode')/root/item[dzongkhag=&quot;M&quot;]" ref="/tblpollination/staffid">
+      <label>Select your name</label>
+    </input>
+    <input query="instance('applicationno')/root/item[dzongkhag=&quot;APN&quot;]" ref="/tblpollination/applicationno">
+      <label>Select Application No.</label>
+    </input>
+    <input ref="/tblpollination/farmerbarcode">
+      <label>Scan farmer details from barcode sheet</label>
+    </input>
+    <input query="instance('dzongkhag')/root/item[dzongkhag=&quot;D&quot;]" ref="/tblpollination/dcode">
+      <label>Select Dzongkhag</label>
+    </input>
+    <input query="instance('gewog')/root/item[dzongkhag= /tblpollination/dcode ]" ref="/tblpollination/gcode">
+      <label>Select Gewog</label>
+    </input>
+    <input query="instance('tshowog')/root/item[gewog= /tblpollination/gcode ]" ref="/tblpollination/tcode">
+      <label>Select Tshowog</label>
+    </input>
+    <input query="instance('farmercode')/root/item[dzongkhag=&quot;FC&quot;]" ref="/tblpollination/fcode">
+      <label>Farmer code</label>
+      <hint>select 999 for all new farmers.</hint>
+    </input>
+    <input ref="/tblpollination/fname">
+      <label>Farmer name</label>
+    </input>
+    <input query="instance('farmertype')/root/item[dzongkhag=&quot;FT&quot;]" ref="/tblpollination/farmertype">
+      <label>Select farmer type</label>
+    </input>
+    <input query="instance('fieldcode')/root/item[dzongkhag=&quot;FDC&quot;]" ref="/tblpollination/fdcode">
+      <label>Field code</label>
+      <hint>First field - 1, second 2, etc. Visit ALL farmers fields</hint>
+    </input>
+    <input ref="/tblpollination/gps_coordinates">
+      <label>Field GPS co-ordinates</label>
+      <hint>GPS coordinates can only be collected when outside.</hint>
+    </input>
+    <input ref="/tblpollination/polstarttime">
+      <label>Start time</label>
+    </input>
+    <input ref="/tblpollination/polendtime">
+      <label>End time</label>
+    </input>
+    <input ref="/tblpollination/nooftrees">
+      <label>No. of trees sprayed</label>
+    </input>
+    <input ref="/tblpollination/comment">
+      <label>Comment</label>
+    </input>
+  </h:body>
+</h:html>
