@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>MTR - Future Farmer</h:title>
+    <model>
+      <instance>
+        <tblfuturefarmer id="tblfuturefarmer" version="1001">
+          <start/>
+          <end/>
+          <deviceid/>
+          <today/>
+          <email/>
+          <phonenumber/>
+          <simserial/>
+          <gennote/>
+          <staffid/>
+          <farmer/>
+          <planted/>
+          <gps_coordinates/>
+          <production/>
+          <pollinizer/>
+          <plantfuture/>
+          <reasonyes/>
+          <reasonno/>
+          <when/>
+          <acre/>
+          <comment/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </tblfuturefarmer>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/tblfuturefarmer/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/tblfuturefarmer/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/tblfuturefarmer/deviceid" type="string"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/tblfuturefarmer/today" type="date"/>
+      <bind jr:preload="property" jr:preloadParams="email" nodeset="/tblfuturefarmer/email" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/tblfuturefarmer/phonenumber" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/tblfuturefarmer/simserial" type="string"/>
+      <bind nodeset="/tblfuturefarmer/gennote" readonly="true()" type="string"/>
+      <bind nodeset="/tblfuturefarmer/staffid" required="true()" type="string"/>
+      <bind nodeset="/tblfuturefarmer/farmer" required="true()" type="string"/>
+      <bind nodeset="/tblfuturefarmer/planted" required="true()" type="string"/>
+      <bind nodeset="/tblfuturefarmer/gps_coordinates" relevant="selected( /tblfuturefarmer/planted ,'yes')" required="true()" type="geopoint"/>
+      <bind nodeset="/tblfuturefarmer/production" relevant="selected( /tblfuturefarmer/planted ,'yes')" required="true()" type="int"/>
+      <bind nodeset="/tblfuturefarmer/pollinizer" relevant="selected( /tblfuturefarmer/planted ,'yes')" required="true()" type="int"/>
+      <bind nodeset="/tblfuturefarmer/plantfuture" relevant="selected( /tblfuturefarmer/planted ,'no')" required="true()" type="string"/>
+      <bind nodeset="/tblfuturefarmer/reasonyes" relevant="selected( /tblfuturefarmer/plantfuture ,'yes')" required="true()" type="string"/>
+      <bind nodeset="/tblfuturefarmer/reasonno" relevant="selected( /tblfuturefarmer/plantfuture ,'no')" required="true()" type="string"/>
+      <bind nodeset="/tblfuturefarmer/when" relevant="selected( /tblfuturefarmer/plantfuture ,'yes')" required="true()" type="string"/>
+      <bind nodeset="/tblfuturefarmer/acre" relevant="selected( /tblfuturefarmer/plantfuture ,'yes')" required="true()" type="decimal"/>
+      <bind nodeset="/tblfuturefarmer/comment" required="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/tblfuturefarmer/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/tblfuturefarmer/gennote">
+      <label>Mountain Hazelnut Venture
+
+Form Name: Orchard Management 
+Form ID: MH-FF-03
+Revision Date: 08-11-2015
+Revision Number: 2.0</label>
+    </input>
+    <input query="instance('staffcode')/root/item[dzongkhag=&quot;M&quot;]" ref="/tblfuturefarmer/staffid">
+      <label>Select your name</label>
+    </input>
+    <input query="instance('farmer')/root/item[dzongkhag= /tblfuturefarmer/staffid ]" ref="/tblfuturefarmer/farmer">
+      <label>Select farmer</label>
+    </input>
+    <input query="instance('yesno')/root/item[dzongkhag=&quot;YN&quot;]" ref="/tblfuturefarmer/planted">
+      <label>Does this farmer has plant in field?</label>
+    </input>
+    <input ref="/tblfuturefarmer/gps_coordinates">
+      <label>Field GPS co-ordinates</label>
+      <hint>GPS coordinates can only be collected when outside.</hint>
+    </input>
+    <input ref="/tblfuturefarmer/production">
+      <label>Total number of production trees</label>
+    </input>
+    <input ref="/tblfuturefarmer/pollinizer">
+      <label>Total number of pollinizer trees</label>
+    </input>
+    <input query="instance('yesno')/root/item[dzongkhag=&quot;YN&quot;]" ref="/tblfuturefarmer/plantfuture">
+      <label>Does farmer want to plant?</label>
+    </input>
+    <input ref="/tblfuturefarmer/reasonyes">
+      <label>What is the reason for not planting before.</label>
+    </input>
+    <input ref="/tblfuturefarmer/reasonno">
+      <label>Why this farmer does not want to plant.</label>
+    </input>
+    <input ref="/tblfuturefarmer/when">
+      <label>When does this farmer want to plant</label>
+    </input>
+    <input ref="/tblfuturefarmer/acre">
+      <label>How many acre does the farmer want to plant.</label>
+    </input>
+    <input ref="/tblfuturefarmer/comment">
+      <label>FE general comment</label>
+    </input>
+  </h:body>
+</h:html>
